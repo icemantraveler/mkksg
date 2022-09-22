@@ -1,0 +1,39 @@
+a:link
+{
+    color: #808080;font-family:Verdana; font-size:10pt 
+}
+a:visited
+{
+    color: #808080;font-family:Verdana; font-size:10pt
+} 
+a:active 
+{
+    color: #808080;font-family:Verdana; font-size:10pt
+}
+a:hover
+{
+    color: #FFFFFF;font-family:Verdana; font-size:10pt
+}
+body
+{
+    background:#000000 url('pics/bgmk3.JPG') no-repeat fixed center; font-family: Verdana;
+    color: #999999;font-size:10pt;
+    scrollbar-arrow-color: #999999;
+    scrollbar-base-color: #000000;
+    scrollbar-dark-shadow-color: #999999;
+    scrollbar-track-color: #000000;
+    scrollbar-face-color: #000000;
+    scrollbar-shadow-color: #999999;
+    scrollbar-highlight-color: #999999
+}
+table
+{
+    table-border-color-light: rgb(33,33,33);
+    table-border-color-dark: rgb(33,33,33); font-family:Verdana; font-size:10pt; color:#999999
+}
+img {
+    max-width: 100%;
+    max-height: 334px;
+    height: auto;
+    width: auto;        /* to make the image responsive */
+}
