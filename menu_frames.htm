@@ -1,20 +1,50 @@
 <html>
 
 <head>
-<meta http-equiv="Content-Language" content="en-us">
-<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta content="en-us" http-equiv="Content-Language">
+<meta content="Microsoft FrontPage 12.0" name="GENERATOR">
+<meta content="FrontPage.Editor.Document" name="ProgId">
 <noscript>
 <body>
 
 </noscript>
 <title>MKKomplete - Navigation Menu</title>
 <style type="text/css">
-.menuOut {cursor:pointer; margin:0px; background-color:#000000; color:#808080; width:100%; border:1px solid #333333; padding:0px; text-align:center;}
-.menuOver {cursor:pointer; margin:0px; background-color:#000000; color:#FFFFFF; width:100%; border:1px solid #C0C0C0; padding:0px; text-align:center;}
-.submenu {width:500px; font-family:Verdana; font-size:12px; padding-left:2px;}
-.submenu a {color:#336699; text-decoration:none;}
-.submenu a:hover {color:#FFFFFF; text-decoration:none; font-weight:bold;}
+.menuOut {
+	cursor: pointer;
+	margin: 0px;
+	background-color: #000000;
+	color: #808080;
+	width: 100%;
+	border: 1px solid #333333;
+	padding: 0px;
+	text-align: center;
+}
+.menuOver {
+	cursor: pointer;
+	margin: 0px;
+	background-color: #000000;
+	color: #FFFFFF;
+	width: 100%;
+	border: 1px solid #C0C0C0;
+	padding: 0px;
+	text-align: center;
+}
+.submenu {
+	width: 500px;
+	font-family: Verdana;
+	font-size: 12px;
+	padding-left: 2px;
+}
+.submenu a {
+	color: #336699;
+	text-decoration: none;
+}
+.submenu a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
 </style>
 <script type="text/javascript">
 /*  
@@ -43,608 +73,732 @@ function ChangeClass(menu, newClass) {
 } 
 document.onselectstart = new Function("return false");
 </script>
-<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 
-<body text="#C0C0C0" bgcolor="#000000" link="#808080" vlink="#808080" alink="#808080">
+<body alink="#808080" bgcolor="#000000" link="#808080" text="#C0C0C0" vlink="#808080">
 
 <center><a name="top">
-<img src="pics/logo_site_small.png" border="0" title="MKKomplete" alt="MKKomplete" width="145" height="69"></a><br>
-<b>Navigation</b></center><hr color="#333333">
+<img alt="MKKomplete" border="0" height="69" src="pics/logo_site_small.png" title="MKKomplete" width="145"></a><br>
+<b>Navigation</b></center>
+<hr color="#333333">
+
 <div id="cont" style="width: 100%;">
-  <p id="menu1" class="menuOut" onclick="SwitchMenu('sub1')" onmouseover="ChangeClass('menu1','menuOver')" onmouseout="ChangeClass('menu1','menuOut')">
-   Main Site<div class="submenu" id="sub1" style="display:none;">
-    <a target="mkmain" href="main.htm">Main Page</a><br>
-    <a target="mkmain" href="staff.htm">Contact/Staff</a><br>
-    <a target="mkmain" href="affiliates.htm">Affiliates</a><br>
-    <a target="mkmain" href="wallpapers.htm">Wallpapers</a><br>
-    <a target="mkmain" href="video.htm">Monitor Setup</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm">Printable Documents</a><br>
-    <a target="mkmain" href="arcade_kollection/default.htm">MK Arcade Kollection</a><br>
-    <a target="mkmain" href="arcade_kollection/default_matep.htm">MAT2/MATEP</a><br>
-    <a target="mkmain" href="combos.htm">Combos</a><br>
-    <a target="mkmain" href="achievementstrophies.htm">Achievements/Trophies</a><br>
-    <a target="mkmain" href="youtube.htm">Trav Plays (YouTube)</a></div>
-  <hr color="#333333">
-  <center><font color="#000000">
-  <span style="background-color: #666666; font-weight:700">Main Games:</span></font></center>
-  <hr color="#333333">
+	<p id="menu1" class="menuOut" onclick="SwitchMenu('sub1')" onmouseout="ChangeClass('menu1','menuOut')" onmouseover="ChangeClass('menu1','menuOver')">
+	Main Site</p>
+	<div id="sub1" class="submenu" style="display: none;">
+		<a href="main.htm" target="mkmain">Main Page</a><br>
+		<a href="staff.htm" target="mkmain">Contact/Staff</a><br>
+		<a href="affiliates.htm" target="mkmain">Affiliates</a><br>
+		<a href="wallpapers.htm" target="mkmain">Wallpapers</a><br>
+		<a href="video.htm" target="mkmain">Monitor Setup</a><br>
+		<a href="printable_movelists/index.htm" target="mkmain">Printable Documents</a><br>
+		<a href="arcade_kollection/default.htm" target="mkmain">MK Arcade Kollection</a><br>
+		<a href="arcade_kollection/default_matep.htm" target="mkmain">MAT2/MATEP</a><br>
+		<a href="combos.htm" target="mkmain">Combos</a><br>
+		<a href="achievementstrophies.htm" target="mkmain">Achievements/Trophies</a><br>
+		<a href="youtube.htm" target="mkmain">Trav Plays (YouTube)</a></div>
+	<hr color="#333333">
 
-<p id="menumk12" class="menuOut" onclick="SwitchMenu('submk12')" onmouseover="ChangeClass('menumk12','menuOver')" onmouseout="ChangeClass('menumk12','menuOut')">
-   Mortal Kombat 1<br>(2023)<div class="submenu" id="submk12" style="display:none;">
-    	<u>Universal:</u><br>
-    <a target="mkmain" href="mk12/default.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk12/combos.htm">Basic Moves &amp; Combos</a><br>
-    <a target="mkmain" href="mk12/fatalities.htm">Fatalities</a><br><br>
-    <u>Xbox Series X|S:</u><br>
-    <a target="mkmain" href="mk12/default_xbox.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk12/combos_xbox.htm">Basic Moves &amp; Combos</a><br>
-    <a target="mkmain" href="mk12/fatalities_xbox.htm">Fatalities</a><br><br>
-    <u>PlayStation 5:</u><br>
-    <a target="mkmain" href="mk12/default_ps5.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk12/combos_ps5.htm">Basic Moves &amp; Combos</a><br>
-    <a target="mkmain" href="mk12/fatalities_ps5.htm">Fatalities</a><br><br>
-    <u>Switch:</u><br>
-    <a target="mkmain" href="mk12/default_switch.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk12/combos_switch.htm">Basic Moves &amp; Combos</a><br>
-    <a target="mkmain" href="mk12/fatalities_switch.htm">Fatalities</a><br><br>
+	<center><font color="#000000">
+	<span style="background-color: #666666; font-weight: 700">Main Games:</span></font></center>
+	<hr color="#333333">
 
-    <a target="mkmain" href="mk12/endings.htm">Endings</a></div>
-  <hr color="#333333">
+	<p id="menumk12" class="menuOut" onclick="SwitchMenu('submk12')" onmouseout="ChangeClass('menumk12','menuOut')" onmouseover="ChangeClass('menumk12','menuOver')">
+	Mortal Kombat 1<br>
+	(2023)</p>
+	<div id="submk12" class="submenu" style="display: none;">
+		<u>Universal:</u><br>
+		<a href="mk12/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk12/combos.htm" target="mkmain">Basic Moves &amp; Combos</a><br>
+		<a href="mk12/fatalities.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<u>Xbox Series X|S:</u><br>
+		<a href="mk12/default_xbox.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk12/combos_xbox.htm" target="mkmain">Basic Moves &amp; Combos</a><br>
+		<a href="mk12/fatalities_xbox.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<u>PlayStation 5:</u><br>
+		<a href="mk12/default_ps5.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk12/combos_ps5.htm" target="mkmain">Basic Moves &amp; Combos</a><br>
+		<a href="mk12/fatalities_ps5.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<u>Switch:</u><br>
+		<a href="mk12/default_switch.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk12/combos_switch.htm" target="mkmain">Basic Moves &amp; Combos</a><br>
+		<a href="mk12/fatalities_switch.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<a href="mk12/endings.htm" target="mkmain">Endings</a></div>
+	<hr color="#333333">
 
-	
-  <p id="menumk11" class="menuOut" onclick="SwitchMenu('submk11')" onmouseover="ChangeClass('menumk11','menuOver')" onmouseout="ChangeClass('menumk11','menuOut')">
-   Mortal Kombat 11<div class="submenu" id="submk11" style="display:none;">
-    	<u>Universal:</u><br>
-    <a target="mkmain" href="mk11/default.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk11/combos.htm">Basic Moves &amp; Combos</a><br>
-    <a target="mkmain" href="mk11/finishers.htm">Finishers</a><br>
-    <a target="mkmain" href="mk11/fatalities.htm">Fatalities</a><br><br>
-    <u>Xbox One:</u><br>
-    <a target="mkmain" href="mk11/default_xbox.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk11/combos_xbox.htm">Basic Moves &amp; Combos</a><br>
-    <a target="mkmain" href="mk11/finishers_xbox.htm">Finishers</a><br>
-    <a target="mkmain" href="mk11/fatalities_xbox.htm">Fatalities</a><br><br>
-    <u>PlayStation 4:</u><br>
-    <a target="mkmain" href="mk11/default_ps4.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk11/combos_ps4.htm">Basic Moves &amp; Combos</a><br>
-    <a target="mkmain" href="mk11/finishers_ps4.htm">Finishers</a><br>
-    <a target="mkmain" href="mk11/fatalities_ps4.htm">Fatalities</a><br><br>
-    <u>Switch:</u><br>
-    <a target="mkmain" href="mk11/default_switch.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk11/combos_switch.htm">Basic Moves &amp; Combos</a><br>
-    <a target="mkmain" href="mk11/finishers_switch.htm">Finishers</a><br>
-    <a target="mkmain" href="mk11/fatalities_switch.htm">Fatalities</a><br><br>
-    <a target="mkmain" href="mk11/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="mk11/endings.htm">Endings</a></div>
+	<p id="menumk11" class="menuOut" onclick="SwitchMenu('submk11')" onmouseout="ChangeClass('menumk11','menuOut')" onmouseover="ChangeClass('menumk11','menuOver')">
+	Mortal Kombat 11</p>
+	<div id="submk11" class="submenu" style="display: none;">
+		<u>Universal:</u><br>
+		<a href="mk11/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk11/combos.htm" target="mkmain">Basic Moves &amp; Combos</a><br>
+		<a href="mk11/finishers.htm" target="mkmain">Finishers</a><br>
+		<a href="mk11/fatalities.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<u>Xbox One:</u><br>
+		<a href="mk11/default_xbox.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk11/combos_xbox.htm" target="mkmain">Basic Moves &amp; Combos</a><br>
+		<a href="mk11/finishers_xbox.htm" target="mkmain">Finishers</a><br>
+		<a href="mk11/fatalities_xbox.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<u>PlayStation 4:</u><br>
+		<a href="mk11/default_ps4.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk11/combos_ps4.htm" target="mkmain">Basic Moves &amp; Combos</a><br>
+		<a href="mk11/finishers_ps4.htm" target="mkmain">Finishers</a><br>
+		<a href="mk11/fatalities_ps4.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<u>Switch:</u><br>
+		<a href="mk11/default_switch.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk11/combos_switch.htm" target="mkmain">Basic Moves &amp; Combos</a><br>
+		<a href="mk11/finishers_switch.htm" target="mkmain">Finishers</a><br>
+		<a href="mk11/fatalities_switch.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<a href="mk11/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="mk11/endings.htm" target="mkmain">Endings</a></div>
+	<hr color="#333333">
 
-  <hr color="#333333">
-	  
-  <p id="menuinjustice2" class="menuOut" onclick="SwitchMenu('subinjustice2')" onmouseover="ChangeClass('menuinjustice2','menuOver')" onmouseout="ChangeClass('menuinjustice2','menuOut')">
-   INJUSTICE 2<div class="submenu" id="subinjustice2" style="display:none;">
-    	<u>Universal:</u><br>
-    <a target="mkmain" href="injustice2/default.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="injustice2/combos.htm">Basic Moves &amp; Combos</a><br><br>
-    	<u>Xbox One:</u><br>
-    <a target="mkmain" href="injustice2/default_xboxone.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="injustice2/combos_xboxone.htm">Basic Moves &amp; Combos</a><br><br>
-    	<u>PlayStation 4:</u><br>
-    <a target="mkmain" href="injustice2/default_ps4.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="injustice2/combos_ps4.htm">Basic Moves &amp; Combos</a><br><br>
-    <a target="mkmain" href="injustice2/abilities.htm">Abilities List</a><br>
-	<a target="mkmain" href="injustice2/endings.htm">Endings</a></div>
-  <hr color="#333333">
-	
-  <p id="menumkx" class="menuOut" onclick="SwitchMenu('submkx')" onmouseover="ChangeClass('menumkx','menuOver')" onmouseout="ChangeClass('menumkx','menuOut')">
-   Mortal Kombat X<div class="submenu" id="submkx" style="display:none;">
-    	<u>Universal:</u><br>
-    <a href="mk10/default.htm" target="mkmain">Moves/Bios</a><br>
-    <a href="mk10/default_graphical.htm" target="mkmain">Moves/Bios/Combos (Graphical)</a><br>
-    <a href="combos/mkx.htm" target="mkmain">Combos</a><br>
-    <a href="mk10/finishers.htm" target="mkmain">Finishers</a><br>
-    <a href="mk10/fatalities.htm" target="mkmain">Fatalities</a><br><br><u>Xbox 
-		One:</u><br>
-    <a target="mkmain" href="mk10/default_xbox.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk10/default_graphical_xbox.htm">Moves/Bios/Combos (Graphical)</a><br>
-    <a target="mkmain" href="combos/mkx_xbox.htm">Combos</a><br>
-    <a target="mkmain" href="mk10/finishers_xbox.htm">Finishers</a><br>
-    <a target="mkmain" href="mk10/fatalities_xbox.htm">Fatalities</a><br><br><u>PlayStation 
-		4:</u><br>
-    <a target="mkmain" href="mk10/default_ps.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk10/default_graphical_ps.htm">Moves/Bios/Combos (Graphical)</a><br>
-    <a href="combos/mkx_playstation.htm" target="mkmain">Combos</a><br>
-    <a target="mkmain" href="mk10/finishers_playstation.htm">Finishers</a><br>
-    <a target="mkmain" href="mk10/fatalities_playstation.htm">Fatalities</a><br><br>
-    <a target="mkmain" href="mk10/hidden_brutalities.htm">Hidden Brutalities</a><br>
-    <a target="mkmain" href="mk10/stage_brutalities.htm">Stage Brutalities</a><br>
-    <a target="mkmain" href="mk10/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="mk10/krypt.htm">The Krypt</a><br>
-    <a target="mkmain" href="mk10/krypt_printable.htm">The Krypt - Printable</a><br>
-    <a target="mkmain" href="mk10/endings.htm">Endings</a><br>
-    <a target="mkmain" href="mk10/story_mode.htm">Story Mode</a><br>
-    </div>
-  <hr color="#333333">
-  <p id="menuinjustice" class="menuOut" onclick="SwitchMenu('subinjustice')" onmouseover="ChangeClass('menuinjustice','menuOver')" onmouseout="ChangeClass('menuinjustice','menuOut')">
-   INJUSTICE<br>
-   Gods Among Us<div class="submenu" id="subinjustice" style="display:none;">
-    	<u>Universal:</u><br>
-    <a target="mkmain" href="igau/default.htm">Moves/Bios - Universal</a><br>
-    <a target="mkmain" href="combos/igau.htm">Combos - Universal</a><br><br><u>Universal/Alternate:</u><br>
-    <a target="mkmain" href="igau/default_alternate.htm">Moves/Bios - Alternate</a><br><br><u>Xbox 360:</u><br>
-    <a target="mkmain" href="igau/default_xbox360.htm">Moves/Bios - Xbox 360</a><br>
-    <a target="mkmain" href="combos/igau_xbox.htm">Combos - Xbox 360</a><br><br><u>PlayStation 3:</u><br>
-    <a target="mkmain" href="igau/default_ps3.htm">Moves/Bios - PS3</a><br>
-    <a target="mkmain" href="combos/igau_ps3.htm">Combos - PS3</a><br><br><u>Wii U:</u><br>
-    <a target="mkmain" href="igau/default_wiiu.htm">Moves/Bios - Wii U</a><br>
-    <a target="mkmain" href="combos/igau_wiiu.htm">Combos - Wii U</a><br><br>
-    <a target="mkmain" href="igau/story.htm">Story</a><br>
-    <a target="mkmain" href="igau/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="igau/archives.htm">Archives</a><br>
-    <a target="mkmain" href="igau/endings.htm">Endings</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm#injustice">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <p id="menu2" class="menuOut" onclick="SwitchMenu('sub2')" onmouseover="ChangeClass('menu2','menuOver')" onmouseout="ChangeClass('menu2','menuOut')">
-   Mortal Kombat<br>
-   (2011)<div class="submenu" id="sub2" style="display:none;">
-    	<u>Universal:</u><br>
-    <a target="mkmain" href="mk9/default.htm">Moves/Bios</a><br>
-    
-    <a target="mkmain" href="mk9/default_graphical.htm">Moves/Bios (Graphical)</a><br>
+	<p id="menuinjustice2" class="menuOut" onclick="SwitchMenu('subinjustice2')" onmouseout="ChangeClass('menuinjustice2','menuOut')" onmouseover="ChangeClass('menuinjustice2','menuOver')">
+	INJUSTICE 2</p>
+	<div id="subinjustice2" class="submenu" style="display: none;">
+		<u>Universal:</u><br>
+		<a href="injustice2/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="injustice2/combos.htm" target="mkmain">Basic Moves &amp; Combos</a><br>
+		<br>
+		<u>Xbox One:</u><br>
+		<a href="injustice2/default_xboxone.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="injustice2/combos_xboxone.htm" target="mkmain">Basic Moves &amp; 
+		Combos</a><br>
+		<br>
+		<u>PlayStation 4:</u><br>
+		<a href="injustice2/default_ps4.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="injustice2/combos_ps4.htm" target="mkmain">Basic Moves &amp; Combos</a><br>
+		<br>
+		<a href="injustice2/abilities.htm" target="mkmain">Abilities List</a><br>
+		<a href="injustice2/endings.htm" target="mkmain">Endings</a></div>
+	<hr color="#333333">
 
-    
-    <a target="mkmain" href="combos/mk9.htm">Combos</a><br>
-    <a target="mkmain" href="mk9/finishers.htm">Finishers</a><br><br><u>Xbox 360:</u><br>
-    <a target="mkmain" href="mk9/default_xbox360.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk9/default_graphical_xbox360.htm">Moves/Bios (Graphical)</a><br>
-    <a target="mkmain" href="combos/mk9_xbox.htm">Combos</a><br>
-    <a target="mkmain" href="mk9/finishers_xbox360.htm">Finishers</a><br><br><u>PlayStation 3:</u><br>
-    <a target="mkmain" href="mk9/default_ps3.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk9/default_graphical_ps3.htm">Moves/Bios (Graphical)</a><br>
-    <a target="mkmain" href="combos/mk9_ps3.htm">Combos</a><br>
-    <a target="mkmain" href="mk9/finishers_ps3.htm">Finishers</a><br><br>
-    <a target="mkmain" href="mk9/story.htm">Story</a><br>
-    <a target="mkmain" href="mk9/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="mk9/renders.htm">Renders</a><br>
-    <a target="mkmain" href="mk9/krypt.htm">The Krypt</a><br>
-    <a target="mkmain" href="mk9/krypt_printable.htm">The Krypt - Printable</a><br>
-    <a target="mkmain" href="mk9/endings_low_bandwidth.htm">Endings - Low Band.</a><br>
-    <a target="mkmain" href="mk9/endings_high_bandwidth.htm">Endings - High 
-    Band.</a><br>
-    <a target="mkmain" href="mk9/kodes.htm">Codes</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm#mk2011">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <p id="menu3" class="menuOut" onclick="SwitchMenu('sub3')" onmouseover="ChangeClass('menu3','menuOver')" onmouseout="ChangeClass('menu3','menuOut')">
-   Mortal Kombat<br>
-   vs<br>
-   DC Universe<div class="submenu" id="sub3" style="display:none;">
-    	<u>Universal:</u><br>
-    <a target="mkmain" href="mkvsdcu/default.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mkvsdcu/default_graphical.htm">Moves/Bios (Graphical)</a><br>
-    <a target="mkmain" href="combos/mkvsdc.htm">Combos</a><br>
-    <a target="mkmain" href="mkvsdcu/finishers.htm">Finishers</a><br><br><u>Xbox 360:</u><br>
-    <a target="mkmain" href="mkvsdcu/default_xbox360.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mkvsdcu/default_graphical_xbox360.htm">Moves/Bios (Graphical)</a><br>
-    <a target="mkmain" href="combos/mkvsdc_xbox.htm">Combos</a><br>
-    <a target="mkmain" href="mkvsdcu/finishers_xbox360.htm">Finishers</a><br><br><u>PlayStation 3:</u><br>
-    <a target="mkmain" href="mkvsdcu/default_ps3.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mkvsdcu/default_graphical_ps3.htm">Moves/Bios (Graphical)</a><br>
-    <a target="mkmain" href="combos/mkvsdc_ps3.htm">Combos</a><br>
-    <a target="mkmain" href="mkvsdcu/finishers_ps3.htm">Finishers</a><br><br>
-    <a target="mkmain" href="mkvsdcu/story.htm">Story</a><br>
-    <a target="mkmain" href="mkvsdcu/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="mkvsdcu/renders.htm">Renders</a><br>
-    <a target="mkmain" href="mkvsdcu/endings.htm">Endings - Low Band.</a><br>
-    <a target="mkmain" href="mkvsdcu/endings_high.htm">Endings - High Band.</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm#mkvsdc">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <p id="menu4" class="menuOut" onclick="SwitchMenu('sub4')" onmouseover="ChangeClass('menu4','menuOver')" onmouseout="ChangeClass('menu4','menuOut')">
-   Mortal Kombat<br>
-   Armageddon<div class="submenu" id="sub4" style="display:none;">
-    	<u>Universal:</u><br>
-    <a target="mkmain" href="mk7/default.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="combos/mk7.htm">Combos</a><br><br><u>Xbox:</u><br>
-    <a target="mkmain" href="mk7/default_xbox.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="combos/mk7_xbox.htm">Combos</a><br>
-    <a target="mkmain" href="mk7/fatalities_xbox.htm">Fatalities</a><br><br><u>PlayStation 2:</u><br>
-    <a target="mkmain" href="mk7/default_ps2.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="combos/mk7_ps2.htm">Combos</a><br>
-    <a target="mkmain" href="mk7/fatalities_ps2.htm">Fatalities</a><br>
-		<br><u>Wii - WiiMote:</u><br>
-    <a target="mkmain" href="mk7/default_wii_wiimote.htm">Moves/Bios</a><br><br>
+	<p id="menumkx" class="menuOut" onclick="SwitchMenu('submkx')" onmouseout="ChangeClass('menumkx','menuOut')" onmouseover="ChangeClass('menumkx','menuOver')">
+	Mortal Kombat X</p>
+	<div id="submkx" class="submenu" style="display: none;">
+		<u>Universal:</u><br>
+		<a href="mk10/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk10/default_graphical.htm" target="mkmain">Moves/Bios/Combos (Graphical)</a><br>
+		<a href="combos/mkx.htm" target="mkmain">Combos</a><br>
+		<a href="mk10/finishers.htm" target="mkmain">Finishers</a><br>
+		<a href="mk10/fatalities.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<u>Xbox One:</u><br>
+		<a href="mk10/default_xbox.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk10/default_graphical_xbox.htm" target="mkmain">Moves/Bios/Combos 
+		(Graphical)</a><br>
+		<a href="combos/mkx_xbox.htm" target="mkmain">Combos</a><br>
+		<a href="mk10/finishers_xbox.htm" target="mkmain">Finishers</a><br>
+		<a href="mk10/fatalities_xbox.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<u>PlayStation 4:</u><br>
+		<a href="mk10/default_ps.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk10/default_graphical_ps.htm" target="mkmain">Moves/Bios/Combos 
+		(Graphical)</a><br>
+		<a href="combos/mkx_playstation.htm" target="mkmain">Combos</a><br>
+		<a href="mk10/finishers_playstation.htm" target="mkmain">Finishers</a><br>
+		<a href="mk10/fatalities_playstation.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<a href="mk10/hidden_brutalities.htm" target="mkmain">Hidden Brutalities</a><br>
+		<a href="mk10/stage_brutalities.htm" target="mkmain">Stage Brutalities</a><br>
+		<a href="mk10/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="mk10/krypt.htm" target="mkmain">The Krypt</a><br>
+		<a href="mk10/krypt_printable.htm" target="mkmain">The Krypt - Printable</a><br>
+		<a href="mk10/endings.htm" target="mkmain">Endings</a><br>
+		<a href="mk10/story_mode.htm" target="mkmain">Story Mode</a><br>
+	</div>
+	<hr color="#333333">
+
+	<p id="menuinjustice" class="menuOut" onclick="SwitchMenu('subinjustice')" onmouseout="ChangeClass('menuinjustice','menuOut')" onmouseover="ChangeClass('menuinjustice','menuOver')">
+	INJUSTICE<br>
+	Gods Among Us</p>
+	<div id="subinjustice" class="submenu" style="display: none;">
+		<u>Universal:</u><br>
+		<a href="igau/default.htm" target="mkmain">Moves/Bios - Universal</a><br>
+		<a href="combos/igau.htm" target="mkmain">Combos - Universal</a><br>
+		<br>
+		<u>Universal/Alternate:</u><br>
+		<a href="igau/default_alternate.htm" target="mkmain">Moves/Bios - Alternate</a><br>
+		<br>
+		<u>Xbox 360:</u><br>
+		<a href="igau/default_xbox360.htm" target="mkmain">Moves/Bios - Xbox 360</a><br>
+		<a href="combos/igau_xbox.htm" target="mkmain">Combos - Xbox 360</a><br>
+		<br>
+		<u>PlayStation 3:</u><br>
+		<a href="igau/default_ps3.htm" target="mkmain">Moves/Bios - PS3</a><br>
+		<a href="combos/igau_ps3.htm" target="mkmain">Combos - PS3</a><br>
+		<br>
+		<u>Wii U:</u><br>
+		<a href="igau/default_wiiu.htm" target="mkmain">Moves/Bios - Wii U</a><br>
+		<a href="combos/igau_wiiu.htm" target="mkmain">Combos - Wii U</a><br>
+		<br>
+		<a href="igau/story.htm" target="mkmain">Story</a><br>
+		<a href="igau/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="igau/archives.htm" target="mkmain">Archives</a><br>
+		<a href="igau/endings.htm" target="mkmain">Endings</a><br>
+		<a href="printable_movelists/index.htm#injustice" target="mkmain">Printable 
+		Documents</a></div>
+	<hr color="#333333">
+
+	<p id="menu2" class="menuOut" onclick="SwitchMenu('sub2')" onmouseout="ChangeClass('menu2','menuOut')" onmouseover="ChangeClass('menu2','menuOver')">
+	Mortal Kombat<br>
+	(2011)</p>
+	<div id="sub2" class="submenu" style="display: none;">
+		<u>Universal:</u><br>
+		<a href="mk9/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk9/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mk9.htm" target="mkmain">Combos</a><br>
+		<a href="mk9/finishers.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<u>Xbox 360:</u><br>
+		<a href="mk9/default_xbox360.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk9/default_graphical_xbox360.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mk9_xbox.htm" target="mkmain">Combos</a><br>
+		<a href="mk9/finishers_xbox360.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<u>PlayStation 3:</u><br>
+		<a href="mk9/default_ps3.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk9/default_graphical_ps3.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mk9_ps3.htm" target="mkmain">Combos</a><br>
+		<a href="mk9/finishers_ps3.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<a href="mk9/story.htm" target="mkmain">Story</a><br>
+		<a href="mk9/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="mk9/renders.htm" target="mkmain">Renders</a><br>
+		<a href="mk9/krypt.htm" target="mkmain">The Krypt</a><br>
+		<a href="mk9/krypt_printable.htm" target="mkmain">The Krypt - Printable</a><br>
+		<a href="mk9/endings_low_bandwidth.htm" target="mkmain">Endings - Low Band.</a><br>
+		<a href="mk9/endings_high_bandwidth.htm" target="mkmain">Endings - High 
+		Band.</a><br>
+		<a href="mk9/kodes.htm" target="mkmain">Codes</a><br>
+		<a href="printable_movelists/index.htm#mk2011" target="mkmain">Printable 
+		Documents</a></div>
+	<hr color="#333333">
+
+	<p id="menu3" class="menuOut" onclick="SwitchMenu('sub3')" onmouseout="ChangeClass('menu3','menuOut')" onmouseover="ChangeClass('menu3','menuOver')">
+	Mortal Kombat<br>
+	vs<br>
+	DC Universe</p>
+	<div id="sub3" class="submenu" style="display: none;">
+		<u>Universal:</u><br>
+		<a href="mkvsdcu/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mkvsdcu/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mkvsdc.htm" target="mkmain">Combos</a><br>
+		<a href="mkvsdcu/finishers.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<u>Xbox 360:</u><br>
+		<a href="mkvsdcu/default_xbox360.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mkvsdcu/default_graphical_xbox360.htm" target="mkmain">Moves/Bios 
+		(Graphical)</a><br>
+		<a href="combos/mkvsdc_xbox.htm" target="mkmain">Combos</a><br>
+		<a href="mkvsdcu/finishers_xbox360.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<u>PlayStation 3:</u><br>
+		<a href="mkvsdcu/default_ps3.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mkvsdcu/default_graphical_ps3.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mkvsdc_ps3.htm" target="mkmain">Combos</a><br>
+		<a href="mkvsdcu/finishers_ps3.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<a href="mkvsdcu/story.htm" target="mkmain">Story</a><br>
+		<a href="mkvsdcu/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="mkvsdcu/renders.htm" target="mkmain">Renders</a><br>
+		<a href="mkvsdcu/endings.htm" target="mkmain">Endings - Low Band.</a><br>
+		<a href="mkvsdcu/endings_high.htm" target="mkmain">Endings - High Band.</a><br>
+		<a href="printable_movelists/index.htm#mkvsdc" target="mkmain">Printable 
+		Documents</a></div>
+	<hr color="#333333">
+
+	<p id="menu4" class="menuOut" onclick="SwitchMenu('sub4')" onmouseout="ChangeClass('menu4','menuOut')" onmouseover="ChangeClass('menu4','menuOver')">
+	Mortal Kombat<br>
+	Armageddon</p>
+	<div id="sub4" class="submenu" style="display: none;">
+		<u>Universal:</u><br>
+		<a href="mk7/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="combos/mk7.htm" target="mkmain">Combos</a><br>
+		<br>
+		<u>Xbox:</u><br>
+		<a href="mk7/default_xbox.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="combos/mk7_xbox.htm" target="mkmain">Combos</a><br>
+		<a href="mk7/fatalities_xbox.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<u>PlayStation 2:</u><br>
+		<a href="mk7/default_ps2.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="combos/mk7_ps2.htm" target="mkmain">Combos</a><br>
+		<a href="mk7/fatalities_ps2.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<u>Wii - WiiMote:</u><br>
+		<a href="mk7/default_wii_wiimote.htm" target="mkmain">Moves/Bios</a><br>
+		<br>
 		<u>Wii - Classic Controller:</u><br>
-    <a target="mkmain" href="mk7/default_wii_cc.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="combos/mk7_wii_cc.htm">Combos</a><br><br><u>Wii - GameCube Controller:</u><br>
-    <a target="mkmain" href="mk7/default_wii_gc.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="combos/mk7_wii_gc.htm">Combos</a><br><br>
-    <a target="mkmain" href="mk7/story.htm">Story</a><br>
-    <a target="mkmain" href="mk7/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="mk7/renders.htm">Renders</a><br>
-    <a target="mkmain" href="mk7/kreate_a_kombatant.htm">Kreate-A-Kombatant</a><br>
-    <a target="mkmain" href="mk7/konquest_relic_locations.htm">Konquest - Relics</a><br>
-    <a target="mkmain" href="mk7/krypt.htm">The Krypt</a><br>
-    <a target="mkmain" href="mk7/krypt_printable.htm">The Krypt - Printable</a><br>
-    <a target="mkmain" href="mk7/motor_kombat.htm">Motor Kombat</a><br>
-    <a target="mkmain" href="mk7/endings.htm">Endings</a><br>
-    <a target="mkmain" href="mk7/kodes.htm">Codes</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm#mk7">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <p id="menu6" class="menuOut" onclick="SwitchMenu('sub6')" onmouseover="ChangeClass('menu6','menuOver')" onmouseout="ChangeClass('menu6','menuOut')">
-   Mortal Kombat<br>
-   Unchained<br>
-   (Sony PSP)<div class="submenu" id="sub6" style="display:none;">
-    	<u>SONY PSP:</u><br>
-    <a target="mkmain" href="mku/default.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mku/default_graphical.htm">Moves/Bios (Graphical)</a><br>
-    <a target="mkmain" href="combos/mku.htm">Combos</a><br>
-    <a target="mkmain" href="mku/finishers.htm">Finishers</a><br><br>
-    <a target="mkmain" href="mku/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="mku/krypt.htm">The Krypt</a><br>
-    <a target="mkmain" href="mku/krypt_printable.htm">The Krypt - Printable</a><br>
-    <a target="mkmain" href="mku/endings.htm">Endings - Low Band.</a><br>
-    <a target="mkmain" href="mku/endings_high.htm">Endings - High Band.</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm#mk6">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <p id="menu5" class="menuOut" onclick="SwitchMenu('sub5')" onmouseover="ChangeClass('menu5','menuOver')" onmouseout="ChangeClass('menu5','menuOut')">
-   Mortal Kombat<br>
-   Deception<div class="submenu" id="sub5" style="display:none;">
-    	<u>Universal:</u><br>
-    <a target="mkmain" href="mk6/default.htm">Moves/Bios</a><br>
-        <a target="mkmain" href="mk6/default_graphical.htm">Moves/Bios (Graphical)</a><br>
-
-    <a target="mkmain" href="combos/mk6.htm">Combos</a><br>
-    <a target="mkmain" href="mk6/finishers.htm">Finishers</a><br><br><u>Xbox:</u><br>
-    <a target="mkmain" href="mk6/default_xbox.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk6/default_graphical_xbox.htm">Moves/Bios (Graphical)</a><br>
-    <a target="mkmain" href="combos/mk6_xbox.htm">Combos</a><br>
-    <a target="mkmain" href="mk6/finishers_xbox.htm">Finishers</a><br><br><u>PlayStation 2:</u><br>
-    <a target="mkmain" href="mk6/default_ps2.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk6/default_graphical_ps2.htm">Moves/Bios (Graphical)</a><br>
-    <a target="mkmain" href="combos/mk6_ps2.htm">Combos</a><br>
-    <a target="mkmain" href="mk6/finishers_ps2.htm">Finishers</a><br><br><u>GameCube:</u><br>
-    <a target="mkmain" href="mk6/default_ngc.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk6/default_graphical_ngc.htm">Moves/Bios (Graphical)</a><br>
-    <a target="mkmain" href="combos/mk6_ngc.htm">Combos</a><br>
-    <a target="mkmain" href="mk6/finishers_ngc.htm">Finishers</a><br>
-    	<br>
-    <a target="mkmain" href="mk6/story.htm">Story</a><br>
-    <a target="mkmain" href="mk6/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="mk6/konquest.htm">Konquest</a><br>
-    <a target="mkmain" href="mk6/krypt.htm">The Krypt</a><br>
-    <a target="mkmain" href="mk6/krypt_printable.htm">The Krypt - Printable</a><br>
-    <a target="mkmain" href="mk6/endingsx.htm">Endings - Low Band.</a><br>
-    <a target="mkmain" href="mk6/endings.htm">Endings - High Band.</a><br>
-    <a target="mkmain" href="mk6/codes.htm">Codes</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm#mk6">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <p id="menu8" class="menuOut" onclick="SwitchMenu('sub8')" onmouseover="ChangeClass('menu8','menuOver')" onmouseout="ChangeClass('menu8','menuOut')">
-   Mortal Kombat<br>
-   Tournament Edition<br>
-   (GameBoy Advance)<div class="submenu" id="sub8" style="display:none;">
-    	<u>GameBoy Advance:</u><br>
-    <a target="mkmain" href="mkte/default.htm">Moves/Bios</a><br>
-        <a target="mkmain" href="mkte/default_graphical.htm">Moves/Bios 
-    (Graphical)</a><br>
-
-    <a target="mkmain" href="mkte/fatalities.htm">Fatalities</a><br><br>
-    <a target="mkmain" href="mkte/krypt.htm">The Krypt</a><br>
-    <a target="mkmain" href="mkte/krypt_printable.htm">The Krypt - Printable</a><br>
-    <a target="mkmain" href="mkte/endings_low.htm">Endings - Low Band.</a><br>
-    <a target="mkmain" href="mkte/endings_high.htm">Endings - High Band.</a><br>
-    <a target="mkmain" href="mkte/codes.htm">Codes</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm#mk5">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <p id="menu7" class="menuOut" onclick="SwitchMenu('sub7')" onmouseover="ChangeClass('menu7','menuOver')" onmouseout="ChangeClass('menu7','menuOut')">
-   Mortal Kombat<br>
-   Deadly Alliance<div class="submenu" id="sub7" style="display:none;">
-    	<u>Universal:</u><br>
-    <a target="mkmain" href="mk5/default.htm">Moves/Bios</a><br>
-        <a target="mkmain" href="mk5/default_graphical.htm">Moves/Bios 
-    (Graphical)</a><br>
-    <a target="mkmain" href="combos/mk5.htm">Combos</a><br>
-    <a target="mkmain" href="mk5/fatalities.htm">Fatalities</a><br><br><u>Xbox:</u><br>
-    <a target="mkmain" href="mk5/default_xbox.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk5/default_graphical_xbox.htm">Moves/Bios 
-    (Graphical)</a><br>
-    <a target="mkmain" href="combos/mk5_xbox.htm">Combos</a><br>
-    <a target="mkmain" href="mk5/fatalities_xbox.htm">Fatalities</a><br><br><u>PlayStation 2:</u><br>
-    <a target="mkmain" href="mk5/default_ps2.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk5/default_graphical_ps2.htm">Moves/Bios 
-    (Graphical)</a><br>
-    <a target="mkmain" href="combos/mk5_ps2.htm">Combos</a><br>
-    <a target="mkmain" href="mk5/fatalities_ps2.htm">Fatalities</a><br><br><u>GameCube:</u><br>
-    <a target="mkmain" href="mk5/default_ngc.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk5/default_graphical_ngc.htm">Moves/Bios 
-    (Graphical)</a><br>
-    <a target="mkmain" href="combos/mk5_ngc.htm">Combos</a><br>
-    <a target="mkmain" href="mk5/fatalities_ngc.htm">Fatalities</a><br><br><u>GameBoy Advance:</u><br>
-    <a target="mkmain" href="mk5/handheld_gameboy_advance.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk5/handheld_graphical_gameboy_advance.htm">
-    Moves/Bios (Graphical)</a><br>
+		<a href="mk7/default_wii_cc.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="combos/mk7_wii_cc.htm" target="mkmain">Combos</a><br>
 		<br>
-    <a target="mkmain" href="mk5/story.htm">Story</a><br>
-    <a target="mkmain" href="mk5/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="mk5/renders.htm">Renders</a><br>
-    <a target="mkmain" href="mk5/koffins.htm">The Krypt</a><br>
-    <a target="mkmain" href="mk5/krypt_printable.htm">The Krypt - Printable</a><br>
-    <a target="mkmain" href="mk5/krypt_gameboy_advance.htm">The Krypt - GBA</a><br>
-    <a target="mkmain" href="mk5/krypt_gameboy_advance_printable.htm">The Krypt 
-    - GBA - Printable</a><br>
-    <a target="mkmain" href="mk5/endingsx.htm">Endings - Low Band.</a><br>
-    <a target="mkmain" href="mk5/endings.htm">Endings - High Band.</a><br>
-    <a target="mkmain" href="mk5/codes.htm">Codes</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm#mk5">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <p id="menu10" class="menuOut" onclick="SwitchMenu('sub10')" onmouseover="ChangeClass('menu10','menuOver')" onmouseout="ChangeClass('menu10','menuOut')">
-   Mortal Kombat<br>
-   Gold<br>
-   (SEGA Dreamcast)<div class="submenu" id="sub10" style="display:none;">
-    	<u>SEGA Dreamcast (Universal):</u><br>
-    <a target="mkmain" href="mkg/default.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mkg/default_graphical.htm">Moves/Bios 
-    (Graphical)</a><br>
-    <a target="mkmain" href="combos/mk4g.htm">Combos</a><br>
-    <a target="mkmain" href="mkg/finishers.htm">Finishers</a><br><br>
-    <a target="mkmain" href="mkg/story.htm">Story</a><br>
-    <a target="mkmain" href="mkg/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="mkg/endings.htm">Endings - Text</a><br>
-    <a target="mkmain" href="mkg/endings_youtube.htm">Endings - Vids</a><br>
-    <a target="mkmain" href="mkg/codes.htm">Codes</a><br>
-    
-    <a target="mkmain" href="printable_movelists/index.htm#mk4">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <p id="menu9" class="menuOut" onclick="SwitchMenu('sub9')" onmouseover="ChangeClass('menu9','menuOver')" onmouseout="ChangeClass('menu9','menuOut')">
-   Mortal Kombat 4<div class="submenu" id="sub9" style="display:none;">
-    	<u>Arcade/Home (Universal):</u><br>
-    <a target="mkmain" href="mk4/default.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk4/default_graphical.htm">Moves/Bios 
-    (Graphical)</a><br>
-    <a target="mkmain" href="combos/mk4g.htm">Combos</a><br>
-    <a target="mkmain" href="mk4/finishers.htm">Finishers</a><br><br><u>GameBoy Color:</u><br>
-    <a target="mkmain" href="mk4/handheld_gameboy.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk4/handheld_graphical_gameboy.htm">Moves/Bios (Graphical)</a><br>
-    	<br>
-    <a target="mkmain" href="mk4/story.htm">Story</a><br>
-    <a target="mkmain" href="mk4/costume_and_weapons_guide.htm">Costumes/Weapons</a><br>
-    <a target="mkmain" href="mk4/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="mk4/endings.htm">Endings - Text</a><br>
-    <a target="mkmain" href="mk4/endings_youtube.htm">Endings - Vids</a><br>
-    <a target="mkmain" href="mk4/codes.htm">Codes</a><br>
-    
-    <a target="mkmain" href="printable_movelists/index.htm#mk4">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <p id="menu11" class="menuOut" onclick="SwitchMenu('sub11')" onmouseover="ChangeClass('menu11','menuOver')" onmouseout="ChangeClass('menu11','menuOut')">
-   Mortal Kombat<br>
-   Trilogy<div class="submenu" id="sub11" style="display:none;">
-    	<u>PS1/Sega Saturn/PC (Universal):</u><br>
-    <a target="mkmain" href="mkt/default.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mkt/default_graphical.htm">Moves/Bios 
-    (Graphical)</a><br><a href="combos/mkt_ps1.htm" target="mkmain">Combos</a><br>
-    <a target="mkmain" href="mkt/finishers.htm">Finishers</a><br><br>
-    <u>Nintendo 64 (Universal):</u><br>
-    <a target="mkmain" href="mkt/defaultx.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mkt/default_graphicalx.htm">Moves/Bios 
-    (Graphical)</a><br>
-    	<a href="combos/mkt_n64.htm" target="mkmain">Combos</a><br>
-    <a target="mkmain" href="mkt/finishersx.htm">Finishers</a><br><br>
-    <a target="mkmain" href="mkt/story.htm">Story</a><br>
-    <a target="mkmain" href="mkt/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="combos/mkt.htm">Combos</a><br>
-    <a target="mkmain" href="mkt/endings.htm">Endings</a><br>
-    <a target="mkmain" href="mkt/codes.htm">Codes</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm#mkt">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <p id="menu12" class="menuOut" onclick="SwitchMenu('sub12')" onmouseover="ChangeClass('menu12','menuOver')" onmouseout="ChangeClass('menu12','menuOut')">
-   Ultimate<br>
-   Mortal Kombat 3<div class="submenu" id="sub12" style="display:none;">
-    	<u>Arcade/Home (Universal):</u><br>
-    <a target="mkmain" href="umk3/default.htm">Moves/Bios</a><br>
-        <a target="mkmain" href="umk3/default_graphical.htm">Moves/Bios 
-    (Graphical)</a><br>
-
-    <a target="mkmain" href="combos/umk3_arcade.htm">Combos</a><br>
-    <a target="mkmain" href="umk3/finishers.htm">Finishers</a><br><br><u>Super 
-		Nintendo / SEGA Genesis (Universal):</u><br>
-    <a target="mkmain" href="umk3/defaultx.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="umk3/default_graphicalx.htm">Moves/Bios 
-    (Graphical)</a><br>
-    <a target="mkmain" href="combos/umk3_snes_gen.htm">Combos</a><br><br><u>GameBoy 
-		Advance (Universal):</u><br>
-    <a target="mkmain" href="mka/default.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mka/default_graphical.htm">Moves/Bios 
-    (Graphical)</a><br><br><u>Nintendo DS (Universal):</u><br>
-    <a target="mkmain" href="umk/default.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="umk/default_graphical.htm">Moves/Bios 
-    (Graphical)</a><br>
-    	<br>
-    <a target="mkmain" href="umk3/story.htm">Story</a><br>
-    <a target="mkmain" href="umk3/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="umk3/endings.htm">Endings</a><br>
-    <a target="mkmain" href="umk3/codes.htm">Codes</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm#umk3">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <p id="menu13" class="menuOut" onclick="SwitchMenu('sub13')" onmouseover="ChangeClass('menu13','menuOver')" onmouseout="ChangeClass('menu13','menuOut')">
-   Mortal Kombat 3<div class="submenu" id="sub13" style="display:none;">
-    	<u>Arcade/Home (Universal)</u>:<br>
-    <a target="mkmain" href="mk3/default.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk3/default_graphical.htm">Moves/Bios (Graphical)</a><br>
-    <a target="mkmain" href="combos/mk3.htm">Combos</a><br>
-    <a target="mkmain" href="mk3/finishers.htm">Finishers</a><br><br>
-    <u>GameBoy (Universal):</u><br>
-    <a target="mkmain" href="mk3/handheld_gameboy.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk3/handheld_graphical_gameboy.htm">Moves/Bios (Graphical)</a><br><br>
-    <u>Game Gear (Universal):</u><br>
-    <a target="mkmain" href="mk3/handheld_gamegear.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk3/handheld_graphical_gamegear.htm">Moves/Bios (Graphical)</a><br><br>
-    <a target="mkmain" href="mk3/story.htm">Story</a><br>
-    <a target="mkmain" href="mk3/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="mk3/endings.htm">Endings</a><br>
-    <a target="mkmain" href="mk3/codes.htm">Codes</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm#mk3">Printable Documents</a></div>
-  <hr color="#333333">
-  <p id="menu14" class="menuOut" onclick="SwitchMenu('sub14')" onmouseover="ChangeClass('menu14','menuOver')" onmouseout="ChangeClass('menu14','menuOut')">
-   Mortal Kombat II<div class="submenu" id="sub14" style="display:none;">
-    	<u>Arcade/Home (Universal)</u>:<br>
-    <a target="mkmain" href="mk2/default.htm">Moves/Bios</a><br>
-        <a target="mkmain" href="mk2/default_graphical.htm">Moves/Bios 
-    (Graphical)</a><br>
-
-    <a target="mkmain" href="mk2/finishers.htm">Finishers</a><br><br>
-    	<u>GameBoy (Universal)</u>:<br>
-    <a target="mkmain" href="mk2/handheld_gameboy.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk2/handheld_graphical_gameboy.htm">Moves/Bios (Graphical)</a><br>
+		<u>Wii - GameCube Controller:</u><br>
+		<a href="mk7/default_wii_gc.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="combos/mk7_wii_gc.htm" target="mkmain">Combos</a><br>
 		<br>
-    	<u>Game Gear (Universal)</u>:<br>
-    <a target="mkmain" href="mk2/handheld_gamegear.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk2/handheld_graphical_gamegear.htm">Moves/Bios (Graphical)</a><br>
-    	<br>
-    <a target="mkmain" href="mk2/story.htm">Story</a><br>
-    <a target="mkmain" href="mk2/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="mk2/endings.htm">Endings</a><br>
-    <a target="mkmain" href="mk2/codes.htm">Codes</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm#mk2">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <p id="menu15" class="menuOut" onclick="SwitchMenu('sub15')" onmouseover="ChangeClass('menu15','menuOver')" onmouseout="ChangeClass('menu15','menuOut')">
-   Mortal Kombat<div class="submenu" id="sub15" style="display:none;">
-    	<u>Arcade/Home (Universal)</u>:<br>
-    <a target="mkmain" href="mk1/default.htm">Moves/Bios</a><br>
-        <a target="mkmain" href="mk1/default_graphical.htm">Moves/Bios 
-    (Graphical)</a><br>
+		<a href="mk7/story.htm" target="mkmain">Story</a><br>
+		<a href="mk7/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="mk7/renders.htm" target="mkmain">Renders</a><br>
+		<a href="mk7/kreate_a_kombatant.htm" target="mkmain">Kreate-A-Kombatant</a><br>
+		<a href="mk7/konquest_relic_locations.htm" target="mkmain">Konquest - Relics</a><br>
+		<a href="mk7/krypt.htm" target="mkmain">The Krypt</a><br>
+		<a href="mk7/krypt_printable.htm" target="mkmain">The Krypt - Printable</a><br>
+		<a href="mk7/motor_kombat.htm" target="mkmain">Motor Kombat</a><br>
+		<a href="mk7/endings.htm" target="mkmain">Endings</a><br>
+		<a href="mk7/kodes.htm" target="mkmain">Codes</a><br>
+		<a href="printable_movelists/index.htm#mk7" target="mkmain">Printable Documents</a></div>
+	<hr color="#333333">
 
-    <a target="mkmain" href="mk1/finishers.htm">Finishers</a><br><br>
-    	<u>GameBoy (Universal)</u>:<br>
-    <a target="mkmain" href="mk1/handheld_gameboy.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk1/handheld_graphical_gameboy.htm">Moves/Bios (Graphical)</a><br>
+	<p id="menu6" class="menuOut" onclick="SwitchMenu('sub6')" onmouseout="ChangeClass('menu6','menuOut')" onmouseover="ChangeClass('menu6','menuOver')">
+	Mortal Kombat<br>
+	Unchained<br>
+	(Sony PSP)</p>
+	<div id="sub6" class="submenu" style="display: none;">
+		<u>SONY PSP:</u><br>
+		<a href="mku/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mku/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mku.htm" target="mkmain">Combos</a><br>
+		<a href="mku/finishers.htm" target="mkmain">Finishers</a><br>
 		<br>
-    	<u>Game Gear (Universal)</u>:<br>
-    <a target="mkmain" href="mk1/handheld_gamegear.htm">Moves/Bios</a><br>
-    <a target="mkmain" href="mk1/handheld_graphical_gamegear.htm">Moves/Bios (Graphical)</a><br>
-    	<br>
-    <a target="mkmain" href="mk1/story.htm">Story</a><br>
-    <a target="mkmain" href="mk1/arenas.htm">Arenas</a><br>
-    <a target="mkmain" href="mk1/endings.htm">Endings</a><br>
-    <a target="mkmain" href="mk1/codes.htm">Codes</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm#mk">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <center><font color="#000000">
-  <span style="background-color: #666666; font-weight:700">Side Games:</span></font></center>
-  <hr color="#333333">
-  <p id="menu18" class="menuOut" onclick="SwitchMenu('sub18')" onmouseover="ChangeClass('menu18','menuOver')" onmouseout="ChangeClass('menu18','menuOut')">
-   Mortal Kombat<br>
-   Shaolin Monks<div class="submenu" id="sub18" style="display:none;">
-    <a target="mkmain" href="mksm/story.htm">Story</a><br>
-    <a target="mkmain" href="mksm/controls_xbox.htm">Moves - Xbox</a><br>
-    <a target="mkmain" href="mksm/controls_ps2.htm">Moves - PS2</a><br>
-    <a target="mkmain" href="mksm/walkthrough.htm">Walkthrough</a><br>
-    <a target="mkmain" href="mksm/maps/index.html">Red Koins</a><br>
-    <a target="mkmain" href="mksm/upgrades.htm">Upgrades</a><br>
-    <a target="mkmain" href="mksm/smoke_missions.htm">Smoke Missions</a><br>
-    <a target="mkmain" href="mksm/unlockables.htm">Unlockables</a><br>
-    <a target="mkmain" href="mksm/secret_boss_battles.htm">Secret Bosses</a><br>
-    <a target="mkmain" href="mksm/default.htm">Character Renders</a><br>
-    <a target="mkmain" href="mksm/kodes.htm">Codes</a></div>
-  <hr color="#333333">
-  <p id="menu17" class="menuOut" onclick="SwitchMenu('sub17')" onmouseover="ChangeClass('menu17','menuOver')" onmouseout="ChangeClass('menu17','menuOut')">
-   Mortal Kombat<br>
-   Special Forces<div class="submenu" id="sub17" style="display:none;">
-    <a target="mkmain" href="mksf/default.htm">Main Info</a><br>
-    <a target="mkmain" href="mksf/youtube.htm">Trav Plays (YouTube)</a></div>
-  <hr color="#333333">
-  <p id="menu16" class="menuOut" onclick="SwitchMenu('sub16')" onmouseover="ChangeClass('menu16','menuOver')" onmouseout="ChangeClass('menu16','menuOut')">
-   Mortal Kombat<br>
-   Mythologies:<br>
-   Sub-Zero<div class="submenu" id="sub16" style="display:none;">
-    <a target="mkmain" href="mkms/story.htm">Story</a><br>
-    <a target="mkmain" href="mkms/controls.htm">Kontrols/Moves - PS/N64</a><br>
-    <a target="mkmain" href="mkms/walkthrough.htm">Walkthrough</a><br>
-    <a target="mkmain" href="mkms/enemies.htm">Enemies</a><br>
-    <a target="mkmain" href="mkms/items.htm">Items</a><br>
-    <a target="mkmain" href="mkms/codes.htm">Codes</a><br>
-    <a target="mkmain" href="mkms/youtube.htm">Trav Plays (YouTube)</a></div>
-  <hr color="#333333">
-  <center><font color="#000000">
-  <span style="background-color: #666666; font-weight:700">Fan-Made:</span></font></center>
-  <hr color="#333333">
-  <p id="menu19" class="menuOut" onclick="SwitchMenu('sub19')" onmouseover="ChangeClass('menu19','menuOver')" onmouseout="ChangeClass('menu19','menuOut')">
-   Ultimate<br>
-   Mortal Kombat<br>
-   Trilogy<br>
-   (Genesis Hack)<div class="submenu" id="sub19" style="display:none;">
-    <a target="mkmain" href="fan_made/umkt_default.htm">Moves/Codes</a><br>
-    <a target="mkmain" href="fan_made/umkt_movelist.htm">Move List - Printable</a></div>
-  <hr color="#333333">
-  <p id="menu20" class="menuOut" onclick="SwitchMenu('sub20')" onmouseover="ChangeClass('menu20','menuOver')" onmouseout="ChangeClass('menu20','menuOut')">
-   Mortal Kombat<br>
-   Revelations<br>
-   (Genesis Hack)<div class="submenu" id="sub20" style="display:none;">
-    <a target="mkmain" href="fan_made/mkr_default.htm">Moves/Codes</a><br>
-    <a target="mkmain" href="fan_made/mkr_movelist.htm">Move List - Printable</a></div>
-  <hr color="#333333">
-  <p id="menu21" class="menuOut" onclick="SwitchMenu('sub21')" onmouseover="ChangeClass('menu21','menuOver')" onmouseout="ChangeClass('menu21','menuOut')">
-   Mortal Kombat II<br>
-   Unlimited<br>
-   (Genesis Hack)<div class="submenu" id="sub21" style="display:none;">
-    <a target="mkmain" href="fan_made/mk2u_default.htm">Moves/Bios/Codes</a><br>
-    <a target="mkmain" href="fan_made/mk2u_movelist.htm">Move List - Printable</a></div>
-  <hr color="#333333">
-  <p id="menumk3s56p" class="menuOut" onclick="SwitchMenu('submk3s56p')" onmouseover="ChangeClass('menumk3s56p','menuOver')" onmouseout="ChangeClass('menumk3s56p','menuOut')">
-   Mortal Kombat 3<br>
-   Special 56 Pepoles<br>
-   (Unlicensed Famicom)<div class="submenu" id="submk3s56p" style="display:none;">
-    <a target="mkmain" href="fan_made/mk3s56p_default.htm">Moves</a></div>
-  <hr color="#333333">
-  <p id="menu80" class="menuOut" onclick="SwitchMenu('sub80')" onmouseover="ChangeClass('menu80','menuOver')" onmouseout="ChangeClass('menu80','menuOut')">
-   Terrordrome<br>
-   Rise of the Boogeymen<div class="submenu" id="sub80" style="display:none;">
-    <a target="mkmain" href="fan_made/terrordrome/default.htm">Moves/Codes</a></div>
-  <hr color="#333333">
-  <center><font color="#000000">
-  <span style="background-color: #666666; font-weight:700">Others:</span></font></center>
-  <hr color="#333333">
-  <p id="menu27" class="menuOut" onclick="SwitchMenu('sub27')" onmouseover="ChangeClass('menu27','menuOver')" onmouseout="ChangeClass('menu27','menuOut')">
-   ClayFighter<div class="submenu" id="sub27" style="display:none;">
-    <a target="mkmain" href="clayfighter/cf1.htm">ClayFighter</a><br>
-    <a target="mkmain" href="clayfighter/cf1te.htm">Tournament Edition</a><br>
-    <a target="mkmain" href="clayfighter/cf2.htm">Judgment Clay</a><br>
-    <a target="mkmain" href="clayfighter/cf64.htm">63&#8531;</a><br>
-    <a target="mkmain" href="clayfighter/cf64sc.htm">Sculptor's Cut</a></div>
-  <hr color="#333333">
-  <p id="menu22" class="menuOut" onclick="SwitchMenu('sub22')" onmouseover="ChangeClass('menu22','menuOver')" onmouseout="ChangeClass('menu22','menuOut')">
-   Justice League:<br>
-   Task Force<div class="submenu" id="sub22" style="display:none;">
-    <a target="mkmain" href="jltf/default.htm">Moves/Bios - SNES</a><br>
-    <a target="mkmain" href="jltf/default2.htm">Moves/Bios - SG</a><br>
-    <a target="mkmain" href="printable_movelists/index.htm#jltf">Printable 
-    Documents</a></div>
-  <hr color="#333333">
-  <p id="menu23" class="menuOut" onclick="SwitchMenu('sub23')" onmouseover="ChangeClass('menu23','menuOver')" onmouseout="ChangeClass('menu23','menuOut')">
-   Killer Instinct<div class="submenu" id="sub23" style="display:none;">
-    <a target="mkmain" href="ki/default.htm">KI1 - Arc./Home</a><br>
-    <a target="mkmain" href="ki/default_gameboy.htm">KI1 - GameBoy</a><br>
-    <a target="mkmain" href="ki/default2.htm">KI2 - Arc./N64</a></div>
-  <hr color="#333333">
-  <p id="menu25" class="menuOut" onclick="SwitchMenu('sub25')" onmouseover="ChangeClass('menu25','menuOver')" onmouseout="ChangeClass('menu25','menuOut')">
-   Primal Rage<div class="submenu" id="sub25" style="display:none;">
-    <a target="mkmain" href="pr/default.htm">Moves/Bios - Arc./Home</a><br>
-    <a target="mkmain" href="pr/default2.htm">Moves/Bios - MAT2</a></div>
-  <hr color="#333333">
-  <p id="menu24" class="menuOut" onclick="SwitchMenu('sub24')" onmouseover="ChangeClass('menu24','menuOver')" onmouseout="ChangeClass('menu24','menuOut')">
-   War Gods<div class="submenu" id="sub24" style="display:none;">
-    <a target="mkmain" href="wargods/default.htm">Moves/Bios - Arc./Home</a></div>
-  <hr color="#333333">
+		<a href="mku/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="mku/krypt.htm" target="mkmain">The Krypt</a><br>
+		<a href="mku/krypt_printable.htm" target="mkmain">The Krypt - Printable</a><br>
+		<a href="mku/endings.htm" target="mkmain">Endings - Low Band.</a><br>
+		<a href="mku/endings_high.htm" target="mkmain">Endings - High Band.</a><br>
+		<a href="printable_movelists/index.htm#mk6" target="mkmain">Printable Documents</a></div>
+	<hr color="#333333">
+
+	<p id="menu5" class="menuOut" onclick="SwitchMenu('sub5')" onmouseout="ChangeClass('menu5','menuOut')" onmouseover="ChangeClass('menu5','menuOver')">
+	Mortal Kombat<br>
+	Deception</p>
+	<div id="sub5" class="submenu" style="display: none;">
+		<u>Universal:</u><br>
+		<a href="mk6/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk6/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mk6.htm" target="mkmain">Combos</a><br>
+		<a href="mk6/finishers.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<u>Xbox:</u><br>
+		<a href="mk6/default_xbox.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk6/default_graphical_xbox.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mk6_xbox.htm" target="mkmain">Combos</a><br>
+		<a href="mk6/finishers_xbox.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<u>PlayStation 2:</u><br>
+		<a href="mk6/default_ps2.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk6/default_graphical_ps2.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mk6_ps2.htm" target="mkmain">Combos</a><br>
+		<a href="mk6/finishers_ps2.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<u>GameCube:</u><br>
+		<a href="mk6/default_ngc.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk6/default_graphical_ngc.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mk6_ngc.htm" target="mkmain">Combos</a><br>
+		<a href="mk6/finishers_ngc.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<a href="mk6/story.htm" target="mkmain">Story</a><br>
+		<a href="mk6/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="mk6/konquest.htm" target="mkmain">Konquest</a><br>
+		<a href="mk6/krypt.htm" target="mkmain">The Krypt</a><br>
+		<a href="mk6/krypt_printable.htm" target="mkmain">The Krypt - Printable</a><br>
+		<a href="mk6/endingsx.htm" target="mkmain">Endings - Low Band.</a><br>
+		<a href="mk6/endings.htm" target="mkmain">Endings - High Band.</a><br>
+		<a href="mk6/codes.htm" target="mkmain">Codes</a><br>
+		<a href="printable_movelists/index.htm#mk6" target="mkmain">Printable Documents</a></div>
+	<hr color="#333333">
+
+	<p id="menu8" class="menuOut" onclick="SwitchMenu('sub8')" onmouseout="ChangeClass('menu8','menuOut')" onmouseover="ChangeClass('menu8','menuOver')">
+	Mortal Kombat<br>
+	Tournament Edition<br>
+	(GameBoy Advance)</p>
+	<div id="sub8" class="submenu" style="display: none;">
+		<u>GameBoy Advance:</u><br>
+		<a href="mkte/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mkte/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="mkte/fatalities.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<a href="mkte/krypt.htm" target="mkmain">The Krypt</a><br>
+		<a href="mkte/krypt_printable.htm" target="mkmain">The Krypt - Printable</a><br>
+		<a href="mkte/endings_low.htm" target="mkmain">Endings - Low Band.</a><br>
+		<a href="mkte/endings_high.htm" target="mkmain">Endings - High Band.</a><br>
+		<a href="mkte/codes.htm" target="mkmain">Codes</a><br>
+		<a href="printable_movelists/index.htm#mk5" target="mkmain">Printable Documents</a></div>
+	<hr color="#333333">
+
+	<p id="menu7" class="menuOut" onclick="SwitchMenu('sub7')" onmouseout="ChangeClass('menu7','menuOut')" onmouseover="ChangeClass('menu7','menuOver')">
+	Mortal Kombat<br>
+	Deadly Alliance</p>
+	<div id="sub7" class="submenu" style="display: none;">
+		<u>Universal:</u><br>
+		<a href="mk5/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk5/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mk5.htm" target="mkmain">Combos</a><br>
+		<a href="mk5/fatalities.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<u>Xbox:</u><br>
+		<a href="mk5/default_xbox.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk5/default_graphical_xbox.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mk5_xbox.htm" target="mkmain">Combos</a><br>
+		<a href="mk5/fatalities_xbox.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<u>PlayStation 2:</u><br>
+		<a href="mk5/default_ps2.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk5/default_graphical_ps2.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mk5_ps2.htm" target="mkmain">Combos</a><br>
+		<a href="mk5/fatalities_ps2.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<u>GameCube:</u><br>
+		<a href="mk5/default_ngc.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk5/default_graphical_ngc.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mk5_ngc.htm" target="mkmain">Combos</a><br>
+		<a href="mk5/fatalities_ngc.htm" target="mkmain">Fatalities</a><br>
+		<br>
+		<u>GameBoy Advance:</u><br>
+		<a href="mk5/handheld_gameboy_advance.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk5/handheld_graphical_gameboy_advance.htm" target="mkmain">Moves/Bios 
+		(Graphical)</a><br>
+		<br>
+		<a href="mk5/story.htm" target="mkmain">Story</a><br>
+		<a href="mk5/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="mk5/renders.htm" target="mkmain">Renders</a><br>
+		<a href="mk5/koffins.htm" target="mkmain">The Krypt</a><br>
+		<a href="mk5/krypt_printable.htm" target="mkmain">The Krypt - Printable</a><br>
+		<a href="mk5/krypt_gameboy_advance.htm" target="mkmain">The Krypt - GBA</a><br>
+		<a href="mk5/krypt_gameboy_advance_printable.htm" target="mkmain">The Krypt 
+		- GBA - Printable</a><br>
+		<a href="mk5/endingsx.htm" target="mkmain">Endings - Low Band.</a><br>
+		<a href="mk5/endings.htm" target="mkmain">Endings - High Band.</a><br>
+		<a href="mk5/codes.htm" target="mkmain">Codes</a><br>
+		<a href="printable_movelists/index.htm#mk5" target="mkmain">Printable Documents</a></div>
+	<hr color="#333333">
+
+	<p id="menu10" class="menuOut" onclick="SwitchMenu('sub10')" onmouseout="ChangeClass('menu10','menuOut')" onmouseover="ChangeClass('menu10','menuOver')">
+	Mortal Kombat<br>
+	Gold<br>
+	(SEGA Dreamcast)</p>
+	<div id="sub10" class="submenu" style="display: none;">
+		<u>SEGA Dreamcast (Universal):</u><br>
+		<a href="mkg/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mkg/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mk4g.htm" target="mkmain">Combos</a><br>
+		<a href="mkg/finishers.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<a href="mkg/story.htm" target="mkmain">Story</a><br>
+		<a href="mkg/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="mkg/endings.htm" target="mkmain">Endings - Text</a><br>
+		<a href="mkg/endings_youtube.htm" target="mkmain">Endings - Vids</a><br>
+		<a href="mkg/codes.htm" target="mkmain">Codes</a><br>
+		<a href="printable_movelists/index.htm#mk4" target="mkmain">Printable Documents</a></div>
+	<hr color="#333333">
+
+	<p id="menu9" class="menuOut" onclick="SwitchMenu('sub9')" onmouseout="ChangeClass('menu9','menuOut')" onmouseover="ChangeClass('menu9','menuOver')">
+	Mortal Kombat 4</p>
+	<div id="sub9" class="submenu" style="display: none;">
+		<u>Arcade/Home (Universal):</u><br>
+		<a href="mk4/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk4/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mk4g.htm" target="mkmain">Combos</a><br>
+		<a href="mk4/finishers.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<u>GameBoy Color:</u><br>
+		<a href="mk4/handheld_gameboy.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk4/handheld_graphical_gameboy.htm" target="mkmain">Moves/Bios 
+		(Graphical)</a><br>
+		<br>
+		<a href="mk4/story.htm" target="mkmain">Story</a><br>
+		<a href="mk4/costume_and_weapons_guide.htm" target="mkmain">Costumes/Weapons</a><br>
+		<a href="mk4/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="mk4/endings.htm" target="mkmain">Endings - Text</a><br>
+		<a href="mk4/endings_youtube.htm" target="mkmain">Endings - Vids</a><br>
+		<a href="mk4/codes.htm" target="mkmain">Codes</a><br>
+		<a href="printable_movelists/index.htm#mk4" target="mkmain">Printable Documents</a></div>
+	<hr color="#333333">
+
+	<p id="menu11" class="menuOut" onclick="SwitchMenu('sub11')" onmouseout="ChangeClass('menu11','menuOut')" onmouseover="ChangeClass('menu11','menuOver')">
+	Mortal Kombat<br>
+	Trilogy</p>
+	<div id="sub11" class="submenu" style="display: none;">
+		<u>PS1/Sega Saturn/PC (Universal):</u><br>
+		<a href="mkt/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mkt/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mkt_ps1.htm" target="mkmain">Combos</a><br>
+		<a href="mkt/finishers.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<u>Nintendo 64 (Universal):</u><br>
+		<a href="mkt/defaultx.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mkt/default_graphicalx.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mkt_n64.htm" target="mkmain">Combos</a><br>
+		<a href="mkt/finishersx.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<a href="mkt/story.htm" target="mkmain">Story</a><br>
+		<a href="mkt/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="combos/mkt.htm" target="mkmain">Combos</a><br>
+		<a href="mkt/endings.htm" target="mkmain">Endings</a><br>
+		<a href="mkt/codes.htm" target="mkmain">Codes</a><br>
+		<a href="printable_movelists/index.htm#mkt" target="mkmain">Printable Documents</a></div>
+	<hr color="#333333">
+
+	<p id="menu12" class="menuOut" onclick="SwitchMenu('sub12')" onmouseout="ChangeClass('menu12','menuOut')" onmouseover="ChangeClass('menu12','menuOver')">
+	Ultimate<br>
+	Mortal Kombat 3</p>
+	<div id="sub12" class="submenu" style="display: none;">
+		<u>Arcade/Home (Universal):</u><br>
+		<a href="umk3/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="umk3/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/umk3_arcade.htm" target="mkmain">Combos</a><br>
+		<a href="umk3/finishers.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<u>Super Nintendo / SEGA Genesis (Universal):</u><br>
+		<a href="umk3/defaultx.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="umk3/default_graphicalx.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/umk3_snes_gen.htm" target="mkmain">Combos</a><br>
+		<br>
+		<u>GameBoy Advance (Universal):</u><br>
+		<a href="mka/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mka/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<br>
+		<u>Nintendo DS (Universal):</u><br>
+		<a href="umk/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="umk/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<br>
+		<a href="umk3/story.htm" target="mkmain">Story</a><br>
+		<a href="umk3/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="umk3/endings.htm" target="mkmain">Endings</a><br>
+		<a href="umk3/codes.htm" target="mkmain">Codes</a><br>
+		<a href="printable_movelists/index.htm#umk3" target="mkmain">Printable Documents</a></div>
+	<hr color="#333333">
+
+	<p id="menu13" class="menuOut" onclick="SwitchMenu('sub13')" onmouseout="ChangeClass('menu13','menuOut')" onmouseover="ChangeClass('menu13','menuOver')">
+	Mortal Kombat 3</p>
+	<div id="sub13" class="submenu" style="display: none;">
+		<u>Arcade/Home (Universal)</u>:<br>
+		<a href="mk3/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk3/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="combos/mk3.htm" target="mkmain">Combos</a><br>
+		<a href="mk3/finishers.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<u>GameBoy (Universal):</u><br>
+		<a href="mk3/handheld_gameboy.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk3/handheld_graphical_gameboy.htm" target="mkmain">Moves/Bios 
+		(Graphical)</a><br>
+		<br>
+		<u>Game Gear (Universal):</u><br>
+		<a href="mk3/handheld_gamegear.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk3/handheld_graphical_gamegear.htm" target="mkmain">Moves/Bios 
+		(Graphical)</a><br>
+		<br>
+		<a href="mk3/story.htm" target="mkmain">Story</a><br>
+		<a href="mk3/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="mk3/endings.htm" target="mkmain">Endings</a><br>
+		<a href="mk3/codes.htm" target="mkmain">Codes</a><br>
+		<a href="printable_movelists/index.htm#mk3" target="mkmain">Printable Documents</a></div>
+	<hr color="#333333">
+
+	<p id="menu14" class="menuOut" onclick="SwitchMenu('sub14')" onmouseout="ChangeClass('menu14','menuOut')" onmouseover="ChangeClass('menu14','menuOver')">
+	Mortal Kombat II</p>
+	<div id="sub14" class="submenu" style="display: none;">
+		<u>Arcade/Home (Universal)</u>:<br>
+		<a href="mk2/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk2/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="mk2/finishers.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<u>GameBoy (Universal)</u>:<br>
+		<a href="mk2/handheld_gameboy.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk2/handheld_graphical_gameboy.htm" target="mkmain">Moves/Bios 
+		(Graphical)</a><br>
+		<br>
+		<u>Game Gear (Universal)</u>:<br>
+		<a href="mk2/handheld_gamegear.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk2/handheld_graphical_gamegear.htm" target="mkmain">Moves/Bios 
+		(Graphical)</a><br>
+		<br>
+		<a href="mk2/story.htm" target="mkmain">Story</a><br>
+		<a href="mk2/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="mk2/endings.htm" target="mkmain">Endings</a><br>
+		<a href="mk2/codes.htm" target="mkmain">Codes</a><br>
+		<a href="printable_movelists/index.htm#mk2" target="mkmain">Printable Documents</a></div>
+	<hr color="#333333">
+
+	<p id="menu15" class="menuOut" onclick="SwitchMenu('sub15')" onmouseout="ChangeClass('menu15','menuOut')" onmouseover="ChangeClass('menu15','menuOver')">
+	Mortal Kombat</p>
+	<div id="sub15" class="submenu" style="display: none;">
+		<u>Arcade/Home (Universal)</u>:<br>
+		<a href="mk1/default.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk1/default_graphical.htm" target="mkmain">Moves/Bios (Graphical)</a><br>
+		<a href="mk1/finishers.htm" target="mkmain">Finishers</a><br>
+		<br>
+		<u>GameBoy (Universal)</u>:<br>
+		<a href="mk1/handheld_gameboy.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk1/handheld_graphical_gameboy.htm" target="mkmain">Moves/Bios 
+		(Graphical)</a><br>
+		<br>
+		<u>Game Gear (Universal)</u>:<br>
+		<a href="mk1/handheld_gamegear.htm" target="mkmain">Moves/Bios</a><br>
+		<a href="mk1/handheld_graphical_gamegear.htm" target="mkmain">Moves/Bios 
+		(Graphical)</a><br>
+		<br>
+		<a href="mk1/story.htm" target="mkmain">Story</a><br>
+		<a href="mk1/arenas.htm" target="mkmain">Arenas</a><br>
+		<a href="mk1/endings.htm" target="mkmain">Endings</a><br>
+		<a href="mk1/codes.htm" target="mkmain">Codes</a><br>
+		<a href="printable_movelists/index.htm#mk" target="mkmain">Printable Documents</a></div>
+	<hr color="#333333">
+
+	<center><font color="#000000">
+	<span style="background-color: #666666; font-weight: 700">Side Games:</span></font></center>
+	<hr color="#333333">
+
+	<p id="menu18" class="menuOut" onclick="SwitchMenu('sub18')" onmouseout="ChangeClass('menu18','menuOut')" onmouseover="ChangeClass('menu18','menuOver')">
+	Mortal Kombat<br>
+	Shaolin Monks</p>
+	<div id="sub18" class="submenu" style="display: none;">
+		<a href="mksm/story.htm" target="mkmain">Story</a><br>
+		<a href="mksm/controls_xbox.htm" target="mkmain">Moves - Xbox</a><br>
+		<a href="mksm/controls_ps2.htm" target="mkmain">Moves - PS2</a><br>
+		<a href="mksm/walkthrough.htm" target="mkmain">Walkthrough</a><br>
+		<a href="mksm/maps/index.html" target="mkmain">Red Koins</a><br>
+		<a href="mksm/upgrades.htm" target="mkmain">Upgrades</a><br>
+		<a href="mksm/smoke_missions.htm" target="mkmain">Smoke Missions</a><br>
+		<a href="mksm/unlockables.htm" target="mkmain">Unlockables</a><br>
+		<a href="mksm/secret_boss_battles.htm" target="mkmain">Secret Bosses</a><br>
+		<a href="mksm/default.htm" target="mkmain">Character Renders</a><br>
+		<a href="mksm/kodes.htm" target="mkmain">Codes</a></div>
+	<hr color="#333333">
+
+	<p id="menu17" class="menuOut" onclick="SwitchMenu('sub17')" onmouseout="ChangeClass('menu17','menuOut')" onmouseover="ChangeClass('menu17','menuOver')">
+	Mortal Kombat<br>
+	Special Forces</p>
+	<div id="sub17" class="submenu" style="display: none;">
+		<a href="mksf/default.htm" target="mkmain">Main Info</a><br>
+		<a href="mksf/youtube.htm" target="mkmain">Trav Plays (YouTube)</a></div>
+	<hr color="#333333">
+
+	<p id="menu16" class="menuOut" onclick="SwitchMenu('sub16')" onmouseout="ChangeClass('menu16','menuOut')" onmouseover="ChangeClass('menu16','menuOver')">
+	Mortal Kombat<br>
+	Mythologies:<br>
+	Sub-Zero</p>
+	<div id="sub16" class="submenu" style="display: none;">
+		<a href="mkms/story.htm" target="mkmain">Story</a><br>
+		<a href="mkms/controls.htm" target="mkmain">Kontrols/Moves - PS/N64</a><br>
+		<a href="mkms/walkthrough.htm" target="mkmain">Walkthrough</a><br>
+		<a href="mkms/enemies.htm" target="mkmain">Enemies</a><br>
+		<a href="mkms/items.htm" target="mkmain">Items</a><br>
+		<a href="mkms/codes.htm" target="mkmain">Codes</a><br>
+		<a href="mkms/youtube.htm" target="mkmain">Trav Plays (YouTube)</a></div>
+	<hr color="#333333">
+
+	<center><font color="#000000">
+	<span style="background-color: #666666; font-weight: 700">Fan-Made:</span></font></center>
+	<hr color="#333333">
+
+	<p id="menuumkd" class="menuOut" onclick="SwitchMenu('subumkd')" onmouseout="ChangeClass('menuumkd','menuOut')" onmouseover="ChangeClass('menuumkd','menuOver')">
+	Ultimate<br>
+	Mortal Kombat<br>
+	Deception<br>
+	(PlayStation 2 ROM Mod)</p>
+	<div id="subumkd" class="submenu" style="display: none;">
+		<a href="fan_made/umkd/default.htm" target="mkmain">Move List/Bios</a><br>
+		<a href="fan_made/umkd/combos.htm" target="mkmain">Combos</a><br>
+		<a href="fan_made/umkd/endings.htm" target="mkmain">Endings</a></div>
+	<hr color="#333333">
+
+	<p id="menu19" class="menuOut" onclick="SwitchMenu('sub19')" onmouseout="ChangeClass('menu19','menuOut')" onmouseover="ChangeClass('menu19','menuOver')">
+	Ultimate<br>
+	Mortal Kombat<br>
+	Trilogy<br>
+	(Genesis Hack)</p>
+	<div id="sub19" class="submenu" style="display: none;">
+		<a href="fan_made/umkt_default.htm" target="mkmain">Moves/Codes</a><br>
+		<a href="fan_made/umkt_movelist.htm" target="mkmain">Move List - Printable</a></div>
+	<hr color="#333333">
+
+	<p id="menu20" class="menuOut" onclick="SwitchMenu('sub20')" onmouseout="ChangeClass('menu20','menuOut')" onmouseover="ChangeClass('menu20','menuOver')">
+	Mortal Kombat<br>
+	Revelations<br>
+	(Genesis Hack)</p>
+	<div id="sub20" class="submenu" style="display: none;">
+		<a href="fan_made/mkr_default.htm" target="mkmain">Moves/Codes</a><br>
+		<a href="fan_made/mkr_movelist.htm" target="mkmain">Move List - Printable</a></div>
+	<hr color="#333333">
+
+	<p id="menu21" class="menuOut" onclick="SwitchMenu('sub21')" onmouseout="ChangeClass('menu21','menuOut')" onmouseover="ChangeClass('menu21','menuOver')">
+	Mortal Kombat II<br>
+	Unlimited<br>
+	(Genesis Hack)</p>
+	<div id="sub21" class="submenu" style="display: none;">
+		<a href="fan_made/mk2u_default.htm" target="mkmain">Moves/Bios/Codes</a><br>
+		<a href="fan_made/mk2u_movelist.htm" target="mkmain">Move List - Printable</a></div>
+	<hr color="#333333">
+
+	<p id="menumk3s56p" class="menuOut" onclick="SwitchMenu('submk3s56p')" onmouseout="ChangeClass('menumk3s56p','menuOut')" onmouseover="ChangeClass('menumk3s56p','menuOver')">
+	Mortal Kombat 3<br>
+	Special 56 Pepoles<br>
+	(Unlicensed Famicom)</p>
+	<div id="submk3s56p" class="submenu" style="display: none;">
+		<a href="fan_made/mk3s56p_default.htm" target="mkmain">Moves</a></div>
+	<hr color="#333333">
+
+	<p id="menu80" class="menuOut" onclick="SwitchMenu('sub80')" onmouseout="ChangeClass('menu80','menuOut')" onmouseover="ChangeClass('menu80','menuOver')">
+	Terrordrome<br>
+	Rise of the Boogeymen</p>
+	<div id="sub80" class="submenu" style="display: none;">
+		<a href="fan_made/terrordrome/default.htm" target="mkmain">Moves/Codes</a></div>
+	<hr color="#333333">
+
+	<center><font color="#000000">
+	<span style="background-color: #666666; font-weight: 700">Others:</span></font></center>
+	<hr color="#333333">
+
+	<p id="menu27" class="menuOut" onclick="SwitchMenu('sub27')" onmouseout="ChangeClass('menu27','menuOut')" onmouseover="ChangeClass('menu27','menuOver')">
+	ClayFighter</p>
+	<div id="sub27" class="submenu" style="display: none;">
+		<a href="clayfighter/cf1.htm" target="mkmain">ClayFighter</a><br>
+		<a href="clayfighter/cf1te.htm" target="mkmain">Tournament Edition</a><br>
+		<a href="clayfighter/cf2.htm" target="mkmain">Judgment Clay</a><br>
+		<a href="clayfighter/cf64.htm" target="mkmain">63&#8531;</a><br>
+		<a href="clayfighter/cf64sc.htm" target="mkmain">Sculptor's Cut</a></div>
+	<hr color="#333333">
+
+	<p id="menu22" class="menuOut" onclick="SwitchMenu('sub22')" onmouseout="ChangeClass('menu22','menuOut')" onmouseover="ChangeClass('menu22','menuOver')">
+	Justice League:<br>
+	Task Force</p>
+	<div id="sub22" class="submenu" style="display: none;">
+		<a href="jltf/default.htm" target="mkmain">Moves/Bios - SNES</a><br>
+		<a href="jltf/default2.htm" target="mkmain">Moves/Bios - SG</a><br>
+		<a href="printable_movelists/index.htm#jltf" target="mkmain">Printable Documents</a></div>
+	<hr color="#333333">
+
+	<p id="menu23" class="menuOut" onclick="SwitchMenu('sub23')" onmouseout="ChangeClass('menu23','menuOut')" onmouseover="ChangeClass('menu23','menuOver')">
+	Killer Instinct</p>
+	<div id="sub23" class="submenu" style="display: none;">
+		<a href="ki/default.htm" target="mkmain">KI1 - Arc./Home</a><br>
+		<a href="ki/default_gameboy.htm" target="mkmain">KI1 - GameBoy</a><br>
+		<a href="ki/default2.htm" target="mkmain">KI2 - Arc./N64</a></div>
+	<hr color="#333333">
+
+	<p id="menu25" class="menuOut" onclick="SwitchMenu('sub25')" onmouseout="ChangeClass('menu25','menuOut')" onmouseover="ChangeClass('menu25','menuOver')">
+	Primal Rage</p>
+	<div id="sub25" class="submenu" style="display: none;">
+		<a href="pr/default.htm" target="mkmain">Moves/Bios - Arc./Home</a><br>
+		<a href="pr/default2.htm" target="mkmain">Moves/Bios - MAT2</a></div>
+	<hr color="#333333">
+
+	<p id="menu24" class="menuOut" onclick="SwitchMenu('sub24')" onmouseout="ChangeClass('menu24','menuOut')" onmouseover="ChangeClass('menu24','menuOver')">
+	War Gods</p>
+	<div id="sub24" class="submenu" style="display: none;">
+		<a href="wargods/default.htm" target="mkmain">Moves/Bios - Arc./Home</a></div>
+	<hr color="#333333">
+
 </div>
 <!--Start End--><br>
 <br>
@@ -697,8 +851,11 @@ document.onselectstart = new Function("return false");
 <br>
 <br>
 <hr color="#333333">
+
 <center><b><a href="site_info.htm">MKKomplete</a></b></center>
-<hr color="#333333"><!--End-->
+<hr color="#333333">
+
+<!--End-->
 
 </body>
 
