@@ -1,33 +1,52 @@
-a:link
-{
-    color: #808080;font-family:Verdana; font-size:10pt 
+﻿/* Link Styles */
+a {
+	color: #808080 !important; /* Force the link color */;
+	font-family: Verdana, sans-serif;
+	font-size: 0.833rem; /* Link size */;
+	text-decoration: underline; /* Change to 'none' to remove underline */
 }
-a:visited
-{
-    color: #808080;font-family:Verdana; font-size:10pt
-} 
-a:active 
-{
-    color: #808080;font-family:Verdana; font-size:10pt
+a:hover {
+	color: #FFFFFF !important; /* Ensure hover color is applied */
 }
-a:hover
-{
-    color: #FFFFFF;font-family:Verdana; font-size:10pt
+/* Body Styles */
+body {
+	background: #000000 url('../pics/bgmk3.jpg') no-repeat fixed center;
+	font-family: Verdana, sans-serif;
+	color: #999999;
+	font-size: 0.833rem; /* Base font size */
 }
-body
-{
-    background:#000000 url('../pics/bgmk3.jpg') no-repeat fixed center; font-family: Verdana;
-    color: #999999;font-size:10pt;
-    scrollbar-arrow-color: #999999;
-    scrollbar-base-color: #000000;
-    scrollbar-dark-shadow-color: #999999;
-    scrollbar-track-color: #000000;
-    scrollbar-face-color: #000000;
-    scrollbar-shadow-color: #999999;
-    scrollbar-highlight-color: #999999
+/* Media Queries */
+@media (max-width: 768px) {
+body {
+	font-size: 0.8rem; /* Slightly smaller text */
 }
-table
-{
-    table-border-color-light: rgb(33,33,33);
-    table-border-color-dark: rgb(33,33,33); font-family:Verdana; font-size:10pt; color:#999999
+a {
+	font-size: 0.7rem; /* Smaller links */
+}
+}
+@media (max-width: 480px) {
+body {
+	font-size: 0.75rem; /* Adjusted for smaller devices */
+}
+a {
+	font-size: 0.65rem; /* Smaller links */
+}
+}
+/* Scrollbar Styles (WebKit Browsers) */
+body::-webkit-scrollbar {
+	width: 12px;
+}
+body::-webkit-scrollbar-track {
+	background: #000000;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: #999999;
+	border-radius: 10px;
+}
+/* Table Styles */
+table {
+	border: 0px solid rgb(33, 33, 33);
+/* Changed from 0px for visibility */font-family: Verdana, sans-serif;
+	font-size: 0.833rem; /* Use rem for consistency */;
+	color: #999999;
 }
