@@ -10,10 +10,24 @@ a:hover {
 }
 /* Body Styles */
 body {
-	background: #000000;
-	font-family: Verdana, sans-serif;
+	background: #000000 font-family: Verdana, sans-serif;
 	color: #999999;
 	font-size: 0.833rem; /* Base font size */
+}
+/* Table Styles */
+table {
+	border: none;
+/* Set border to none for clarity */font-family: Verdana, sans-serif;
+	font-size: 0.833rem; /* Use rem for consistency */;
+	color: #999999;
+}
+.responsive-table {
+	width: 100%; /* Allow the table to take full width of its container */;
+	max-width: 700px; /* Set a maximum width for larger screens */;
+	border-collapse: collapse; /* Remove gaps between cells */
+}
+.responsive-table td {
+	padding: 5px; /* Add some padding for better spacing */
 }
 /* Media Queries */
 @media (max-width: 768px) {
@@ -22,6 +36,18 @@ body {
 }
 a {
 	font-size: 0.7rem; /* Smaller links */
+}
+.responsive-table, .responsive-table tr, .responsive-table td {
+	display: block; /* Stack elements */;
+	width: 100%; /* Full width for mobile */;
+	box-sizing: border-box; /* Include padding in width */
+}
+.responsive-table tr {
+	margin-bottom: 15px; /* Space between stacked rows */
+}
+.responsive-table td {
+	padding: 10px;
+/* More padding for readability */border: 1px solid #333; /* Optional: Add borders for clarity */
 }
 }
 @media (max-width: 480px) {
@@ -42,11 +68,4 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
 	background-color: #999999;
 	border-radius: 10px;
-}
-/* Table Styles */
-table {
-	border: 0px solid rgb(33, 33, 33);
-/* Changed from 0px for visibility */font-family: Verdana, sans-serif;
-	font-size: 0.833rem; /* Use rem for consistency */;
-	color: #999999;
 }
