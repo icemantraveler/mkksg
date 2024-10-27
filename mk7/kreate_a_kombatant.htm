@@ -5,54 +5,12 @@
 <meta content="en-us" http-equiv="Content-Language">
 <meta content="Microsoft FrontPage 12.0" name="GENERATOR">
 <meta content="FrontPage.Editor.Document" name="ProgId">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <noscript>
 <body>
 
 </noscript>
-<script language="javascript" type="text/javascript">
-<!--
-
-//Disable right mouse click Script
-//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
-//For full source code, visit http://www.dynamicdrive.com
-
-var message="Function Disabled!";
-
-///////////////////////////////////
-function clickIE4(){
-if (event.button==2){
-alert(message);
-return false;
-}
-}
-
-function clickNS4(e){
-if (document.layers||document.getElementById&&!document.all){
-if (e.which==2||e.which==3){
-alert(message);
-return false;
-}
-}
-}
-
-if (document.layers){
-document.captureEvents(Event.MOUSEDOWN);
-document.onmousedown=clickNS4;
-}
-else if (document.all&&!document.getElementById){
-document.onmousedown=clickIE4;
-}
-
-document.oncontextmenu=new Function("alert(message);return false")
-
-// --> 
-  </script>
-<script language="javascript" type="text/javascript">
-     function toggle_it(itemID)
-     {if ((document.getElementById(itemID).style.display == 'none'))
-     {document.getElementById(itemID).style.display = 'inline';}
-     else {document.getElementById(itemID).style.display = 'none';}}
-    </script>
+<script src="../css/disable-right-click.js" type="text/javascript"></script>
 <title>MKKomplete - Mortal Kombat Armageddon (2006) - Kreate-a-Kombatant</title>
 <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
@@ -61,11 +19,14 @@ document.oncontextmenu=new Function("alert(message);return false")
 
 <a href="../menu.htm#mk7">Choose Your Game</a><br>
 <!--Old MK7 Navigation--><center>
-<img alt="Mortal Kombat Armageddon (2006)" border="0" height="94" src="logo_mk7.gif" title="Mortal Kombat Armageddon (2006)" width="500"><br>
+<img alt="Mortal Kombat Armageddon (2006)" border="0" class="logo" height="94" src="logo_mk7.gif" title="Mortal Kombat Armageddon (2006)" width="500"><br>
 Kreate-a-Kombatant</center>
-<hr color="#333333"><a href="kreate_a_kombatant_khameleon.htm">Klick to see Trav's 
-Khameleon KAK Recipe</a><hr color="#333333"><u><b>Appearance:</b></u><br>1/7 Body 
-Type:<br>
+<hr class="main">
+
+<a href="kreate_a_kombatant_khameleon.htm">Klick to see Trav's Khameleon KAK Recipe</a><hr class="main">
+
+<u><b>Appearance:</b></u><br>
+1/7 Body Type:<br>
 <select name="Gender" size="1" style="background-color: 000000; color: FFFFFF; font-family: ; font-size: 11; width: 63; height: 20">
 <option>*Gender</option>
 <option>Male</option>
@@ -99,7 +60,8 @@ Type:<br>
 <option>Small</option>
 <option>Medium</option>
 <option>Large</option>
-</select><br>2/7 Head:<br>
+</select><br>
+2/7 Head:<br>
 <select name="MaleFace" style="background-color: 000000; color: FFFFFF; font-family: ; font-size: 11; width: 137; height: 20">
 <option>*Male Face</option>
 <option>Cyborg - 1,500</option>
@@ -262,7 +224,8 @@ Type:<br>
 <option>Top Hat - 1,000</option>
 <option>Trident - N/A</option>
 <option>Viking Helmet - 500</option>
-</select><br>3/7 Upper Body:<br>
+</select><br>
+3/7 Upper Body:<br>
 <select name="MaleTorsoStyles" style="background-color: 000000; color: FFFFFF; font-family: ; font-size: 11; width: 138; height: 20">
 <option>*Male Torso</option>
 <option>Bakara - 1,000</option>
@@ -443,7 +406,8 @@ Type:<br>
 <option>Vinyl Medium - 1,000</option>
 <option>Vinyl Short - 1,500</option>
 <option>Wraps - N/A</option>
-</select><br>4/7 Lower Body:<br>
+</select><br>
+4/7 Lower Body:<br>
 <select name="MalePants" style="background-color: 000000; color: FFFFFF; font-family: ; font-size: 11; width: 138; height: 20">
 <option>*Male Pants</option>
 <option>Baggy - N/A</option>
@@ -608,7 +572,8 @@ Type:<br>
 <option>Vinyl Medium - 1,000</option>
 <option>Vinyl Long - 1,000</option>
 <option>Wood Sandals - 500</option>
-</select><br>5/7 Accessories:<br>
+</select><br>
+5/7 Accessories:<br>
 <select name="MaleHeadAccessories" style="background-color: 000000; color: FFFFFF; font-family: ; font-size: 11; width: 138; height: 20">
 <option>*Male Head Accessories</option>
 <option>Beard Long - 500</option>
@@ -694,7 +659,8 @@ Type:<br>
 <option>Samurai Flags - 500</option>
 <option>Scarf - 1,500</option>
 <option>Tiger Necklace - 1,000</option>
-</select><br>6/7 Accessories:<br>
+</select><br>
+6/7 Accessories:<br>
 <select name="MaleArmAccessories" style="background-color: 000000; color: FFFFFF; font-family: ; font-size: 11; width: 138; height: 20">
 <option>*Male Arm Accessories</option>
 <option>Commander - 500</option>
@@ -755,7 +721,8 @@ Type:<br>
 <option>Spiral Anklet - 1,000</option>
 <option>Studded Shinguard - 500</option>
 <option>Tiled - 500</option>
-</select><br>7/7 Attributes:<br>
+</select><br>
+7/7 Attributes:<br>
 <select name="Attributes" style="background-color: 000000; color: FFFFFF; font-family: ; font-size: 11; width: 133; height: 20">
 <option>*Attributes</option>
 <option>Nose Width</option>
@@ -768,7 +735,10 @@ Type:<br>
 <option>Eyelids</option>
 <option>Eye Angle</option>
 <option>Breast Size (Female Only)</option>
-</select><br><br><u><b>Fighting Style:</b></u><br>Basics:<br>
+</select><br>
+<br>
+<u><b>Fighting Style:</b></u><br>
+Basics:<br>
 <select name="Preset" style="background-color: 000000; color: FFFFFF; font-family: ; font-size: 11; width: 92; height: 20">
 <option>*Preset</option>
 <option>None</option>
@@ -835,7 +805,12 @@ Type:<br>
 <option>Yue Chuan</option>
 <option>Zha Chuan</option>
 <option>Zi Ran Men</option>
-</select><br>Attacks:<br>(?)<br><br><u><b>Weapon Style:</b></u><br>Basics:<br>
+</select><br>
+Attacks:<br>
+(?)<br>
+<br>
+<u><b>Weapon Style:</b></u><br>
+Basics:<br>
 <select name="WeaponType" style="background-color: 000000; color: FFFFFF; font-family: ; font-size: 11; width: 94; height: 20">
 <option>*Weapon Type</option>
 <option>Swords</option>
@@ -884,15 +859,25 @@ Type:<br>
 <option>Axe</option>
 <option>Cleaver</option>
 <option>Hammer</option>
-</select><br>Attacks:<br>(?)<br><br><u><b>Special Moves:</b></u><br>
+</select><br>
+Attacks:<br>
+(?)<br>
+<br>
+<u><b>Special Moves:</b></u><br>
 <table id="AutoNumber1" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="700">
 	<tr>
-		<td align="left" valign="top" width="200"><br>&nbsp;</td>
-		<td align="left" valign="top" width="100"><u>XBOX:</u><br>&nbsp;</td>
-		<td align="left" valign="top" width="100"><u>PS2:</u><br>&nbsp;</td>
-		<td align="left" valign="top" width="100"><u>Wii:</u><br>&nbsp;</td>
-		<td align="left" valign="top" width="100"><u>Classic:</u><br>&nbsp;</td>
-		<td align="left" valign="top" width="100"><u>GameCube:</u><br>&nbsp;</td>
+		<td align="left" valign="top" width="200"><br>
+&nbsp;</td>
+		<td align="left" valign="top" width="100"><u>Xbox:</u><br>
+&nbsp;</td>
+		<td align="left" valign="top" width="100"><u>PS2:</u><br>
+&nbsp;</td>
+		<td align="left" valign="top" width="100"><u>Wii:</u><br>
+&nbsp;</td>
+		<td align="left" valign="top" width="100"><u>Classic:</u><br>
+&nbsp;</td>
+		<td align="left" valign="top" width="100"><u>GameCube:</u><br>
+&nbsp;</td>
 	</tr>
 	<tr>
 		<td align="left" valign="top" width="200">
@@ -923,17 +908,23 @@ Type:<br>
 		<option>Tele-Flurry - 3,000</option>
 		<option>Chi-Blast - 500</option>
 		<option>Crouching Chi-Blast 1,500</option>
-		</select><br>&nbsp;</td>
+		</select><br>
+&nbsp;</td>
 		<td align="left" valign="top" width="100">D, B, <font color="#0000ff">
-		<b>X</b></font><br>&nbsp;</td>
+		<b>X</b></font><br>
+&nbsp;</td>
 		<td align="left" valign="top" width="100">D, B, <font color="#FF66CC">
-		<b>&#9633;</b><br>&nbsp;</font></td>
+		<b>&#9633;</b><br>
+&nbsp;</font></td>
 		<td align="left" valign="top" width="100">
-		<img alt="Half Circle Towards - Low" border="0" height="25" src="pics/wii_hctl.gif" width="30"><br>&nbsp;</td>
+		<img alt="Half Circle Towards - Low" border="0" height="25" src="pics/wii_hctl.gif" width="30"><br>
+&nbsp;</td>
 		<td align="left" valign="top" width="100">D, B, <font color="#c0c0c0">
-		<b>Y</b><br>&nbsp;</font></td>
+		<b>Y</b><br>
+&nbsp;</font></td>
 		<td align="left" valign="top" width="100">D, B, <font color="#ff0000">
-		<b>B</b></font><br>&nbsp;</td>
+		<b>B</b></font><br>
+&nbsp;</td>
 	</tr>
 	<tr>
 		<td align="left" valign="top" width="200">
@@ -971,17 +962,23 @@ Type:<br>
 		<option>Pretty Kick - 500</option>
 		<option>Burning Fist - 1,000</option>
 		<option>Wind Kick - 1,000</option>
-		</select><br>&nbsp;</td>
+		</select><br>
+&nbsp;</td>
 		<td align="left" valign="top" width="100">F, F, <font color="#008000">
-		<b>A</b><br>&nbsp;</font></td>
+		<b>A</b><br>
+&nbsp;</font></td>
 		<td align="left" valign="top" width="100">F, F, <font color="#00CCFF">
-		<b>X</b><br>&nbsp;</font></td>
+		<b>X</b><br>
+&nbsp;</font></td>
 		<td align="left" valign="top" width="100">
-		<img alt="Back, Forward" border="0" height="25" src="pics/wii_bf.gif" width="30"><br>&nbsp;</td>
+		<img alt="Back, Forward" border="0" height="25" src="pics/wii_bf.gif" width="30"><br>
+&nbsp;</td>
 		<td align="left" valign="top" width="100">F, F, <font color="#c0c0c0">
-		<b>B</b><br>&nbsp;</font></td>
+		<b>B</b><br>
+&nbsp;</font></td>
 		<td align="left" valign="top" width="100">F, F, <font color="#008000">
-		<b>A</b></font><br>&nbsp;</td>
+		<b>A</b></font><br>
+&nbsp;</td>
 	</tr>
 	<tr>
 		<td align="left" valign="top" width="200">
@@ -1008,17 +1005,23 @@ Type:<br>
 		<option>Rolling Uppercut - 1,000</option>
 		<option>Windmill Kick - 500</option>
 		<option>Shocking Bolt - 3,000</option>
-		</select><br>&nbsp;</td>
+		</select><br>
+&nbsp;</td>
 		<td align="left" valign="top" width="100">B, F, <font color="#FFFF00">
-		<b>Y</b><br>&nbsp;</font></td>
+		<b>Y</b><br>
+&nbsp;</font></td>
 		<td align="left" valign="top" width="100">B, F, <font color="#00CC66">
-		<b>&#916;</b><br>&nbsp;</font></td>
+		<b>&#916;</b><br>
+&nbsp;</font></td>
 		<td align="left" valign="top" width="100">
-		<img alt="Half Circle Away - Low" border="0" height="25" src="pics/wii_hcal.gif" width="30"><br>&nbsp;</td>
+		<img alt="Half Circle Away - Low" border="0" height="25" src="pics/wii_hcal.gif" width="30"><br>
+&nbsp;</td>
 		<td align="left" valign="top" width="100">B, F, <font color="#c0c0c0">
-		<b>X</b><br>&nbsp;</font></td>
+		<b>X</b><br>
+&nbsp;</font></td>
 		<td align="left" valign="top" width="100">B, F, <font color="#c0c0c0">
-		<b>Y</b></font><br>&nbsp;</td>
+		<b>Y</b></font><br>
+&nbsp;</td>
 	</tr>
 	<tr>
 		<td align="left" valign="top" width="200">
@@ -1039,17 +1042,23 @@ Type:<br>
 		<option>Mind Warp - 1,000</option>
 		<option>Squarewave Punch - 500</option>
 		<option>Tele-Punch - 1,500</option>
-		</select><br>&nbsp;</td>
+		</select><br>
+&nbsp;</td>
 		<td align="left" valign="top" width="100">D, U, <font color="#FF0000">
-		<b>B</b><br>&nbsp;</font></td>
+		<b>B</b><br>
+&nbsp;</font></td>
 		<td align="left" valign="top" width="100">D, U, <font color="#FF0000">
-		<b>O</b><br>&nbsp;</font></td>
+		<b>O</b><br>
+&nbsp;</font></td>
 		<td align="left" valign="top" width="100">
-		<img alt="Up, Down" border="0" height="25" src="pics/wii_ud.gif" width="30"><br>&nbsp;</td>
+		<img alt="Up, Down" border="0" height="25" src="pics/wii_ud.gif" width="30"><br>
+&nbsp;</td>
 		<td align="left" valign="top" width="100">D, U, <font color="#c0c0c0">
-		<b>A</b><br>&nbsp;</font></td>
+		<b>A</b><br>
+&nbsp;</font></td>
 		<td align="left" valign="top" width="100">D, U, <font color="#c0c0c0">
-		<b>X</b></font><br>&nbsp;</td>
+		<b>X</b></font><br>
+&nbsp;</td>
 	</tr>
 	<tr>
 		<td align="left" valign="top" width="200">
@@ -1063,17 +1072,23 @@ Type:<br>
 		<option>Room Sweeper - 1,500</option>
 		<option>Sumo Stomp - 1,500</option>
 		<option>Neck Breaker - 1,500</option>
-		</select><br>&nbsp;</td>
+		</select><br>
+&nbsp;</td>
 		<td align="left" valign="top" width="100">D, B, F, <font color="#FF0000">
-		<b>B</b><br>&nbsp;</font></td>
+		<b>B</b><br>
+&nbsp;</font></td>
 		<td align="left" valign="top" width="100">D, B, F, <font color="#FF0000">
-		<b>O</b><br>&nbsp;</font></td>
+		<b>O</b><br>
+&nbsp;</font></td>
 		<td align="left" valign="top" width="100">
-		<img alt="Forward, Back" border="0" height="25" src="pics/wii_fb.gif" width="30"><br>&nbsp;</td>
+		<img alt="Forward, Back" border="0" height="25" src="pics/wii_fb.gif" width="30"><br>
+&nbsp;</td>
 		<td align="left" valign="top" width="100">D, B, F, <font color="#c0c0c0">
-		<b>A</b><br>&nbsp;</font></td>
+		<b>A</b><br>
+&nbsp;</font></td>
 		<td align="left" valign="top" width="100">D, B, F, <b>
-		<font color="#c0c0c0">X</font></b><br>&nbsp;</td>
+		<font color="#c0c0c0">X</font></b><br>
+&nbsp;</td>
 	</tr>
 	<tr>
 		<td align="left" valign="top" width="200">
@@ -1094,12 +1109,18 @@ Type:<br>
 		<option>Chaos Axe Kick - 3,000</option>
 		<option>Front Flip - 1,000</option>
 		<option>Bouncer - 3,000</option>
-		</select><br>&nbsp;</td>
-		<td align="left" valign="top" width="100"><b><font color="#333333">(Black)<br>&nbsp;</font></b></td>
-		<td align="left" valign="top" width="100"><b><font color="#999999">[R1]<br>&nbsp;</font></b></td>
-		<td align="left" valign="top" width="100"><b><font color="#FFFFFF">(A)<br>&nbsp;</font></b></td>
-		<td align="left" valign="top" width="100"><b><font color="#FFFFFF">zR<br>&nbsp;</font></b></td>
-		<td align="left" valign="top" width="100"><b><font color="#FFFFFF">Z<br>&nbsp;</font></b></td>
+		</select><br>
+&nbsp;</td>
+		<td align="left" valign="top" width="100"><b><font color="#333333">(Black)<br>
+&nbsp;</font></b></td>
+		<td align="left" valign="top" width="100"><b><font color="#999999">[R1]<br>
+&nbsp;</font></b></td>
+		<td align="left" valign="top" width="100"><b><font color="#FFFFFF">(A)<br>
+&nbsp;</font></b></td>
+		<td align="left" valign="top" width="100"><b><font color="#FFFFFF">zR<br>
+&nbsp;</font></b></td>
+		<td align="left" valign="top" width="100"><b><font color="#FFFFFF">Z<br>
+&nbsp;</font></b></td>
 	</tr>
 </table>
 <u><b>Extras:</b></u><br>
@@ -1135,12 +1156,68 @@ Type:<br>
 <option>Shaolin</option>
 <option>Snake</option>
 <option>Tai Chi</option>
-</select><br><br><u><b>Biography:</b></u><br>(Name)<br>(Victory Slogan)<br>(Biography)<hr color="#333333">
-<!--Start End--><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr color="#333333">
+</select><br>
+<br>
+<u><b>Biography:</b></u><br>
+(Name)<br>
+(Victory Slogan)<br>
+(Biography)<hr class="main">
+
+<!--Start End--><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr class="main">
+
 <center><b><a href="../site_info.htm">MKKomplete</a></b></center>
-<hr color="#333333">
+<hr class="main">
+
 <!--End-->
 
 </body>
