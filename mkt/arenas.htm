@@ -5,54 +5,12 @@
 <meta content="en-us" http-equiv="Content-Language">
 <meta content="Microsoft FrontPage 12.0" name="GENERATOR">
 <meta content="FrontPage.Editor.Document" name="ProgId">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <noscript>
 <body>
 
 </noscript>
-<script language="JavaScript" type="text/javascript">
-<!--
-
-//Disable right mouse click Script
-//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
-//For full source code, visit http://www.dynamicdrive.com
-
-var message="Function Disabled!";
-
-///////////////////////////////////
-function clickIE4(){
-if (event.button==2){
-alert(message);
-return false;
-}
-}
-
-function clickNS4(e){
-if (document.layers||document.getElementById&&!document.all){
-if (e.which==2||e.which==3){
-alert(message);
-return false;
-}
-}
-}
-
-if (document.layers){
-document.captureEvents(Event.MOUSEDOWN);
-document.onmousedown=clickNS4;
-}
-else if (document.all&&!document.getElementById){
-document.onmousedown=clickIE4;
-}
-
-document.oncontextmenu=new Function("alert(message);return false")
-
-// --> 
-  </script>
-<script language="JavaScript" type="text/javascript">
-     function toggle_it(itemID)
-     {if ((document.getElementById(itemID).style.display == 'none'))
-     {document.getElementById(itemID).style.display = 'inline';}
-     else {document.getElementById(itemID).style.display = 'none';}}
-    </script>
+<script src="../css/disable-right-click.js" type="text/javascript"></script>
 <title>MKKomplete - Mortal Kombat Trilogy (1996) - Arenas</title>
 <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
@@ -61,13 +19,13 @@ document.oncontextmenu=new Function("alert(message);return false")
 
 <a href="../menu.htm#mkt">Choose Your Game</a><br>
 <!--Old MKT Navigation--><center>
-<img alt="Mortal Kombat Trilogy (1996)" border="0" height="117" src="logo.gif" title="Mortal Kombat Trilogy (1996)" width="200"><br>
-Arenas<hr color="#333333">
+<img alt="Mortal Kombat Trilogy (1996)" border="0" class="logo" height="117" src="logo.gif" title="Mortal Kombat Trilogy (1996)" width="200"><br>
+Arenas<hr class="main">
 
 Press (<img alt="Up" border="0" height="15" src="../images/dir_u.png" title="Up" width="15">+<b>Start</b>) 
-on Sonya on the VS Select Screen to select your stage<hr color="#333333">
+on Sonya on the VS Select Screen to select your stage<hr class="main">
 
-<table id="AutoNumber1" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="800">
+<table id="AutoNumber1" border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="border-collapse: collapse" width="700">
 	<tr>
 		<td align="center" valign="top" width="20%">
 		<a href="stage_courtyard.png">
@@ -216,7 +174,7 @@ on Sonya on the VS Select Screen to select your stage<hr color="#333333">
 The Star Bridge (N64)<br>
 <font color="#FF0000">(When Dan &quot;Toasty&quot; Forden appears, hit (<img alt="Down" border="0" height="15" src="../images/dir_d.png" title="Down" width="15">+<b>Start</b>) 
 to fight Khameleon)</font></center>
-<hr color="#333333">
+<hr class="main">
 
 <!--Start End--><br>
 <br>
@@ -268,10 +226,10 @@ to fight Khameleon)</font></center>
 <br>
 <br>
 <br>
-<hr color="#333333">
+<hr class="main">
 
 <center><b><a href="../site_info.htm">MKKomplete</a></b></center>
-<hr color="#333333">
+<hr class="main">
 
 <!--End-->
 
