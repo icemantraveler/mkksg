@@ -25,7 +25,7 @@ table {
 .responsive-table {
 	width: 100%; /* Allow the table to take full width of its container */;
 	max-width: 700px; /* Set a maximum width for larger screens */;
-	border-collapse: collapse; /* Remove gaps between cells */
+	border-collapse: collapse; /* Remove gaps between cells */;
 }
 .responsive-table td {
 	padding: 5px; /* Add some padding for better spacing */
