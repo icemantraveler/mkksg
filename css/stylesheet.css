@@ -83,3 +83,10 @@ hr.sub {
 	background-color: #1A1A1A; /* Color of the sub-section line */;
 	margin: 2px 2px; /* Space above and below the line */
 }
+/* Logo */
+.logo {
+    max-width: 100%; /* Allow the logo to resize */
+    height: auto; /* Maintain aspect ratio */
+    text-align: center; /* Center the content inside the container */
+    margin: 0 auto; /* Center the logo */
+}
