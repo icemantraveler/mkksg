@@ -10,7 +10,8 @@ a:hover {
 }
 /* Body Styles */
 body {
-	background: #000000 font-family: Verdana, sans-serif;
+	background: #000000;
+	font-family: Verdana, sans-serif;
 	color: #999999;
 	font-size: 0.833rem; /* Base font size */
 }
@@ -68,4 +69,17 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
 	background-color: #999999;
 	border-radius: 10px;
+}
+/* Horizontal Rule */
+hr.main {
+	border: none;
+/* Remove default border */height: 2px; /* Thickness of the line */;
+	background-color: #333333; /* Color of the main section line */;
+	margin: 2px 2px; /* Space above and below the line */
+}
+hr.sub {
+	border: none;
+/* Remove default border */height: 2px; /* Thickness of the line */;
+	background-color: #1A1A1A; /* Color of the sub-section line */;
+	margin: 2px 2px; /* Space above and below the line */
 }
