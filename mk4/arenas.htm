@@ -2,56 +2,15 @@
 <html>
 
 <head>
+<meta content="en-us" http-equiv="Content-Language">
 <meta content="Microsoft FrontPage 12.0" name="GENERATOR">
 <meta content="FrontPage.Editor.Document" name="ProgId">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <noscript>
 <body>
 
 </noscript>
-<script language="JavaScript" type="text/javascript">
-<!--
-
-//Disable right mouse click Script
-//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
-//For full source code, visit http://www.dynamicdrive.com
-
-var message="Function Disabled!";
-
-///////////////////////////////////
-function clickIE4(){
-if (event.button==2){
-alert(message);
-return false;
-}
-}
-
-function clickNS4(e){
-if (document.layers||document.getElementById&&!document.all){
-if (e.which==2||e.which==3){
-alert(message);
-return false;
-}
-}
-}
-
-if (document.layers){
-document.captureEvents(Event.MOUSEDOWN);
-document.onmousedown=clickNS4;
-}
-else if (document.all&&!document.getElementById){
-document.onmousedown=clickIE4;
-}
-
-document.oncontextmenu=new Function("alert(message);return false")
-
-// --> 
-  </script>
-<script language="JavaScript" type="text/javascript">
-     function toggle_it(itemID)
-     {if ((document.getElementById(itemID).style.display == 'none'))
-     {document.getElementById(itemID).style.display = 'inline';}
-     else {document.getElementById(itemID).style.display = 'none';}}
-    </script>
+<script src="../css/disable-right-click.js" type="text/javascript"></script>
 <title>MKKomplete - Mortal Kombat 4 (1997) - Arenas</title>
 <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
@@ -60,10 +19,10 @@ document.oncontextmenu=new Function("alert(message);return false")
 
 <a href="../menu.htm#mk4">Choose Your Game</a><br>
 <!--Old MK4 Navigation--><center>
-<img alt="Mortal Kombat 4 (1997)" border="0" height="165" src="logo.gif" title="Mortal Kombat 4 (1997)" width="500"><br>
-Arenas<hr color="#333333">
+<img alt="Mortal Kombat 4 (1997)" border="0" class="logo" height="165" src="logo.gif" title="Mortal Kombat 4 (1997)" width="500"><br>
+Arenas<hr class="main">
 
-<table id="AutoNumber1" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="700">
+<table id="AutoNumber1" border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="border-collapse: collapse" width="700">
 	<tr>
 		<td align="center" valign="top" width="25%">
 		<a href="stage_eldergods.png">
@@ -113,7 +72,7 @@ Arenas<hr color="#333333">
 	</tr>
 </table>
 </center>
-<hr color="#333333">
+<hr class="main">
 
 <!--Start End--><br>
 <br>
@@ -165,10 +124,10 @@ Arenas<hr color="#333333">
 <br>
 <br>
 <br>
-<hr color="#333333">
+<hr class="main">
 
 <center><b><a href="../site_info.htm">MKKomplete</a></b></center>
-<hr color="#333333">
+<hr class="main">
 
 <!--End-->
 
