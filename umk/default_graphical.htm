@@ -10,48 +10,7 @@
 <body>
 
 </noscript>
-<script language="javascript" type="text/javascript"><!--
-
-//Disable right mouse click Script
-//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
-//For full source code, visit http://www.dynamicdrive.com
-
-var message="Function Disabled!";
-
-///////////////////////////////////
-function clickIE4(){
-if (event.button==2){
-alert(message);
-return false;
-}
-}
-
-function clickNS4(e){
-if (document.layers||document.getElementById&&!document.all){
-if (e.which==2||e.which==3){
-alert(message);
-return false;
-}
-}
-}
-
-if (document.layers){
-document.captureEvents(Event.MOUSEDOWN);
-document.onmousedown=clickNS4;
-}
-else if (document.all&&!document.getElementById){
-document.onmousedown=clickIE4;
-}
-
-document.oncontextmenu=new Function("alert(message);return false")
-
-// --> 
-  </script>
-<script language="javascript" type="text/javascript">     function toggle_it(itemID)
-     {if ((document.getElementById(itemID).style.display == 'none'))
-     {document.getElementById(itemID).style.display = 'inline';}
-     else {document.getElementById(itemID).style.display = 'none';}}
-    </script>
+<script src="../css/disable-right-click.js" type="text/javascript"></script>
 <title>MKKomplete - Ultimate Mortal Kombat - Move List/Bios - Nintendo DS 
 (Universal)</title>
 <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
@@ -64,23 +23,25 @@ document.oncontextmenu=new Function("alert(message);return false")
 Move List/Bios - Nintendo DS (Universal)<br>
 (Graphical Version)<hr class="main">
 
-<a href="#kitana">
-<img alt="Kitana" border="1" height="75" src="../mkt/bio_kitana.jpg" title="Kitana" width="61"></a><a href="#reptile"><img alt="Reptile" border="1" height="75" src="../mkt/bio_reptile.jpg" title="Reptile" width="61"></a><a href="#sonya"><img alt="Sonya" border="1" height="75" src="../mkt/bio_sonya.jpg" title="Sonya" width="61"></a><a href="#jax"><img alt="Jax" border="1" height="75" src="../mkt/bio_jax.jpg" title="Jax" width="61"></a><a href="#nightwolf"><img alt="Nightwolf" border="1" height="75" src="../mkt/bio_nightwolf.jpg" title="Nightwolf" width="61"></a><a href="#jade"><img alt="Jade" border="1" height="75" src="../mkt/bio_jade.jpg" title="Jade" width="61"></a><a href="#scorpion"><img alt="Scorpion" border="1" height="75" src="../mkt/bio_scorpion.jpg" title="Scorpion" width="61"></a><br>
-<a href="#kano">
-<img alt="Kano" border="1" height="75" src="../mkt/bio_kano.jpg" title="Kano" width="61"></a><a href="#mileena"><img alt="?" border="1" height="75" src="../mkt/question_mark.jpg" title="?" width="61"></a><a href="#ermac"><img alt="?" border="1" height="75" src="../mkt/question_mark.jpg" title="?" width="61"></a><a href="#classicsz"><img alt="?" border="1" height="75" src="../mkt/question_mark.jpg" title="?" width="61"></a><a href="#sub"><img alt="Sub-Zero (Unmasked)" border="1" height="75" src="../mkt/bio_subzero_unmasked.jpg" title="Sub-Zero (Unmasked)" width="61"></a><br>
-<a href="#sektor">
-<img alt="Sektor" border="1" height="75" src="../mkt/bio_sektor.jpg" title="Sektor" width="61"></a><a href="#sindel"><img alt="Sindel" border="1" height="75" src="../mkt/bio_sindel.jpg" title="Sindel" width="61"></a><a href="#stryker"><img alt="Stryker" border="1" height="75" src="../mkt/bio_stryker.jpg" title="Stryker" width="61"></a><a href="#cyrax"><img alt="Cyrax" border="1" height="75" src="../mkt/bio_cyrax.jpg" title="Cyrax" width="61"></a><a href="#kung"><img alt="Kung Lao" border="1" height="75" src="../mkt/bio_kung.jpg" title="Kung Lao" width="61"></a><br>
-<a href="#kabal">
-<img alt="Kabal" border="1" height="75" src="../mkt/bio_kabal.jpg" title="Kabal" width="61"></a><a href="#sheeva"><img alt="Sheeva" border="1" height="75" src="../mkt/bio_sheeva.jpg" title="Sheeva" width="61"></a><a href="#shang"><img alt="Shang Tsung" border="1" height="75" src="../mkt/bio_shang.jpg" title="Shang Tsung" width="61"></a><a href="#liu"><img alt="Liu Kang" border="1" height="75" src="../mkt/bio_liu.jpg" title="Liu Kang" width="61"></a><a href="#smoke"><img alt="Smoke (Cyborg)" border="1" height="75" src="../mkt/bio_smoke_cyborg.jpg" title="Smoke (Cyborg)" width="61"></a><hr class="sub">
+<div class="character-select">
+	<a href="#kitana">
+	<img alt="Kitana" border="1" height="75" src="../mkt/bio_kitana.jpg" title="Kitana" width="61"></a><a href="#reptile"><img alt="Reptile" border="1" height="75" src="../mkt/bio_reptile.jpg" title="Reptile" width="61"></a><a href="#sonya"><img alt="Sonya" border="1" height="75" src="../mkt/bio_sonya.jpg" title="Sonya" width="61"></a><a href="#jax"><img alt="Jax" border="1" height="75" src="../mkt/bio_jax.jpg" title="Jax" width="61"></a><a href="#nightwolf"><img alt="Nightwolf" border="1" height="75" src="../mkt/bio_nightwolf.jpg" title="Nightwolf" width="61"></a><a href="#jade"><img alt="Jade" border="1" height="75" src="../mkt/bio_jade.jpg" title="Jade" width="61"></a><a href="#scorpion"><img alt="Scorpion" border="1" height="75" src="../mkt/bio_scorpion.jpg" title="Scorpion" width="61"></a><br>
+	<a href="#kano">
+	<img alt="Kano" border="1" height="75" src="../mkt/bio_kano.jpg" title="Kano" width="61"></a><a href="#mileena"><img alt="?" border="1" height="75" src="../mkt/question_mark.jpg" title="?" width="61"></a><a href="#ermac"><img alt="?" border="1" height="75" src="../mkt/question_mark.jpg" title="?" width="61"></a><a href="#classicsz"><img alt="?" border="1" height="75" src="../mkt/question_mark.jpg" title="?" width="61"></a><a href="#sub"><img alt="Sub-Zero (Unmasked)" border="1" height="75" src="../mkt/bio_subzero_unmasked.jpg" title="Sub-Zero (Unmasked)" width="61"></a><br>
+	<a href="#sektor">
+	<img alt="Sektor" border="1" height="75" src="../mkt/bio_sektor.jpg" title="Sektor" width="61"></a><a href="#sindel"><img alt="Sindel" border="1" height="75" src="../mkt/bio_sindel.jpg" title="Sindel" width="61"></a><a href="#stryker"><img alt="Stryker" border="1" height="75" src="../mkt/bio_stryker.jpg" title="Stryker" width="61"></a><a href="#cyrax"><img alt="Cyrax" border="1" height="75" src="../mkt/bio_cyrax.jpg" title="Cyrax" width="61"></a><a href="#kung"><img alt="Kung Lao" border="1" height="75" src="../mkt/bio_kung.jpg" title="Kung Lao" width="61"></a><br>
+	<a href="#kabal">
+	<img alt="Kabal" border="1" height="75" src="../mkt/bio_kabal.jpg" title="Kabal" width="61"></a><a href="#sheeva"><img alt="Sheeva" border="1" height="75" src="../mkt/bio_sheeva.jpg" title="Sheeva" width="61"></a><a href="#shang"><img alt="Shang Tsung" border="1" height="75" src="../mkt/bio_shang.jpg" title="Shang Tsung" width="61"></a><a href="#liu"><img alt="Liu Kang" border="1" height="75" src="../mkt/bio_liu.jpg" title="Liu Kang" width="61"></a><a href="#smoke"><img alt="Smoke (Cyborg)" border="1" height="75" src="../mkt/bio_smoke_cyborg.jpg" title="Smoke (Cyborg)" width="61"></a><hr class="sub">
 
-<a href="#mileena">
-<img alt="Mileena" border="1" height="75" src="../mkt/bio_mileena.jpg" title="Mileena" width="61"></a><a href="#ermac"><img alt="Ermac" border="1" height="75" src="../mkt/bio_ermac.jpg" title="Ermac" width="61"></a><a href="#classicsz"><img alt="Sub-Zero (Classic)" border="1" height="75" src="../mkt/bio_subzero_classic.jpg" title="Sub-Zero (Classic)" width="61"></a><br>
-<a href="#NinjaSmoke">
-<img alt="Smoke (Human)" border="1" height="75" src="../mkt/bio_smoke_human.jpg" title="Smoke (Human)" width="61"></a><a href="#noob"><img alt="Noob Saibot" border="1" height="75" src="../mkt/bio_noob.jpg" title="Noob Saibot" width="61"></a><br>
-<a href="#unlocking">How To Unlock</a><hr class="sub">
+	<a href="#mileena">
+	<img alt="Mileena" border="1" height="75" src="../mkt/bio_mileena.jpg" title="Mileena" width="61"></a><a href="#ermac"><img alt="Ermac" border="1" height="75" src="../mkt/bio_ermac.jpg" title="Ermac" width="61"></a><a href="#classicsz"><img alt="Sub-Zero (Classic)" border="1" height="75" src="../mkt/bio_subzero_classic.jpg" title="Sub-Zero (Classic)" width="61"></a><br>
+	<a href="#NinjaSmoke">
+	<img alt="Smoke (Human)" border="1" height="75" src="../mkt/bio_smoke_human.jpg" title="Smoke (Human)" width="61"></a><a href="#noob"><img alt="Noob Saibot" border="1" height="75" src="../mkt/bio_noob.jpg" title="Noob Saibot" width="61"></a><br>
+	<a href="#unlocking">How To Unlock</a><hr class="sub">
 
-<a href="#motaro">
-<img alt="Motaro" border="1" height="75" src="../mkt/bio_motaro.jpg" title="Motaro" width="61"></a><a href="#shao"><img alt="Shao Kahn" border="1" height="75" src="../mkt/bio_shao.jpg" title="Shao Kahn" width="61"></a></center>
+	<a href="#motaro">
+	<img alt="Motaro" border="1" height="75" src="../mkt/bio_motaro.jpg" title="Motaro" width="61"></a><a href="#shao"><img alt="Shao Kahn" border="1" height="75" src="../mkt/bio_shao.jpg" title="Shao Kahn" width="61"></a></div>
+</center>
 <hr class="main">
 
 <b>Key:</b><br>
@@ -93,7 +54,7 @@ Move List/Bios - Nintendo DS (Universal)<br>
 <img alt="B" border="0" height="20" src="../images/dir_b.png" title="Back" width="20"> 
 = Back/Away<hr class="sub">
 
-<table id="AutoNumber1" border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="border-collapse: collapse" width="300">
+<table id="AutoNumber1" border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="border-collapse: collapse" width="700">
 	<tr>
 		<td align="left" valign="top" width="175"><b>Universal:</b><br>
 		<img alt="[HP]" border="0" height="20" src="../images/btn_hp.png" title="High Punch" width="20"> 
