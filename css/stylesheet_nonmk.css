@@ -89,3 +89,27 @@ hr.sub {
 	text-align: center; /* Center the content inside the container */;
 	margin: 0 auto; /* Center the logo */
 }
+/* Character Select */
+.character-select a {
+	display: inline-block; /* Ensure links are inline */;
+	margin: 0px; /* Space between images */
+}
+.character-select img {
+	width: 75px; /* Default size for larger screens */;
+	height: auto; /* Maintain aspect ratio */;
+	border: 1px solid #808080;
+/* Optional: Add a border */border-radius: 0px;
+/* Optional: Rounded corners */transition: transform 0.2s; /* Add a hover effect */
+}
+.character-select img:hover {
+	transform: scale(1.05); /* Scale image on hover */
+}
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+.character-select a {
+	margin: 2px; /* Reduce space for compactness */
+}
+.character-select img {
+	width: 50px; /* Smaller size on mobile */
+}
+}
