@@ -5,56 +5,12 @@
 <meta content="en-us" http-equiv="Content-Language">
 <meta content="Microsoft FrontPage 12.0" name="GENERATOR">
 <meta content="FrontPage.Editor.Document" name="ProgId">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <noscript>
 <body>
 
-
    </noscript>
-<script language="JavaScript" type="text/javascript">
-      <!--
-      
-      //Disable right mouse click Script
-      //By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
-      //For full source code, visit http://www.dynamicdrive.com
-      
-      var message="Function Disabled!";
-      
-      ///////////////////////////////////
-      function clickIE4(){
-      if (event.button==2){
-      alert(message);
-      return false;
-      }
-      }
-      
-      function clickNS4(e){
-      if (document.layers||document.getElementById&&!document.all){
-      if (e.which==2||e.which==3){
-      alert(message);
-      return false;
-      }
-      }
-      }
-      
-      if (document.layers){
-      document.captureEvents(Event.MOUSEDOWN);
-      document.onmousedown=clickNS4;
-      }
-      else if (document.all&&!document.getElementById){
-      document.onmousedown=clickIE4;
-      }
-      
-      document.oncontextmenu=new Function("alert(message);return false")
-      
-      // --> 
-       
-   </script>
-<script language="JavaScript" type="text/javascript">
-      function toggle_it(itemID)
-      {if ((document.getElementById(itemID).style.display == 'none'))
-      {document.getElementById(itemID).style.display = 'inline';}
-      else {document.getElementById(itemID).style.display = 'none';}}
-   </script>
+<script src="../css/disable-right-click.js" type="text/javascript"></script>
 <title>MKKomplete - Mortal Kombat 1 (2023) - Basic Moves and Combos - PlayStation 5
 </title>
 <link href="../css/stylesheet_nonmk.css" rel="stylesheet" type="text/css">
@@ -63,44 +19,46 @@
 <body alink="#333333" bgcolor="#000000" link="#808080" text="#666666" vlink="#808080">
 
 <a name="top"></a><a href="../menu.htm#mk12">Choose Your Game</a> <center>
-<img alt="Mortal Kombat 1 (2023)" border="0" height="143" src="logo_mk1.webp" title="Mortal Kombat 1 (2023)" width="500">
+<img alt="Mortal Kombat 1 (2023)" border="0" class="logo" height="143" src="logo_mk1.webp" title="Mortal Kombat 1 (2023)" width="500">
 <br>
-Basic Moves &amp; Combos - PlayStation 5 <hr color="#333333">
+Basic Moves &amp; Combos - PlayStation 5 <hr class="main">
 
 Selectable Characters:<br>
-<a href="#Kitana">
-<img alt="Kitana" border="1" height="55" src="bio_kitana.jpg" title="Kitana" width="55"></a><a href="#Mileena"><img alt="Mileena" border="1" height="55" src="bio_mileena.jpg" title="Mileena" width="55"></a><a href="#Tanya"><img alt="Tanya" border="1" height="55" src="bio_tanya.jpg" title="Tanya" width="55"></a><a href="#Rain"><img alt="Rain" border="1" height="55" src="bio_rain.jpg" title="Rain" width="55"></a><a href="#Smoke"><img alt="Smoke" border="1" height="55" src="bio_smoke.jpg" title="Smoke" width="55"></a><a href="#Scorpion"><img alt="Scorpion" border="1" height="55" src="bio_scorpion.jpg" title="Scorpion" width="55"></a><a href="#Sub-Zero"><img alt="Sub-Zero" border="1" height="55" src="bio_subzero.jpg" title="Sub-Zero" width="55"></a><a href="#Reptile"><img alt="Reptile" border="1" height="55" src="bio_reptile.jpg" title="Reptile" width="55"></a><a href="#Li Mei"><img alt="Li Mei" border="1" height="55" src="bio_limei.jpg" title="Li Mei" width="55"></a><a href="#Kenshi"><img alt="Kenshi Takahashi" border="1" height="55" src="bio_kenshi.jpg" title="Kenshi Takahashi" width="55"></a><a href="#Baraka"><img alt="Baraka" border="1" height="55" src="bio_baraka.jpg" title="Baraka" width="55"></a><a href="#Geras"><img alt="Geras" border="1" height="55" src="bio_geras.jpg" title="Geras" width="55"></a><br>
-<a href="#Shang Tsung">
-<img alt="Shang Tsung" border="1" height="55" src="bio_shangtsung.jpg" title="Shang Tsung" width="55"></a><a href="#General Shao"><img alt="General Shao" border="1" height="55" src="bio_generalshao.jpg" title="General Shao" width="55"></a><a href="#Sindel"><img alt="Sindel" border="1" height="55" src="bio_sindel.jpg" title="Sindel" width="55"></a><a href="#Reiko"><img alt="Reiko" border="1" height="55" src="bio_reiko.jpg" title="Reiko" width="55"></a><a href="#Raiden"><img alt="Raiden" border="1" height="55" src="bio_raiden.jpg" title="Raiden" width="55"></a><a href="#Liu Kang"><img alt="Liu Kang" border="1" height="55" src="bio_liukang.jpg" title="Liu Kang" width="55"></a><a href="#Johnny Cage"><img alt="Johnny Cage" border="1" height="55" src="bio_johnnycage.jpg" title="Johnny Cage" width="55"></a><a href="#Kung Lao"><img alt="Kung Lao" border="1" height="55" src="bio_kunglao.jpg" title="Kung Lao" width="55"></a><a href="#Ashrah"><img alt="Ashrah" border="1" height="55" src="bio_ashrah.jpg" title="Ashrah" width="55"></a><a href="#Nitara"><img alt="Nitara" border="1" height="55" src="bio_nitara.jpg" title="Nitara" width="55"></a><a href="#Havik"><img alt="Havik" border="1" height="55" src="bio_havik.jpg" title="Havik" width="55"></a><a href="#Unannounced"><img alt="Who's Next?" border="1" height="55" src="bio_dragon2.jpg" title="Who's Next?" width="55"></a><br>
-<hr color="#1A1A1A">
+<div class="character-select">
+	<a href="#Kitana">
+	<img alt="Kitana" border="1" height="55" src="bio_kitana.jpg" title="Kitana" width="55"></a><a href="#Mileena"><img alt="Mileena" border="1" height="55" src="bio_mileena.jpg" title="Mileena" width="55"></a><a href="#Tanya"><img alt="Tanya" border="1" height="55" src="bio_tanya.jpg" title="Tanya" width="55"></a><a href="#Rain"><img alt="Rain" border="1" height="55" src="bio_rain.jpg" title="Rain" width="55"></a><a href="#Smoke"><img alt="Smoke" border="1" height="55" src="bio_smoke.jpg" title="Smoke" width="55"></a><a href="#Scorpion"><img alt="Scorpion" border="1" height="55" src="bio_scorpion.jpg" title="Scorpion" width="55"></a><a href="#Sub-Zero"><img alt="Sub-Zero" border="1" height="55" src="bio_subzero.jpg" title="Sub-Zero" width="55"></a><a href="#Reptile"><img alt="Reptile" border="1" height="55" src="bio_reptile.jpg" title="Reptile" width="55"></a><a href="#Li Mei"><img alt="Li Mei" border="1" height="55" src="bio_limei.jpg" title="Li Mei" width="55"></a><a href="#Kenshi"><img alt="Kenshi Takahashi" border="1" height="55" src="bio_kenshi.jpg" title="Kenshi Takahashi" width="55"></a><a href="#Baraka"><img alt="Baraka" border="1" height="55" src="bio_baraka.jpg" title="Baraka" width="55"></a><a href="#Geras"><img alt="Geras" border="1" height="55" src="bio_geras.jpg" title="Geras" width="55"></a><br>
+	<a href="#Shang Tsung">
+	<img alt="Shang Tsung" border="1" height="55" src="bio_shangtsung.jpg" title="Shang Tsung" width="55"></a><a href="#General Shao"><img alt="General Shao" border="1" height="55" src="bio_generalshao.jpg" title="General Shao" width="55"></a><a href="#Sindel"><img alt="Sindel" border="1" height="55" src="bio_sindel.jpg" title="Sindel" width="55"></a><a href="#Reiko"><img alt="Reiko" border="1" height="55" src="bio_reiko.jpg" title="Reiko" width="55"></a><a href="#Raiden"><img alt="Raiden" border="1" height="55" src="bio_raiden.jpg" title="Raiden" width="55"></a><a href="#Liu Kang"><img alt="Liu Kang" border="1" height="55" src="bio_liukang.jpg" title="Liu Kang" width="55"></a><a href="#Johnny Cage"><img alt="Johnny Cage" border="1" height="55" src="bio_johnnycage.jpg" title="Johnny Cage" width="55"></a><a href="#Kung Lao"><img alt="Kung Lao" border="1" height="55" src="bio_kunglao.jpg" title="Kung Lao" width="55"></a><a href="#Ashrah"><img alt="Ashrah" border="1" height="55" src="bio_ashrah.jpg" title="Ashrah" width="55"></a><a href="#Nitara"><img alt="Nitara" border="1" height="55" src="bio_nitara.jpg" title="Nitara" width="55"></a><a href="#Havik"><img alt="Havik" border="1" height="55" src="bio_havik.jpg" title="Havik" width="55"></a><a href="#Unannounced"><img alt="Who's Next?" border="1" height="55" src="bio_dragon2.jpg" title="Who's Next?" width="55"></a><br>
+	<hr class="sub">
 
-Kombat Pack 1 DLC Characters:<br>
-<a href="#Omni-Man">
-<img alt="Omni-Man" border="1" height="55" src="bio_omniman.jpg" title="Omni-Man" width="55"></a><a href="#Quan Chi"><img alt="Quan Chi" border="1" height="55" src="bio_quanchi.jpg" title="Quan Chi" width="55"></a><a href="#Peacemaker"><img alt="Peacemaker" border="1" height="55" src="bio_peacemaker.jpg" title="Peacemaker" width="55"></a><a href="#Ermac"><img alt="Ermac" border="1" height="55" src="bio_ermac.jpg" title="Ermac" width="55"></a><a href="#Homelander"><img alt="Homelander" border="1" height="55" src="bio_homelander.jpg" title="Homelander" width="55"></a><a href="#Takeda"><img alt="Takeda Takahashi" border="1" height="55" src="bio_takeda.jpg" title="Takeda Takahashi" width="55"></a>
-<hr color="#1A1A1A">
+	Kombat Pack 1 DLC Characters:<br>
+	<a href="#Omni-Man">
+	<img alt="Omni-Man" border="1" height="55" src="bio_omniman.jpg" title="Omni-Man" width="55"></a><a href="#Quan Chi"><img alt="Quan Chi" border="1" height="55" src="bio_quanchi.jpg" title="Quan Chi" width="55"></a><a href="#Peacemaker"><img alt="Peacemaker" border="1" height="55" src="bio_peacemaker.jpg" title="Peacemaker" width="55"></a><a href="#Ermac"><img alt="Ermac" border="1" height="55" src="bio_ermac.jpg" title="Ermac" width="55"></a><a href="#Homelander"><img alt="Homelander" border="1" height="55" src="bio_homelander.jpg" title="Homelander" width="55"></a><a href="#Takeda"><img alt="Takeda Takahashi" border="1" height="55" src="bio_takeda.jpg" title="Takeda Takahashi" width="55"></a>
+	<hr class="sub">
 
-Kombat Pack 2 DLC Characters:<br>
-<a href="#KP2_Cyrax">
-<img alt="Tampax" border="1" height="55" src="bio_kp2_cyrax.jpg" title="Tampax" width="55"></a><a href="#KP2_Noob Saibot"><img alt="Noob Saibot" border="1" height="55" src="bio_kp2_noobsaibot.jpg" title="Noob Saibot" width="55"></a><a href="#KP2_Sektor"><img alt="Sucktor" border="1" height="55" src="bio_kp2_sektor.jpg" title="Sucktor" width="55"></a><a href="#KP2_Conan"><img alt="Conan The Barbarian" border="1" height="55" src="bio_kp2_conan.jpg" title="Conan The Barbarian" width="55"></a><a href="#KP2_Ghostface"><img alt="Ghostface" border="1" height="55" src="bio_kp2_ghostface.jpg" title="Ghostface" width="55"></a><a href="#KP2_T1000"><img alt="T-1000" border="1" height="55" src="bio_kp2_t1000.jpg" title="T-1000" width="55"></a><hr color="#333333">
+	Kombat Pack 2 DLC Characters:<br>
+	<a href="#KP2_Cyrax">
+	<img alt="Tampax" border="1" height="55" src="bio_kp2_cyrax.jpg" title="Tampax" width="55"></a><a href="#KP2_Noob Saibot"><img alt="Noob Saibot" border="1" height="55" src="bio_kp2_noobsaibot.jpg" title="Noob Saibot" width="55"></a><a href="#KP2_Sektor"><img alt="Sucktor" border="1" height="55" src="bio_kp2_sektor.jpg" title="Sucktor" width="55"></a><a href="#KP2_Conan"><img alt="Conan The Barbarian" border="1" height="55" src="bio_kp2_conan.jpg" title="Conan The Barbarian" width="55"></a><a href="#KP2_Ghostface"><img alt="Ghostface" border="1" height="55" src="bio_kp2_ghostface.jpg" title="Ghostface" width="55"></a><a href="#KP2_T1000"><img alt="T-1000" border="1" height="55" src="bio_kp2_t1000.jpg" title="T-1000" width="55"></a><hr class="main">
 
+</div>
 </center>
 <center><a href="http://www.mortalkombat.com/" target="_blank">MortalKombat.com</a> 
-/ <a href="http://www.netherrealm.com/" target="_blank">NetherRealm Studios</a><hr color="#333333">
+/ <a href="http://www.netherrealm.com/" target="_blank">NetherRealm Studios</a><hr class="main">
 
 You can e-mail corrections/additions to
 <a href="mailto:trav.lane84@gmail.com?subject=MKKomplete - Mortal Kombat 1 (2023) - Basic Moves &amp; Combos - PlayStation 5">
 The Webmaster</a><br>
-Last updated: 09/24/24<hr color="#1A1A1A">
+Last updated: 09/24/24<hr class="sub">
 
 <b>Note:</b> All commands are assuming your character is facing right.<br>
 If you are facing left, you must reverse the directional commands.<br>
-Backwards becoming Forwards and Vice Versa.<hr color="#1A1A1A">
+Backwards becoming Forwards and Vice Versa.<hr class="sub">
 
 It's recommended that your controls match the default setting.</center>
-<hr color="#333333">
+<hr class="main">
 
 <u><b>Key:</b></u>
-<table id="AutoNumber3" border="0" bordercolor="#111111" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="350">
+<table id="AutoNumber3" border="0" bordercolor="#111111" cellpadding="0" cellspacing="0" class="responsive-table" style="border-collapse: collapse" width="350">
 	<tr>
 		<td align="left" valign="top" width="175">U = Up/Jump<br>
 		D = Down/Crouch<br>
@@ -113,9 +71,9 @@ It's recommended that your controls match the default setting.</center>
 		Pause/Move List = <b>START</b></td>
 	</tr>
 </table>
-<hr color="#1A1A1A">
+<hr class="sub">
 
-<table id="AutoNumber5" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="500">
+<table id="AutoNumber5" border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="border-collapse: collapse" width="500">
 	<tr>
 		<td valign="top" width="250"><u><b>Universal:</b></u><br>
 		<b>FP</b> = Front Punch<br>
@@ -147,16 +105,16 @@ It's recommended that your controls match the default setting.</center>
 </table>
 <br>
 &nbsp;&nbsp;&nbsp;*Throw (Away) Switches the character's facing side, while (Toward) 
-maintains it.<hr color="#333333">
+maintains it.<hr class="main">
 
-? <hr color="#333333">
+? <hr class="main">
 
 <center><b>Selectable Characters:</b></center>
-<hr color="#333333">
+<hr class="main">
 
 <a href="#top" name="Ashrah">
 <img alt="Ashrah" border="1" height="80" src="bio_ashrah.jpg" title="Ashrah" width="80"></a>
-<b>Ashrah</b><hr color="#1A1A1A">
+<b>Ashrah</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Heaven's Palm: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -172,7 +130,7 @@ Quick Poke: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Heavenly Heel: <font color="#ff0000"><b>O</b></font><br>
 Toe Tap: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Crushing Knee: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Heavy Heel: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Heavy Heel: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Final Blessing: <font color="#ff66cc"><b>&#9633;</b></font>,
@@ -194,12 +152,12 @@ Heaven's Light: (B+<font color="#00ccff"><b>X</b></font>), <font color="#ff66cc"
 Crown Cracker: (F+<font color="#ff0000"><b>O</b></font>), <font color="#00cc66">
 <b>&#916;</b></font> [30]<br>
 God's Will: (F+<font color="#ff0000"><b>O</b></font>), <font color="#00cc66"><b>&#916;</b></font>,
-<font color="#00ccff"><b>X</b></font> [70]<hr color="#1A1A1A">
+<font color="#00ccff"><b>X</b></font> [70]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Helping Hand: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Quick Cut: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Leaping Light: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Leaping Light: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Soul Punch: UF+<font color="#ff66cc"><b>&#9633;</b></font>,
@@ -213,21 +171,21 @@ Bladed Flurry: UF+<font color="#00cc66"><b>&#916;</b></font>,
 <font color="#00cc66"><b>&#916;</b></font> [28.50]<br>
 Blessed Boot: UF+<font color="#00cc66"><b>&#916;</b></font>,
 <font color="#00cc66"><b>&#916;</b></font>, <font color="#00ccff"><b>X</b></font> 
-[90]<hr color="#1A1A1A">
+[90]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Demon Dance: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Demon Dance: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Baraka">
 <img alt="Baraka" border="1" height="80" src="bio_baraka.jpg" title="Baraka" width="80"></a>
-<b>Baraka</b><hr color="#1A1A1A">
+<b>Baraka</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Jawripper: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -243,7 +201,7 @@ Knee Breaker: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Quick Shave: <font color="#ff0000"><b>O</b></font><br>
 Cut Down: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Muay Kry: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Klean Kuts: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Klean Kuts: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Gutwrencher: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66">
@@ -269,12 +227,12 @@ Slaughter House: <font color="#ff0000"><b>O</b></font>, <font color="#ff0000">
 <b>O</b></font>, <font color="#ff0000"><b>O</b></font>, <font color="#ff0000">
 <b>O</b></font> [N/A]<br>
 Shove Off: (F+<font color="#ff0000"><b>O</b></font>), <font color="#ff0000"><b>O</b></font> 
-[70]<hr color="#1A1A1A">
+[70]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Quick Palm: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Bird Slayer: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Karnivorous Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Karnivorous Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Set: UF+<font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
@@ -284,21 +242,21 @@ Spike: UF+<font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>
 Hellish Heel: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
 <font color="#ff0000"><b>O</b></font> [70]<br>
 Star Kicker: (UF+<font color="#00cc66"><b>&#916;</b></font>),
-<font color="#ff0000"><b>O</b></font> [81]<hr color="#1A1A1A">
+<font color="#ff0000"><b>O</b></font> [81]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Quick Taste: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Quick Taste: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="General Shao">
 <img alt="General Shao" border="1" height="80" src="bio_generalshao.jpg" title="General Shao" width="80"></a>
-<b>General Shao</b><hr color="#1A1A1A">
+<b>General Shao</b><hr class="sub">
 
 <u><b>Basic Attacks - With Axe:</b></u><br>
 Mighty Hook: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -315,7 +273,7 @@ Hamstring: (D+<font color="#00ccff"><b>X</b></font>)<br>
 You Suck: <font color="#ff0000"><b>O</b></font><br>
 Timbeeeeer!: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Battering Ram: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Ankle Slicing: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Ankle Slicing: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Basic Attacks - Without Axe:</b></u><br>
 Mighty Hook: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -328,7 +286,7 @@ Beneath Me: (B+<font color="#00ccff"><b>X</b></font>)<br>
 General Shao's Kickin': (B+<font color="#ff0000"><b>O</b></font>)<br>
 Battering Ram: (F+<font color="#ff0000"><b>O</b></font>)<br>
 Odd Kick: (D+<font color="#ff0000"><b>O</b></font>)<br>
-<hr color="#1A1A1A">
+<hr class="sub">
 
 <u><b>Kombos - With Axe:</b></u><br>
 Fury Strikes: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66">
@@ -350,7 +308,7 @@ You're Weak: (F+<font color="#00cc66"><b>&#916;</b></font>),
 Divide And Konquer: (B+<font color="#00ccff"><b>X</b></font>),
 <font color="#808080"><b>L1</b></font> [3]<br>
 Widow Breaker: (B+<font color="#00ccff"><b>X</b></font>), <font color="#00cc66">
-<b>&#916;</b></font> [5]<hr color="#1A1A1A">
+<b>&#916;</b></font> [5]<hr class="sub">
 
 <u><b>Kombos - Without Axe:</b></u><br>
 Hammerfist: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66">
@@ -360,16 +318,16 @@ Savage Strikes: <font color="#00cc66"><b>&#916;</b></font>,
 Run Over: <font color="#00cc66"><b>&#916;</b></font>, <font color="#00cc66"><b>&#916;</b></font>,
 <font color="#ff0000"><b>O</b></font> [7]<br>
 Haymaker: (B+<font color="#00ccff"><b>X</b></font>), <font color="#00cc66"><b>&#916;</b></font> 
-[5] <hr color="#1A1A1A">
+[5] <hr class="sub">
 
 <u><b>Basic Aerial Attacks - With Axe:</b></u><br>
 Strong Axe: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Superiority Complex: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Kombat Maneuver: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Kombat Maneuver: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Basic Aerial Attacks - Without Axe:</b></u><br>
 Strong Arm: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
-Stiffed: (UF+<font color="#00cc66"><b>&#916;</b></font>)<hr color="#1A1A1A">
+Stiffed: (UF+<font color="#00cc66"><b>&#916;</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos - With Axe:</b></u><br>
 Bending Slash: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -379,7 +337,7 @@ Clamping Down: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
 [7]<br>
 Timber?: (UF+<font color="#00cc66"><b>&#916;</b></font>), <font color="#00cc66">
 <b>&#916;</b></font> [9]<br>
-<hr color="#1A1A1A">
+<hr class="sub">
 
 <u><b>Aerial Kombos - Without Axe:</b></u><br>
 Bending Slap: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -388,21 +346,21 @@ Superiority Komplex: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
 <font color="#00cc66"><b>&#916;</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
 [7]<br>
 Kombat Technique: (UF+<font color="#00cc66"><b>&#916;</b></font>),
-<font color="#00cc66"><b>&#916;</b></font> [9]<hr color="#1A1A1A">
+<font color="#00cc66"><b>&#916;</b></font> [9]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Might Makes Right: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Might Makes Right: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Geras">
 <img alt="Geras" border="1" height="80" src="bio_geras.jpg" title="Geras" width="80"></a>
-<b>Geras</b><hr color="#1A1A1A">
+<b>Geras</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Little Hand: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -418,7 +376,7 @@ Quick Sand: (D+<font color="#00ccff"><b>X</b></font>)<br>
 For The Timeline: <font color="#ff0000"><b>O</b></font><br>
 Timefall: (B+<font color="#ff0000"><b>O</b></font>)<br>
 The Hammer: (F+<font color="#ff0000"><b>O</b></font>)<br>
-In The Gears: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+In The Gears: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Clogged Up: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66">
@@ -446,12 +404,12 @@ Stopping Time: (F+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#ff0000"><b>O</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
 [50]<br>
 For The Fire God: (F+<font color="#ff0000"><b>O</b></font>),
-<font color="#ff0000"><b>O</b></font> [77.5]<hr color="#1A1A1A">
+<font color="#ff0000"><b>O</b></font> [77.5]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Running Out: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Time's Up: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Kicking Up Dust: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Kicking Up Dust: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Smash: (UF+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00cc66">
@@ -469,21 +427,21 @@ Atomic Driver: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 [50]<br>
 In The Stone Age: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#ff66cc"><b>&#9633;</b></font>, (B+<font color="#808080"><b>L1</b></font>) 
-[50]<hr color="#1A1A1A">
+[50]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Outside Help: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Outside Help: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Havik">
 <img alt="Havik" border="1" height="80" src="bio_havik.jpg" title="Havik" width="80"></a>
-<b>Havik</b><hr color="#1A1A1A">
+<b>Havik</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Heavy Hook: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -497,7 +455,7 @@ Knee Breaker: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Chaos Kick: <font color="#ff0000"><b>O</b></font><br>
 Hyperextended: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Sinister Stomp: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Corpse Dropkick: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Corpse Dropkick: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Cleric of Chaos: <font color="#ff66cc"><b>&#9633;</b></font>,
@@ -523,12 +481,12 @@ Destroying Balance: (B+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff0000"><b>O</b></font> 
 [70]<br>
 No Order: (F+<font color="#ff0000"><b>O</b></font>), <font color="#00ccff"><b>X</b></font> 
-[70]<hr color="#1A1A1A">
+[70]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Harmful Hook: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Snapped: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Diving Corpse: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Diving Corpse: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Beaten And Broken: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -539,21 +497,21 @@ Blissful Chaos: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
 Self Inflicted: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#ff66cc"><b>&#9633;</b></font> [27]<br>
 Critical Strike: (UF+<font color="#00cc66"><b>&#916;</b></font>),
-<font color="#ff0000"><b>O</b></font> [81]<hr color="#1A1A1A">
+<font color="#ff0000"><b>O</b></font> [81]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Self-Destructive Barrage: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Self-Destructive Barrage: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Johnny Cage">
 <img alt="Johnny Cage" border="1" height="80" src="bio_johnnycage.jpg" title="Johnny Cage" width="80"></a>
-<b>Johnny Cage</b><hr color="#1A1A1A">
+<b>Johnny Cage</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Plot Fist: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -570,7 +528,7 @@ Ankle of the Covenant: (D+<font color="#00ccff"><b>X</b></font>)<br>
 John Kick: <font color="#ff0000"><b>O</b></font><br>
 Sweep The Leg: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Flipper: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Donkey Kick: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Donkey Kick: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Rough House: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#ff66cc">
@@ -609,12 +567,12 @@ On The Chin: (F+<font color="#00ccff"><b>X</b></font>), <font color="#00cc66">
 Style Points: (F+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000">
 <b>O</b></font> [70]<br>
 Cagenado: <font color="#ff0000"><b>O</b></font>, <font color="#ff0000"><b>O</b></font> 
-(70) <hr color="#1A1A1A">
+(70) <hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Sky Die: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Face X: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Toe Tap: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Toe Tap: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Private Jet: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -625,23 +583,23 @@ Air Blood: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
 Air Goring: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#ff0000"><b>O</b></font> [28.5]<br>
 Star Wrecked: The Final Foottier: (UF+<font color="#00cc66"><b>&#916;</b></font>),
-<font color="#ff0000"><b>O</b></font>, <font color="#ff0000"><b>O</b></font> [70]<hr color="#1A1A1A">
+<font color="#ff0000"><b>O</b></font>, <font color="#ff0000"><b>O</b></font> [70]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
 Hands Off: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
 Wombo Kombo: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Hands Off: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Hands Off: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Kenshi">
 <img alt="Kenshi" border="1" height="80" src="bio_kenshi.jpg" title="Kenshi" width="80"></a>
-<b>Kenshi Takahashi</b><hr color="#1A1A1A">
+<b>Kenshi Takahashi</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Sheath Slap: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -654,7 +612,7 @@ High Kick: <font color="#00ccff"><b>X</b></font><br>
 Sneaky Sneaker: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Face Breaker: <font color="#ff0000"><b>O</b></font><br>
 Achilles Cutter: (B+<font color="#ff0000"><b>O</b></font>)<br>
-Sweeping Heel: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Sweeping Heel: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Basic Attacks - Sento Stance:</b></u><br>
 Disable Spirit Action (While Held): (Hold RB)<br>
@@ -670,7 +628,7 @@ Gutted: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Chest Cracker: <font color="#ff0000"><b>O</b></font><br>
 Cut Down: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Double Tab: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Painful Poke: (D+<font color="#ff0000"><b>O</b></font>) <hr color="#1A1A1A">
+Painful Poke: (D+<font color="#ff0000"><b>O</b></font>) <hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 See No Evil: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#ff0000">
@@ -694,7 +652,7 @@ Deep Stab: (F+<font color="#00cc66"><b>&#916;</b></font>), <font color="#00cc66"
 <b>&#916;</b></font>, (D+<font color="#00cc66"><b>&#916;</b></font>) [50]<br>
 Heighten Senses: <font color="#ff0000"><b>O</b></font>, <font color="#ff0000">
 <b>O</b></font> [70]<br>
-<hr color="#1A1A1A">
+<hr class="sub">
 
 <u><b>Kombos - Sento Stance:</b></u><br>
 Off Balance: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66">
@@ -716,17 +674,17 @@ Down the Middle: <font color="#ff0000"><b>O</b></font>, <font color="#00cc66">
 <b>&#916;</b></font> [3]<br>
 Get Back: <font color="#ff0000"><b>O</b></font>, <font color="#00cc66"><b>&#916;</b></font>,
 <font color="#ff66cc"><b>&#9633;</b></font> [7]<br>
-<hr color="#1A1A1A">
+<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Quick Swipe: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Hilting Flower: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Flying Boot: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Flying Boot: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Basic Aerial Attacks - Sento Stance:</b></u><br>
 Quick Slice: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Upper Gash: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Foot Frenzy: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Foot Frenzy: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Bleeding: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -737,7 +695,7 @@ Spirit Spike: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
 Blooming Blade: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#00cc66"><b>&#916;</b></font> [27]<br>
 Booted: <font color="#00cc66"><b>&#916;</b></font>, <font color="#00cc66"><b>&#916;</b></font>,
-<font color="#ff0000"><b>O</b></font> (9.55%, A) <hr color="#1A1A1A">
+<font color="#ff0000"><b>O</b></font> (9.55%, A) <hr class="sub">
 
 <u><b>Aerial Kombos - Sento Stance:</b></u><br>
 Losing Blood: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -746,21 +704,21 @@ Deep Cuts: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
 <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
 [7]<br>
 Falling Appart: (UF+<font color="#00cc66"><b>&#916;</b></font>),
-<font color="#00ccff"><b>X</b></font>, <font color="#ff0000"><b>O</b></font> [7]<hr color="#1A1A1A">
+<font color="#00ccff"><b>X</b></font>, <font color="#ff0000"><b>O</b></font> [7]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Deep Tissue: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Deep Tissue: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Kitana">
 <img alt="Kitana" border="1" height="80" src="bio_kitana.jpg" title="Kitana" width="80"></a>
-<b>Kitana</b><hr color="#1A1A1A">
+<b>Kitana</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Side Slice: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -775,7 +733,7 @@ Knee Check: (B+<font color="#00ccff"><b>X</b></font>)<br>
 Siletto Strike: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Pretty Kick: <font color="#ff0000"><b>O</b></font><br>
 Sweeping Fan: (B+<font color="#ff0000"><b>O</b></font>)<br>
-Heel Spin: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Heel Spin: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Limitless: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#ff66cc">
@@ -806,12 +764,12 @@ Simple Kommand: (B+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000"
 Edenian Dance: <font color="#ff0000"><b>O</b></font>, (F+<font color="#00ccff"><b>X</b></font>),
 <font color="#00ccff"><b>X</b></font>, <font color="#00ccff"><b>X</b></font> [N/A]<br>
 Head Over Heels: <font color="#ff0000"><b>O</b></font>, (F+<font color="#00ccff"><b>X</b></font>),
-<font color="#00ccff"><b>X</b></font>, <font color="#ff0000"><b>O</b></font> [N/A]<hr color="#1A1A1A">
+<font color="#00ccff"><b>X</b></font>, <font color="#ff0000"><b>O</b></font> [N/A]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Straight Stab: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Fanning Out: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Toe Tap: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Toe Tap: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Quick Kut: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -822,21 +780,21 @@ Fan Slam: <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff66cc"><b>&
 [27]<br>
 Flipping Out: <font color="#00ccff"><b>X</b></font>, <font color="#ff0000"><b>O</b></font> 
 [76.08]<br>
-<hr color="#1A1A1A">
+<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Talk to the Fan: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Talk to the Fan: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Kung Lao">
 <img alt="Kung Lao" border="1" height="80" src="bio_kunglao.jpg" title="Kung Lao" width="80"></a>
-<b>Kung Lao</b><hr color="#1A1A1A">
+<b>Kung Lao</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Bruised Knuckles: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -853,7 +811,7 @@ Flick Kick: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Spinning Heel: <font color="#ff0000"><b>O</b></font><br>
 Shaolin Spin: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Monk Drop: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Step Kick: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Step Kick: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 No Silence: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66">
@@ -881,12 +839,12 @@ Leg Day: (F+<font color="#00ccff"><b>X</b></font>), <font color="#00ccff"><b>X</
 One More Time: (F+<font color="#00ccff"><b>X</b></font>), <font color="#00ccff">
 <b>X</b></font>, <font color="#00ccff"><b>X</b></font> [50]<br>
 Get Back: <font color="#ff0000"><b>O</b></font>, <font color="#ff0000"><b>O</b></font> 
-[70]<hr color="#1A1A1A">
+[70]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Calm Palm: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Bloody Brim: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Broken Toe: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Broken Toe: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Quick Fist: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -897,21 +855,21 @@ Hinge Kick: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
 Split Kick: (UF+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000">
 <b>O</b></font> [25.5]<br>
 Spinning Finish: (UF+<font color="#00ccff"><b>X</b></font>),
-<font color="#ff0000"><b>O</b></font>, <font color="#00ccff"><b>X</b></font> [90]<hr color="#1A1A1A">
+<font color="#ff0000"><b>O</b></font>, <font color="#00ccff"><b>X</b></font> [90]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Countless Blows: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Countless Blows: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Li Mei">
 <img alt="Li Mei" border="1" height="80" src="bio_limei.jpg" title="Li Mei" width="80"></a>
-<b>Li Mei</b><hr color="#1A1A1A">
+<b>Li Mei</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Warrior's Strike: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -927,7 +885,7 @@ Stiletto Stab: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Broken Pedicure: <font color="#ff0000"><b>O</b></font><br>
 Clean Sweep: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Sliding In: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Shin Breaker: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Shin Breaker: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Forces of Light: <font color="#ff66cc"><b>&#9633;</b></font>,
@@ -955,12 +913,12 @@ Kick Precision: (F+<font color="#ff0000"><b>O</b></font>), <font color="#00ccff"
 <b>X</b></font> [50]<br>
 Lion Tail: (F+<font color="#ff0000"><b>O</b></font>), <font color="#ff0000"><b>O</b></font> 
 [70]<br>
-<hr color="#1A1A1A">
+<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Palm Push: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Straight Punch: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Side Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Side Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Rebel: (UF+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00ccff">
@@ -974,21 +932,21 @@ Determination: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 [70]<br>
 Flying Flurry: (U+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font>,
-<font color="#ff66cc"><b>&#9633;</b></font> [20]<hr color="#1A1A1A">
+<font color="#ff66cc"><b>&#9633;</b></font> [20]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-The Lion's Appetizer: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+The Lion's Appetizer: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Liu Kang">
 <img alt="Liu Kang" border="1" height="80" src="bio_liukang.jpg" title="Liu Kang" width="80"></a>
-<b>Liu Kang</b><hr color="#1A1A1A">
+<b>Liu Kang</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Bare Knuckles: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -1002,7 +960,7 @@ Side Step: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Brain Buster: <font color="#ff0000"><b>O</b></font><br>
 Time Sweeper: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Double Strike: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Reverse Heel: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Reverse Heel: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Dragon Scales: <font color="#ff66cc"><b>&#9633;</b></font>,
@@ -1031,12 +989,12 @@ The Creator: (F+<font color="#ff0000"><b>O</b></font>), <font color="#00ccff">
 <b>X</b></font> [50]<br>
 Eternal Power: (F+<font color="#ff0000"><b>O</b></font>), <font color="#00ccff">
 <b>X</b></font>, <font color="#ff0000"><b>O</b></font> [70]<br>
-<hr color="#1A1A1A">
+<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Snap Back: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Heavy Hand: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Dragon Claw: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Dragon Claw: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Deep Impact: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -1048,21 +1006,21 @@ Unstoppable: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
 Ultimate Power: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#ff66cc"><b>&#9633;</b></font> [63]<br>
 New Future: (UF+<font color="#ff0000"><b>O</b></font>), <font color="#00ccff">
-<b>X</b></font>, <font color="#ff0000"><b>O</b></font> [70]<hr color="#1A1A1A">
+<b>X</b></font>, <font color="#ff0000"><b>O</b></font> [70]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Cosmic Death Sentence: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Cosmic Death Sentence: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Mileena">
 <img alt="Mileena" border="1" height="80" src="bio_mileena.jpg" title="Mileena" width="80"></a>
-<b>Mileena</b><hr color="#1A1A1A">
+<b>Mileena</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Just The Tip: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -1077,7 +1035,7 @@ Teasing Toe: (D+<font color="#00ccff"><b>X</b></font>)<br>
 High Heel: <font color="#ff0000"><b>O</b></font><br>
 Cartheel: (F+<font color="#ff0000"><b>O</b></font>)<br>
 Low Point: (D+<font color="#ff0000"><b>O</b></font>)<br>
-Slash Kick: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Slash Kick: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Ambitious Strikes: <font color="#ff66cc"><b>&#9633;</b></font>,
@@ -1105,12 +1063,12 @@ Twice Scorned: (F+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000">
 <b>O</b></font> [77.5]<br>
 Can't Fight It: (F+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000">
 <b>O</b></font>, <font color="#00ccff"><b>X</b></font> [70]<br>
-<hr color="#1A1A1A">
+<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 High Life: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Torn Limbs: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Graceful lKick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Graceful lKick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Royaltease: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -1122,21 +1080,21 @@ Battered Bones: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#00cc66"><b>&#916;</b></font> [70]<br>
 Kicked Out: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#00cc66"><b>&#916;</b></font>, <font color="#00ccff"><b>X</b></font> 
-[70]<hr color="#1A1A1A">
+[70]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Brainstorm: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Brainstorm: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Nitara">
 <img alt="Nitara" border="1" height="80" src="bio_nitara.jpg" title="Nitara" width="80"></a>
-<b>Nitara</b><hr color="#1A1A1A">
+<b>Nitara</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Dirty Claw: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -1150,7 +1108,7 @@ Stabbing Heel: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Bloodhouse: <font color="#ff0000"><b>O</b></font><br>
 Death Spiral: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Bleeding Out: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Deep Sweep: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Deep Sweep: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Never Grow Old: <font color="#ff66cc"><b>&#9633;</b></font>,
@@ -1171,12 +1129,12 @@ Drawing Blood: (B+<font color="#00cc66"><b>&#916;</b></font>),
 Hell Dive: <font color="#00ccff"><b>X</b></font>, <font color="#ff0000"><b>O</b></font> 
 [70]<br>
 Tenderize: (F+<font color="#ff0000"><b>O</b></font>), <font color="#00ccff"><b>X</b></font>,
-<font color="#ff0000"><b>O</b></font> [N/A]<hr color="#1A1A1A">
+<font color="#ff0000"><b>O</b></font> [N/A]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Deep Slash: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Downward Scratch: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Side Heel: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Side Heel: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Feast of Blood: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -1188,21 +1146,21 @@ Broken Wings: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#ff0000"><b>O</b></font> [70]<br>
 Final Breath: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#ff0000"><b>O</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
-[90]<hr color="#1A1A1A">
+[90]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Not Worth The View: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Not Worth The View: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Raiden">
 <img alt="Raiden" border="1" height="80" src="bio_raiden.jpg" title="Raiden" width="80"></a>
-<b>Raiden</b><hr color="#1A1A1A">
+<b>Raiden</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Electric Tips: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -1217,7 +1175,7 @@ Low Boot: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Spinning Heel: <font color="#ff0000"><b>O</b></font><br>
 Sweeping Storm: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Sliding Strike: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Toe Tapper: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Toe Tapper: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Warrior's Stance: <font color="#ff66cc"><b>&#9633;</b></font>,
@@ -1246,12 +1204,12 @@ Double Strike: (F+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000">
 The Basics: (F+<font color="#ff0000"><b>O</b></font>), <font color="#00ccff"><b>
 X</b></font> [50]<br>
 Super Bolt: (F+<font color="#ff0000"><b>O</b></font>), <font color="#00ccff"><b>
-X</b></font>, <font color="#ff0000"><b>O</b></font> [70] <hr color="#1A1A1A">
+X</b></font>, <font color="#ff0000"><b>O</b></font> [70] <hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Open Palm: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Elbow Drop: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Fly Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Fly Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Crane Kick: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -1267,21 +1225,21 @@ Piston Punch: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#00cc66"><b>&#916;</b></font> [27]<br>
 Whirlwind: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff0000"><b>O</b></font> 
-[70] <hr color="#1A1A1A">
+[70] <hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Exposed Wires: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Exposed Wires: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Rain">
 <img alt="Rain" border="1" height="80" src="bio_rain.jpg" title="Rain" width="80"></a>
-<b>Rain</b><hr color="#1A1A1A">
+<b>Rain</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Splash: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -1297,7 +1255,7 @@ Hydropho-Kick: <font color="#ff0000"><b>O</b></font> (Charge: Hold
 <font color="#ff0000"><b>O</b></font>) (Forward Cancel: F, F) (Backward Cancel: 
 B, B)<br>
 Beneath The Waves: (B+<font color="#ff0000"><b>O</b></font>)<br>
-Thwackerel: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Thwackerel: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Beach Slap: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#ff66cc">
@@ -1319,12 +1277,12 @@ Waterwhirled: (B+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00ccff"><b>X</b></font> 
 [70]<br>
 Centrifugal Force: (F+<font color="#00ccff"><b>X</b></font>),
-<font color="#00cc66"><b>&#916;</b></font> [70]<hr color="#1A1A1A">
+<font color="#00cc66"><b>&#916;</b></font> [70]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Nautifist: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Drizzle: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Dolphin Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Dolphin Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Around The Whirled: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -1337,21 +1295,21 @@ Overkast: (UF+<font color="#00cc66"><b>&#916;</b></font>), <font color="#ff0000"
 Downpour: (UF+<font color="#00cc66"><b>&#916;</b></font>), <font color="#ff0000">
 <b>O</b></font>, <font color="#00ccff"><b>X</b></font> [70]<br>
 Supercavity: (UF+<font color="#00ccff"><b>X</b></font>), <font color="#00cc66">
-<b>&#916;</b></font> [90]<hr color="#1A1A1A">
+<b>&#916;</b></font> [90]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-100% Chance of Pain: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+100% Chance of Pain: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Reiko">
 <img alt="Reiko" border="1" height="80" src="bio_reiko.jpg" title="Reiko" width="80"></a>
-<b>Reiko</b><hr color="#1A1A1A">
+<b>Reiko</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Busted Knuckles: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -1367,7 +1325,7 @@ Open Toe: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Dislocator: <font color="#ff0000"><b>O</b></font><br>
 Low Takedown: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Thrust Kick: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Ankle Snapper: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Ankle Snapper: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Devastating Blow: <font color="#ff66cc"><b>&#9633;</b></font>,
@@ -1391,12 +1349,12 @@ Fatal Infiltration: (B+<font color="#00ccff"><b>X</b></font>),
 Savage Siege: <font color="#ff0000"><b>O</b></font>, <font color="#00ccff"><b>X</b></font> 
 [50]<br>
 Mass Casualities: <font color="#ff0000"><b>O</b></font>, <font color="#00ccff">
-<b>X</b></font>, <font color="#ff0000"><b>O</b></font> [70]<hr color="#1A1A1A">
+<b>X</b></font>, <font color="#ff0000"><b>O</b></font> [70]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Haymaker: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Full Cross: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Brute Force: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Brute Force: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Invaded: (UF+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00cc66">
@@ -1407,21 +1365,21 @@ Deadly Infantry: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
 No Retreating: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#ff66cc"><b>&#9633;</b></font> [63]<br>
 Push On: (UF+<font color="#00cc66"><b>&#916;</b></font>), <font color="#ff66cc">
-<b>&#9633;</b></font>, <font color="#ff0000"><b>O</b></font> [90]<hr color="#1A1A1A">
+<b>&#9633;</b></font>, <font color="#ff0000"><b>O</b></font> [90]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Military Might: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Military Might: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Reptile">
 <img alt="Reptile" border="1" height="80" src="bio_reptile.jpg" title="Reptile" width="80"></a>
-<b>Reptile</b><hr color="#1A1A1A">
+<b>Reptile</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Stage Hand: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -1437,7 +1395,7 @@ Serial Gila: (F+<font color="#00ccff"><b>X</b></font>)<br>
 Kneer-Death Kick: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Sticky Foot: <font color="#ff0000"><b>O</b></font><br>
 Die-ving For It: (B+<font color="#ff0000"><b>O</b></font>)<br>
-Surprise Swipe: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Surprise Swipe: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Kold-Blooded Blow: <font color="#ff66cc"><b>&#9633;</b></font>,
@@ -1466,12 +1424,12 @@ Hidden Klaws: (F+<font color="#00ccff"><b>X</b></font>), <font color="#ff66cc">
 Mr. Hide: (F+<font color="#00ccff"><b>X</b></font>), <font color="#ff66cc"><b>&#9633;</b></font>,
 <font color="#ff66cc"><b>&#9633;</b></font> [3]<br>
 Visceral Klaw: (F+<font color="#00ccff"><b>X</b></font>), <font color="#00cc66">
-<b>&#916;</b></font> [70] <hr color="#1A1A1A">
+<b>&#916;</b></font> [70] <hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Palm-Reading: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Terrosaur: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Leaping Lizard: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Leaping Lizard: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Tipping The Scales: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -1480,21 +1438,21 @@ Slithering Slap: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#00ccff"><b>X</b></font> [63] <br>
 Natural Selection: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#00ccff"><b>X</b></font>, <font color="#00ccff"><b>X</b></font> [70]
-<hr color="#1A1A1A">
+<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Puny Human: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Puny Human: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Scorpion">
 <img alt="Scorpion" border="1" height="80" src="bio_scorpion.jpg" title="Scorpion" width="80"></a>
-<b>Scorpion</b><hr color="#1A1A1A">
+<b>Scorpion</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Seared Strike: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -1509,7 +1467,7 @@ Charred Heel: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Side Kick: <font color="#ff0000"><b>O</b></font><br>
 Sweeping Predator: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Falcon Dragon: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Metasoma: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Metasoma: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Whiplash: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
@@ -1526,12 +1484,12 @@ Shirai Who: <font color="#00ccff"><b>X</b></font>, <font color="#00ccff"><b>X</b
 Krackjaw: <font color="#00ccff"><b>X</b></font>, <font color="#00ccff"><b>X</b></font>,
 <font color="#00ccff"><b>X</b></font> [5]<br>
 Raising Hell: (F+<font color="#00ccff"><b>X</b></font>), <font color="#00cc66">
-<b>&#916;</b></font> [5]<hr color="#1A1A1A">
+<b>&#916;</b></font> [5]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Quick Slice: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Burning Spear: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Tactical Tabi: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Tactical Tabi: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Burning Fist: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#ff66cc">
@@ -1550,21 +1508,21 @@ Krushing Kunai: <font color="#ff66cc"><b>&#9633;</b></font>,
 Demonic Slam: <font color="#00cc66"><b>&#916;</b></font>, (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>) 
 [N/A]<br>
 Deadly Sting: <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff0000">
-<b>O</b></font> [7] <hr color="#1A1A1A">
+<b>O</b></font> [7] <hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Fire Drop: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Fire Drop: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Sindel">
 <img alt="Sindel" border="1" height="80" src="bio_sindel.jpg" title="Sindel" width="80"></a>
-<b>Sindel</b><hr color="#1A1A1A">
+<b>Sindel</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Mother Knows Best: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -1579,7 +1537,7 @@ Brush With Death: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Handstand: <font color="#ff0000"><b>O</b></font><br>
 Flippy Flip: (F+<font color="#ff0000"><b>O</b></font>)<br>
 Tripping Bangs: (B+<font color="#ff0000"><b>O</b></font>)<br>
-Bend The Knee: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Bend The Knee: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Kiss The Ring: <font color="#ff66cc"><b>&#9633;</b></font>,
@@ -1606,12 +1564,12 @@ Bow Before Me - Close: (F+<font color="#ff0000"><b>O</b></font>),
 <font color="#00ccff"><b>X</b></font> (Hold B) [50]<br>
 Bow Before Me - Far: (F+<font color="#ff0000"><b>O</b></font>),
 <font color="#00ccff"><b>X</b></font> (Hold F) [50]<br>
-<hr color="#1A1A1A">
+<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Queen's Gambit: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Voluminous Smack: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Purple Panic: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Purple Panic: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Front Stroke: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -1622,21 +1580,21 @@ House of Sindel: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
 Bodied: (UF+<font color="#00cc66"><b>&#916;</b></font>), <font color="#ff0000">
 <b>O</b></font> [28.5]<br>
 Edenian Dip: (UF+<font color="#00cc66"><b>&#916;</b></font>),
-<font color="#ff0000"><b>O</b></font>, <font color="#ff0000"><b>O</b></font> [58.5]<hr color="#1A1A1A">
+<font color="#ff0000"><b>O</b></font>, <font color="#ff0000"><b>O</b></font> [58.5]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Mane Squeeze: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Mane Squeeze: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Smoke">
 <img alt="Smoke" border="1" height="80" src="bio_smoke.jpg" title="Smoke" width="80"></a>
-<b>Smoke</b><hr color="#1A1A1A">
+<b>Smoke</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Quick Cut: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -1651,7 +1609,7 @@ Knee Breaker: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Turning Heel: <font color="#ff0000"><b>O</b></font><br>
 Sweeping Smoke: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Face Walk: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Gut Buster: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Gut Buster: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Never Submit: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#ff66cc">
@@ -1684,12 +1642,12 @@ Soaring Assassin: (F+<font color="#00ccff"><b>X</b></font>),
 <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff0000"><b>O</b></font> 
 [70]<br>
 Inhalation: (D+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000"><b>
-O</b></font> [20]<hr color="#1A1A1A">
+O</b></font> [20]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Downward Stab: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Knuckle Duster: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Turn and Burn: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Turn and Burn: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Deep Incision: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -1704,21 +1662,21 @@ Cutter: (UF+<font color="#00cc66"><b>&#916;</b></font>), <font color="#ff66cc">
 Spin Kicks: (UF+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000">
 <b>O</b></font> [25.5]<br>
 Airing Out: (UF+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000">
-<b>O</b></font>, <font color="#ff0000"><b>O</b></font> [70]<hr color="#1A1A1A">
+<b>O</b></font>, <font color="#ff0000"><b>O</b></font> [70]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Assassin's Judgment: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Assassin's Judgment: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D <hr color="#333333">
+Taunts: D, D, D, D <hr class="main">
 
 <a href="#top" name="Sub-Zero">
 <img alt="Sub-Zero" border="1" height="80" src="bio_subzero.jpg" title="Sub-Zero" width="80"></a>
-<b>Sub-Zero</b><hr color="#1A1A1A">
+<b>Sub-Zero</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Clammy Palm: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -1732,7 +1690,7 @@ Shin Shatter: (B+<font color="#00ccff"><b>X</b></font>)<br>
 Low Step: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Harmful Heel: <font color="#ff0000"><b>O</b></font><br>
 Chilled Sweep: (B+<font color="#ff0000"><b>O</b></font>)<br>
-Swing Kick: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Swing Kick: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Lin Kuei Storm: <font color="#ff66cc"><b>&#9633;</b></font>,
@@ -1755,12 +1713,12 @@ Permafrost: (B+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000"><b>
 O</b></font> [70]<br>
 Hail Damage: <font color="#ff0000"><b>O</b></font>, <font color="#ff0000"><b>O</b></font> 
 [50]<br>
-<hr color="#1A1A1A">
+<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Icy Knuckles: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Ice Maker: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Balanced Boot: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Balanced Boot: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Slick Strike: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -1780,21 +1738,21 @@ Freezer Burn: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#00cc66"><b>&#916;</b></font> [27]<br>
 Arctic Blast: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#00cc66"><b>&#916;</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
-[90]<hr color="#1A1A1A">
+[90]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Negative Zero: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Negative Zero: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Tanya">
 <img alt="Tanya" border="1" height="80" src="bio_tanya.jpg" title="Tanya" width="80"></a>
-<b>Tanya</b><hr color="#1A1A1A">
+<b>Tanya</b><hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Closed Fist: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -1809,7 +1767,7 @@ Kneeling Strike: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Rise And Shine: <font color="#ff0000"><b>O</b></font><br>
 Prayer Circle: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Roundhouse: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Sweeping Change: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Sweeping Change: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Active Threat: <font color="#ff66cc"><b>&#9633;</b></font>,
@@ -1830,12 +1788,12 @@ Answers: (B+<font color="#00cc66"><b>&#916;</b></font>), <font color="#ff0000">
 Brought Low: <font color="#00ccff"><b>X</b></font>, <font color="#808080"><b>L1</b></font> 
 [70]<br>
 Whirlwinder: (B+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000">
-<b>O</b></font>, <font color="#ff0000"><b>O</b></font> [N/A]<hr color="#1A1A1A">
+<b>O</b></font>, <font color="#ff0000"><b>O</b></font> [N/A]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Divine Touch: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Scattering Clouds: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Heavy Heel: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Heavy Heel: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Followed Ways: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -1848,22 +1806,25 @@ Farsight: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
 Reaching Out: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
 <font color="#00ccff"><b>X</b></font>, <font color="#00ccff"><b>X</b></font> [115.5]<br>
 Gather Round: (UF+<font color="#00cc66"><b>&#916;</b></font>),
-<font color="#ff66cc"><b>&#9633;</b></font> [55.5]<hr color="#1A1A1A">
+<font color="#ff66cc"><b>&#9633;</b></font> [55.5]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Descendant Blows: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Descendant Blows: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
-<center><b>Kombat Pack 1 DLC Characters:</b></center><hr color="#333333">
+<center><b>Kombat Pack 1 DLC Characters:</b></center>
+<hr class="main">
+
 <a href="#top" name="Shang Tsung">
 <img alt="Shang Tsung" border="1" height="80" src="bio_shangtsung.jpg" title="Shang Tsung" width="80"></a>
-<b>Shang Tsung</b> [KP1 DLC]<br><hr color="#1A1A1A">
+<b>Shang Tsung</b> [KP1 DLC]<br>
+<hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Spurned God: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -1877,17 +1838,17 @@ Femurder: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Facebreaker: <font color="#ff0000"><b>O</b></font><br>
 Kneedler: (F+<font color="#ff0000"><b>O</b></font>)<br>
 Kareer-Ender: (B+<font color="#ff0000"><b>O</b></font>)<br>
-Longfoot: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Longfoot: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Basic Attacks - Young Shang:</b></u><br>
 Deceptive Slash: (B+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
-<hr color="#1A1A1A">
+<hr class="sub">
 
 <u><b>Basic Attacks - Old Shang:</b></u><br>
 Spurned Man: (B+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Reflex Test: <font color="#00cc66"><b>&#916;</b></font><br>
 Goal Kick: (F+<font color="#00ccff"><b>X</b></font>)<br>
-<hr color="#1A1A1A">
+<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Die-agnosis: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66">
@@ -1897,7 +1858,7 @@ Pulse Check: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66">
 Lovetap: (B+<font color="#00cc66"><b>&#916;</b></font>), <font color="#00cc66">
 <b>&#916;</b></font> [30]<br>
 Laid Low: (B+<font color="#00cc66"><b>&#916;</b></font>), <font color="#00cc66">
-<b>&#916;</b></font>, <font color="#00ccff"><b>X</b></font> [70]<hr color="#1A1A1A">
+<b>&#916;</b></font>, <font color="#00ccff"><b>X</b></font> [70]<hr class="sub">
 
 <u><b>Kombos - Young Shang:</b></u><br>
 Snake Oil: (B+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -1907,7 +1868,7 @@ Silent Killer: <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff0000"
 Die-V: (F+<font color="#ff0000"><b>O</b></font>), <font color="#00ccff"><b>X</b></font> 
 [30]<br>
 Spin Kick: (F+<font color="#ff0000"><b>O</b></font>), <font color="#00ccff"><b>X</b></font>,
-<font color="#ff0000"><b>O</b></font> [70]<hr color="#1A1A1A">
+<font color="#ff0000"><b>O</b></font> [70]<hr class="sub">
 
 <u><b>Kombos - Old Shang:</b></u><br>
 Operation: (B+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -1926,12 +1887,12 @@ Dissection: (F+<font color="#ff0000"><b>O</b></font>), <font color="#ff66cc"><b>
 Age Before Beauty: (F+<font color="#ff0000"><b>O</b></font>),
 <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font>,
 <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#ff0000"><b>O</b></font> 
-[3] <hr color="#1A1A1A">
+[3] <hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Above You: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Experiment: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Deadly Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Deadly Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Surgery: (UF+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00cc66">
@@ -1940,21 +1901,22 @@ Major Complications: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
 <font color="#00cc66"><b>&#916;</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
 [30]<br>
 Festering Wounds: (UF+<font color="#00cc66"><b>&#916;</b></font>),
-<font color="#00cc66"><b>&#916;</b></font> [70]<hr color="#1A1A1A">
+<font color="#00cc66"><b>&#916;</b></font> [70]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Not Covered by Insurance: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Not Covered by Insurance: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Omni-Man">
 <img alt="Omni-Man" border="1" height="80" src="bio_omniman.jpg" title="Omni-Man" width="80"></a>
-<b>Omni-Man</b> [KP1 DLC]<br><hr color="#1A1A1A">
+<b>Omni-Man</b> [KP1 DLC]<br>
+<hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Viltru-Mighty Blow: <font color="#ff66cc"><b>□</b></font><br>
@@ -1969,7 +1931,7 @@ Knee Remover: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Satellite Kick: <font color="#ff0000"><b>O</b></font><br>
 Like an Ant: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Brought to Heel: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Mantle Shaker: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Mantle Shaker: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Konqueror Killer: <font color="#ff66cc"><b>□</b></font>, <font color="#00cc66">
@@ -1987,12 +1949,12 @@ Destructive Elbow: <font color="#00cc66"><b>Δ</b></font>, <font color="#00cc66"
 Uh-Oh: (F+<font color="#ff0000"><b>O</b></font>), <font color="#ff66cc"><b>□</b></font> 
 [30]<br>
 Spilled Kontents: (F+<font color="#ff0000"><b>O</b></font>),
-<font color="#ff66cc"><b>□</b></font>, <font color="#808080"><b>L1</b></font> [N/A]<hr color="#1A1A1A">
+<font color="#ff66cc"><b>□</b></font>, <font color="#808080"><b>L1</b></font> [N/A]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Meteor Strike: (UF+<font color="#ff66cc"><b>□</b></font>)<br>
 Strength: (UF+<font color="#00cc66"><b>Δ</b></font>)<br>
-Hard Landing: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Hard Landing: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Spinning Smack: (UF+<font color="#ff66cc"><b>□</b></font>),
@@ -2004,21 +1966,22 @@ Anger: (UF+<font color="#00cc66"><b>Δ</b></font>), <font color="#ff66cc"><b>□
 Discipline: (UF+<font color="#00cc66"><b>Δ</b></font>), <font color="#ff66cc">
 <b>□</b></font>, <font color="#00cc66"><b>Δ</b></font> [30]<br>
 Duty: (UF+<font color="#00cc66"><b>Δ</b></font>), <font color="#ff66cc"><b>□</b></font>,
-<font color="#00cc66"><b>Δ</b></font>, <font color="#ff66cc"><b>□</b></font> [90]<hr color="#1A1A1A">
+<font color="#00cc66"><b>Δ</b></font>, <font color="#ff66cc"><b>□</b></font> [90]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>□</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Armageddon: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>□</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Armageddon: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>□</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Quan Chi">
 <img alt="Quan Chi" height="80" src="bio_quanchi.jpg" title="Quan Chi" width="80"></a>
-<b>Quan Chi</b> [KP1 DLC]<br><hr color="#1A1A1A">
+<b>Quan Chi</b> [KP1 DLC]<br>
+<hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Sorcerer Smack: <font color="#ff66cc"><b>□</b></font><br>
@@ -2031,7 +1994,7 @@ Killer Kalcium: (D+<font color="#00cc66"><b>Δ</b></font>)<br>
 Is that a Tongue?: <font color="#00ccff"><b>X</b></font><br>
 Tripper: (B+<font color="#00ccff"><b>X</b></font>)<br>
 Bone Breaker: (D+<font color="#00ccff"><b>X</b></font>)<br>
-Kunning Kick: <font color="#ff0000"><b>O</b></font><hr color="#1A1A1A">
+Kunning Kick: <font color="#ff0000"><b>O</b></font><hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Dangerous Ally: <font color="#ff66cc"><b>□</b></font>, <font color="#00cc66"><b>
@@ -2053,12 +2016,12 @@ Skeleton Jacker: (F+<font color="#00cc66"><b>Δ</b></font>),
 Taste Test: (B+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000"><b>
 O</b></font> [50]<br>
 Koccyx Krusher: (B+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000">
-<b>O</b></font>, <font color="#00cc66"><b>Δ</b></font> [70]<hr color="#1A1A1A">
+<b>O</b></font>, <font color="#00cc66"><b>Δ</b></font> [70]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Planned Punch: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Serve Me!: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Quan-Chi-nius Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Quan-Chi-nius Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Risen Rake: (UF+<font color="#ff66cc"><b>□</b></font>), <font color="#00cc66">
@@ -2068,21 +2031,22 @@ Brilliant Blast: (UF+<font color="#ff66cc"><b>□</b></font>),
 Double Death Dealer: (UF+<font color="#00cc66"><b>Δ</b></font>),
 <font color="#ff66cc"><b>□</b></font> [27]<br>
 Be Gone!: (UF+<font color="#00cc66"><b>Δ</b></font>), <font color="#ff0000"><b>O</b></font> 
-[81]<hr color="#1A1A1A">
+[81]<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Into the Nightmare Realm: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Into the Nightmare Realm: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Peacemaker">
 <img alt="Peacemaker" height="80" src="bio_peacemaker.jpg" title="Peacemaker" width="80"></a>
-<b>Peacemaker</b> [KP1 DLC]<br><hr color="#1A1A1A">
+<b>Peacemaker</b> [KP1 DLC]<br>
+<hr class="sub">
 
 <u><b>Note:</b></u><br>
 MKKomplete does not support John Cena and will not indorse his inclusion in MK1 
@@ -2091,32 +2055,33 @@ It's possible we may add his moveset to this guide at some point in the future.<
 Perhaps at the end of MK1's DLC lifecycle or when production starts on NetherRealm 
 Studios' next game.<br>
 If you're looking for info on Peacemaker's moveset or other info, I suggest
-<a href="http://www.google.com" target="_blank">checking here</a>.<hr color="#1A1A1A">
+<a href="http://www.google.com" target="_blank">checking here</a>.<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
-?<hr color="#1A1A1A">
+?<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 ?: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 ?: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-?: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+?: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
-?<hr color="#1A1A1A">
+?<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-?: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+?: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Ermac">
 <img alt="Ermac" height="80" src="bio_ermac.jpg" title="Ermac" width="80"></a>
-<b>Ermac</b> [KP1 DLC]<br><hr color="#1A1A1A">
+<b>Ermac</b> [KP1 DLC]<br>
+<hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Spirit Maker: <font color="#ff66cc"><b>□</b></font><br>
@@ -2131,7 +2096,7 @@ Making Kontact: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Kasket Kloser: <font color="#ff0000"><b>O</b></font><br>
 Soul Sweep: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Knee Deep: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Brush With Death: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Brush With Death: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Sinking Feeling: <font color="#ff66cc"><b>□</b></font>, <font color="#00cc66">
@@ -2160,12 +2125,12 @@ Rising Dead: <font color="#ff0000"><b>O</b></font>, <font color="#00cc66"><b>Δ<
 Hell Spiller: <font color="#ff0000"><b>O</b></font>, <font color="#00cc66"><b>Δ</b></font>,
 <font color="#ff0000"><b>O</b></font> [90]<br>
 De-Animator: (F+<font color="#ff0000"><b>O</b></font>), <font color="#00ccff">
-<b>X</b></font> [70]<hr color="#1A1A1A">
+<b>X</b></font> [70]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Phantom Pain: (UF+<font color="#ff66cc"><b>□</b></font>)<br>
 Psychic Palm: (UF+<font color="#00cc66"><b>Δ</b></font>)<br>
-Flying Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Flying Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Raking Wraith: (UF+<font color="#ff66cc"><b>□</b></font>), <font color="#00cc66">
@@ -2185,21 +2150,22 @@ Epithet of Agony: (UF+<font color="#00cc66"><b>Δ</b></font>),
 Tombstoner: (UF+<font color="#00cc66"><b>Δ</b></font>), <font color="#ff0000">
 <b>O</b></font>, <font color="#00cc66"><b>Δ</b></font> [90]<br>
 Headkase: (UF+<font color="#00cc66"><b>Δ</b></font>), <font color="#ff0000"><b>O</b></font>,
-<font color="#00ccff"><b>X</b></font> [90] <hr color="#1A1A1A">
+<font color="#00ccff"><b>X</b></font> [90] <hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>□</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Wrung Out: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>□</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Wrung Out: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>□</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Homelander">
 <img alt="Homelander" height="80" src="bio_homelander.jpg" title="Homelander" width="80"></a>
-<b>Homelander</b> [KP1 DLC]<br><hr color="#1A1A1A">
+<b>Homelander</b> [KP1 DLC]<br>
+<hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Patriotic Punch: <font color="#ff66cc"><b>&#9633;</b></font><br>
@@ -2216,7 +2182,7 @@ Ankle Breaker: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Freedom Foot: <font color="#ff0000"><b>O</b></font><br>
 Meltdown: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Blaze It Up: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Floor Sizzle: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Floor Sizzle: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Smash Hit: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66">
@@ -2240,13 +2206,13 @@ Brightest Day: (B+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#00cc66"><b>&#916;</b></font> [30]<br>
 See No Evil: (B+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#00cc66"><b>&#916;</b></font>, (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>) 
-[60]<hr color="#1A1A1A">
+[60]<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Punching Down: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 Bloody Knuckles: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
 Compound V: (UF+<font color="#00ccff"><b>X</b></font>)<br>
-Heroic Punt: (UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Heroic Punt: (UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Burning Stare: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
@@ -2264,21 +2230,22 @@ Back To Earth: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 [90]<br>
 If Looks Could Kill: (UF+<font color="#00cc66"><b>&#916;</b></font>),
 <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#808080"><b>L1</b></font> 
-[50] <hr color="#1A1A1A">
+[50] <hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-Up Up And...: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+Up Up And...: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="Takeda">
 <img alt="Takeda Takahashi" height="80" src="bio_takeda.jpg" title="Takeda Takahashi" width="80"></a>
-<b>Takeda Takahashi</b> [KP1 DLC]<br><hr color="#1A1A1A">
+<b>Takeda Takahashi</b> [KP1 DLC]<br>
+<hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
 Tempest Strike: <font color="#ff66cc"><b>□</b></font><br>
@@ -2295,7 +2262,7 @@ Klog Kick: (D+<font color="#00ccff"><b>X</b></font>)<br>
 Kami Kick: <font color="#ff0000"><b>O</b></font><br>
 Whip Trip: (B+<font color="#ff0000"><b>O</b></font>)<br>
 Hurrikane Kick: (F+<font color="#ff0000"><b>O</b></font>)<br>
-Wheel Spoke: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Wheel Spoke: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
 Twisting Blades: <font color="#ff66cc"><b>□</b></font>, <font color="#00cc66">
@@ -2322,14 +2289,14 @@ Twin Fangs: (B+<font color="#00cc66"><b>Δ</b></font>), <font color="#ff66cc"><b
 Prey Maker: (B+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000"><b>
 O</b></font> [70]<br>
 Tengu Tearer: <font color="#ff0000"><b>O</b></font>, <font color="#00ccff"><b>X</b></font> 
-[70] <hr color="#1A1A1A">
+[70] <hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 Night's Veil: (UF+<font color="#ff66cc"><b>□</b></font>)<br>
 Lasher-ation: (DB/DF+<font color="#ff66cc"><b>□</b></font>)<br>
 Wolf Fang: (UF+<font color="#00cc66"><b>Δ</b></font>)<br>
 Slasher-ation: (DB/DF+<font color="#00cc66"><b>Δ</b></font>)<br>
-Waterfall Splitter: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+Waterfall Splitter: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
 Devouring Shadows: (UF+<font color="#ff66cc"><b>□</b></font>),
@@ -2344,207 +2311,376 @@ Sparrow Strike: (UF+<font color="#00cc66"><b>Δ</b></font>),
 <font color="#ff0000"><b>O</b></font> [63]<br>
 Falcon Dive: (UF+<font color="#00cc66"><b>Δ</b></font>), <font color="#ff0000">
 <b>O</b></font>, (<font color="#ff66cc"><b>□</b></font>+<font color="#00ccff"><b>X</b></font>) 
-[86.5] <hr color="#1A1A1A">
+[86.5] <hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>□</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-100 Yen Technique: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>□</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+100 Yen Technique: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>□</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D <hr color="#333333">
+Taunts: D, D, D, D <hr class="main">
 
 <center><b>Kombat Pack 2 DLC Characters:</b></center>
-<hr color="#333333">
+<hr class="main">
 
 <a href="#top" name="KP2_Cyrax">
 <img alt="Tampax" border="1" height="80" src="bio_kp2_cyrax.jpg" title="Tampax" width="80"></a>
-<b>Tampax</b> [KP2 DLC]<hr color="#1A1A1A">
+<b>Tampax</b> [KP2 DLC]<hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
-High 
-Tech: <font color="#ff66cc"><b>&#9633;</b></font><br>Dialing Up: (B+<font color="#ff66cc"><b>&#9633;</b></font>)<br>Hydraulic Punch: (D+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
-Steel Strike: <font color="#00cc66"><b>&#916;</b></font><br>Blast Overhead: (B+<font color="#00cc66"><b>&#916;</b></font>)<br>Quick Buzz: (F+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Sawed Off: (D+<font color="#00cc66"><b>&#916;</b></font>)<br>Metal High Heel: <font color="#00ccff"><b>X</b></font><br>Shin Shatter: (B+<font color="#00ccff"><b>X</b></font>)
-<br>Hydraulic Step: (D+<font color="#00ccff"><b>X</b></font>)<br>Zaki Cyclone: <font color="#ff0000"><b>O</b></font><br>&nbsp;&nbsp;&nbsp; 
-Delay Zaki Cyclone: (Hold <font color="#ff0000"><b>O</b></font>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-Cancel Zaki Cyclone: (Hold <font color="#ff0000"><b>O</b></font>), D, D<br>Photon Sweep: (Hold <font color="#ff0000"><b>O</b></font>), B<br>
-Dialing Up: (Hold <font color="#ff0000"><b>O</b></font>), (Hold <font color="#808080"><b>L1</b></font>)<br>Photon Sweep: (B+<font color="#ff0000"><b>O</b></font>)<br>
-Metal Scraper: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A"><u><b>Kombos:</b></u><br>Steel Fist:
-<font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> [70]<br>Short Circuit: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font> [30]<br>See Saw:
-<font color="#ff66cc"><b>&#9633;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> [70]<br>Cyber Beatdown: (B+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00cc66"><b>&#916;</b></font> 
-[100]<br>Grinder: <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font> [50]<br>&nbsp;&nbsp;&nbsp; Delay Grinder:
-<font color="#00cc66"><b>&#916;</b></font>, (Hold <font color="#ff66cc"><b>&#9633;</b></font>) [50]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cancel 
-Grinder: <font color="#00cc66"><b>&#916;</b></font>, (Hold <font color="#ff66cc"><b>&#9633;</b></font>), D, D<br>Bionic Kick: <font color="#00cc66"><b>&#916;</b></font>, <font color="#00ccff"><b>X</b></font> 
-[30]<br>Zaki Cyclone: <font color="#00cc66"><b>&#916;</b></font>, <font color="#00ccff"><b>X</b></font>, <font color="#ff0000"><b>O</b></font> [70]<br>&nbsp;&nbsp;&nbsp; 
-Delay Zaki Cyclone: <font color="#00cc66"><b>&#916;</b></font>, <font color="#00ccff"><b>X</b></font>, (Hold <font color="#ff0000"><b>O</b></font>) [70]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-Cancel Zaki Cyclone: <font color="#00cc66"><b>&#916;</b></font>, <font color="#00ccff"><b>X</b></font>, (Hold <font color="#ff0000"><b>O</b></font>), D, D<br>Sliding Detonation: 
-(B+<font color="#00cc66"><b>&#916;</b></font>), <font color="#ff0000"><b>O</b></font> [72.5]<br>Saw Enough: (F+<font color="#00cc66"><b>&#916;</b></font>), <font color="#ff66cc"><b>&#9633;</b></font> [70]<br>
-Detonation: <font color="#00ccff"><b>X</b></font>, <font color="#00cc66"><b>&#916;</b></font> [87]<br>Metal Mid Heel: (B+<font color="#00ccff"><b>X</b></font>), <font color="#00ccff"><b>X</b></font> 
-[30]<br>Syntax Error: (B+<font color="#00ccff"><b>X</b></font>), <font color="#00ccff"><b>X</b></font>, <font color="#ff0000"><b>O</b></font> [80]<hr color="#1A1A1A">
-<u><b>Basic Aerial Attacks:</b></u><br>Power Plant: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>Downloaded: 
-(UF+<font color="#00cc66"><b>&#916;</b></font>)<br>Power Surge: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
-<u><b>Aerial Kombos:</b></u><br>Cut Above: (UF+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
-[70]<br>Upgraded: (UF+<font color="#00cc66"><b>&#916;</b></font>), <font color="#ff66cc"><b>&#9633;</b></font> [30]<br>Mustard Mk. 1: (UF+<font color="#00cc66"><b>&#916;</b></font>),
-<font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> [89.5]<br>Hard Krash: (UF+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000"><b>O</b></font> [25.5]<br>Reboot: 
-(UF+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000"><b>O</b></font>, <font color="#00ccff"><b>X</b></font> [25.5]&nbsp;<hr color="#1A1A1A"><u><b>Throws:</b></u><br>
-Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>Zaki Orthodontics: <font color="#808080"><b>L1</b></font> / 
-(<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A"><u><b>Breakers:</b></u><br>Kombo Breaker: 
-(F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A"><u><b>Taunts:</b></u><br>Taunts: D, D, D, D<hr color="#333333">
+High Tech: <font color="#ff66cc"><b>&#9633;</b></font><br>
+Dialing Up: (B+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
+Hydraulic Punch: (D+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
+Steel Strike: <font color="#00cc66"><b>&#916;</b></font><br>
+Blast Overhead: (B+<font color="#00cc66"><b>&#916;</b></font>)<br>
+Quick Buzz: (F+<font color="#00cc66"><b>&#916;</b></font>)<br>
+Sawed Off: (D+<font color="#00cc66"><b>&#916;</b></font>)<br>
+Metal High Heel: <font color="#00ccff"><b>X</b></font><br>
+Shin Shatter: (B+<font color="#00ccff"><b>X</b></font>) <br>
+Hydraulic Step: (D+<font color="#00ccff"><b>X</b></font>)<br>
+Zaki Cyclone: <font color="#ff0000"><b>O</b></font><br>
+&nbsp;&nbsp;&nbsp; Delay Zaki Cyclone: (Hold <font color="#ff0000"><b>O</b></font>)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cancel Zaki Cyclone: (Hold
+<font color="#ff0000"><b>O</b></font>), D, D<br>
+Photon Sweep: (Hold <font color="#ff0000"><b>O</b></font>), B<br>
+Dialing Up: (Hold <font color="#ff0000"><b>O</b></font>), (Hold
+<font color="#808080"><b>L1</b></font>)<br>
+Photon Sweep: (B+<font color="#ff0000"><b>O</b></font>)<br>
+Metal Scraper: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
+
+<u><b>Kombos:</b></u><br>
+Steel Fist: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66">
+<b>&#916;</b></font> [70]<br>
+Short Circuit: <font color="#ff66cc"><b>&#9633;</b></font>,
+<font color="#ff66cc"><b>&#9633;</b></font> [30]<br>
+See Saw: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font>,
+<font color="#00cc66"><b>&#916;</b></font> [70]<br>
+Cyber Beatdown: (B+<font color="#ff66cc"><b>&#9633;</b></font>),
+<font color="#00cc66"><b>&#916;</b></font> [100]<br>
+Grinder: <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font> 
+[50]<br>
+&nbsp;&nbsp;&nbsp; Delay Grinder: <font color="#00cc66"><b>&#916;</b></font>, (Hold
+<font color="#ff66cc"><b>&#9633;</b></font>) [50]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cancel Grinder: <font color="#00cc66">
+<b>&#916;</b></font>, (Hold <font color="#ff66cc"><b>&#9633;</b></font>), D, D<br>
+Bionic Kick: <font color="#00cc66"><b>&#916;</b></font>, <font color="#00ccff">
+<b>X</b></font> [30]<br>
+Zaki Cyclone: <font color="#00cc66"><b>&#916;</b></font>, <font color="#00ccff">
+<b>X</b></font>, <font color="#ff0000"><b>O</b></font> [70]<br>
+&nbsp;&nbsp;&nbsp; Delay Zaki Cyclone: <font color="#00cc66"><b>&#916;</b></font>,
+<font color="#00ccff"><b>X</b></font>, (Hold <font color="#ff0000"><b>O</b></font>) 
+[70]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cancel Zaki Cyclone:
+<font color="#00cc66"><b>&#916;</b></font>, <font color="#00ccff"><b>X</b></font>, 
+(Hold <font color="#ff0000"><b>O</b></font>), D, D<br>
+Sliding Detonation: (B+<font color="#00cc66"><b>&#916;</b></font>),
+<font color="#ff0000"><b>O</b></font> [72.5]<br>
+Saw Enough: (F+<font color="#00cc66"><b>&#916;</b></font>),
+<font color="#ff66cc"><b>&#9633;</b></font> [70]<br>
+Detonation: <font color="#00ccff"><b>X</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
+[87]<br>
+Metal Mid Heel: (B+<font color="#00ccff"><b>X</b></font>), <font color="#00ccff">
+<b>X</b></font> [30]<br>
+Syntax Error: (B+<font color="#00ccff"><b>X</b></font>), <font color="#00ccff">
+<b>X</b></font>, <font color="#ff0000"><b>O</b></font> [80]<hr class="sub">
+
+<u><b>Basic Aerial Attacks:</b></u><br>
+Power Plant: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
+Downloaded: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
+Power Surge: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
+
+<u><b>Aerial Kombos:</b></u><br>
+Cut Above: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
+<font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
+[70]<br>
+Upgraded: (UF+<font color="#00cc66"><b>&#916;</b></font>), <font color="#ff66cc">
+<b>&#9633;</b></font> [30]<br>
+Mustard Mk. 1: (UF+<font color="#00cc66"><b>&#916;</b></font>),
+<font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
+[89.5]<br>
+Hard Krash: (UF+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000">
+<b>O</b></font> [25.5]<br>
+Reboot: (UF+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000"><b>O</b></font>,
+<font color="#00ccff"><b>X</b></font> [25.5]&nbsp;<hr class="sub">
+
+<u><b>Throws:</b></u><br>
+Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
+Zaki Orthodontics: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
+
+<u><b>Breakers:</b></u><br>
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
+
+<u><b>Taunts:</b></u><br>
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="KP2_Noob Saibot">
 <img alt="Noob Saibot" border="1" height="80" src="bio_kp2_noobsaibot.jpg" title="Noob Saibot" width="80"></a>
-<b>Noob Saibot</b> [KP2 DLC]<hr color="#1A1A1A">
+<b>Noob Saibot</b> [KP2 DLC]<hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
-Caver: <font color="#ff66cc"><b>&#9633;</b></font><br>Void Elbow: (F+<font color="#ff66cc"><b>&#9633;</b></font>)<br>Humble Servant: (D+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
-Dark Spike: <font color="#00cc66"><b>&#916;</b></font><br>Shadow Bringer: (D+<font color="#00cc66"><b>&#916;</b></font>)<br>Saibot Swat: (D+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Dark Geyser: <font color="#00ccff"><b>X</b></font><br>Low Saibot: (B+<font color="#00ccff"><b>X</b></font>)<br>Guillotine: (F+<font color="#00ccff"><b>X</b></font>)<br>
-Seeping Dark: (D+<font color="#00ccff"><b>X</b></font>)<br>Dark Maul: <font color="#ff0000"><b>O</b></font><br>Creeping Shadow: (B+<font color="#ff0000"><b>O</b></font>)<br>
-Sweeping Black: (B+<font color="#ff0000"><b>O</b></font>)<br>Saibot Ward: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
-<u><b>Kombos:</b></u><br>Collapser: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> [30]<br>Shadow Upper:
-<font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font> [30]<br>Khaotic Haymaker: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font>,
-<font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> [70] <br>Shadow Flashkick: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font>,
-<font color="#ff0000"><b>O</b></font> [97.5]<br>Darkness Falls: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font>, <font color="#00ccff"><b>X</b></font> [70]<br>Shadow 
-Strike: (F+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00cc66"><b>&#916;</b></font> [50]<br>Evil Twin: (F+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00cc66"><b>&#916;</b></font>, <b>
-BP</b> [90]<br>Abyssal Hook: (F+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00ccff"><b>X</b></font> [30]<br>Saibot Blast: (F+<font color="#ff66cc"><b>&#9633;</b></font>),
-<font color="#00ccff"><b>X</b></font>, <font color="#ff66cc"><b>&#9633;</b></font> [70]<br>Shadow Strike: (F+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00ccff"><b>X</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
-[50]<br>Evil Twin: (F+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00ccff"><b>X</b></font>, <font color="#00cc66"><b>&#916;</b></font>, <font color="#00cc66"><b>&#916;</b></font> [90]<br>Shadow 
-Clap: <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font> [50]<br>Night Rain: <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> [30]<br>
-Shadow Palm: <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font> [70]<br>Shadow Krush: <b>
-BP</b>, <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#ff0000"><b>O</b></font> [70]<br>Sneaky Saibot: <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff0000"><b>O</b></font> [70]<br>
-Gravedigger: (B+<font color="#00ccff"><b>X</b></font>), <font color="#00ccff"><b>X</b></font> [30]<br>Reincarnation: (B+<font color="#00ccff"><b>X</b></font>), <font color="#00ccff"><b>X</b></font>,
-<font color="#ff0000"><b>O</b></font> [70]<br>Black Mace: <font color="#ff0000"><b>O</b></font>, <font color="#ff0000"><b>O</b></font> [50]<br>Shadow Katapult: <font color="#ff0000"><b>O</b></font>,
-<font color="#ff0000"><b>O</b></font>, <font color="#00ccff"><b>X</b></font> [70]<hr color="#1A1A1A"><u><b>Basic Aerial Attacks:</b></u><br>
-Guiding Dark: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>Dark Scrape: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>Saibot Spear: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
-<u><b>Aerial Kombos:</b></u><br>Vile Tension: (UF+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00cc66"><b>&#916;</b></font> [27]<br>
-Wraith Kicks: (UF+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00cc66"><b>&#916;</b></font>, <font color="#00ccff"><b>X</b></font>, <font color="#ff0000"><b>O</b></font> [89.5]<br>Wraith Kicks: 
-(UF+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff0000"><b>O</b></font>, <font color="#ff0000"><b>O</b></font> [89.5]<br>Void Knee: (UF+<font color="#00cc66"><b>&#916;</b></font>),
-<font color="#00ccff"><b>X</b></font> [27]<br>Saibot Dervish: (UF+<font color="#00cc66"><b>&#916;</b></font>), <font color="#00ccff"><b>X</b></font>, <font color="#ff0000"><b>O</b></font> [70]<hr color="#1A1A1A">
-<u><b>Throws:</b></u><br>Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>Sinister 
-Sillhouette: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>Sinister Strikes: <font color="#808080"><b>L1</b></font> / 
-(<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A"><u><b>Breakers:</b></u><br>Kombo Breaker: 
-(F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A"><u><b>Taunts:</b></u><br>Taunts: D, D, D, D<hr color="#333333">
+Caver: <font color="#ff66cc"><b>&#9633;</b></font><br>
+Void Elbow: (F+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
+Humble Servant: (D+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
+Dark Spike: <font color="#00cc66"><b>&#916;</b></font><br>
+Shadow Bringer: (D+<font color="#00cc66"><b>&#916;</b></font>)<br>
+Saibot Swat: (D+<font color="#00cc66"><b>&#916;</b></font>)<br>
+Dark Geyser: <font color="#00ccff"><b>X</b></font><br>
+Low Saibot: (B+<font color="#00ccff"><b>X</b></font>)<br>
+Guillotine: (F+<font color="#00ccff"><b>X</b></font>)<br>
+Seeping Dark: (D+<font color="#00ccff"><b>X</b></font>)<br>
+Dark Maul: <font color="#ff0000"><b>O</b></font><br>
+Creeping Shadow: (B+<font color="#ff0000"><b>O</b></font>)<br>
+Sweeping Black: (B+<font color="#ff0000"><b>O</b></font>)<br>
+Saibot Ward: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
+
+<u><b>Kombos:</b></u><br>
+Collapser: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66">
+<b>&#916;</b></font> [30]<br>
+Shadow Upper: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66">
+<b>&#916;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font> [30]<br>
+Khaotic Haymaker: <font color="#ff66cc"><b>&#9633;</b></font>,
+<font color="#00cc66"><b>&#916;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font>,
+<font color="#00cc66"><b>&#916;</b></font> [70] <br>
+Shadow Flashkick: <font color="#ff66cc"><b>&#9633;</b></font>,
+<font color="#00cc66"><b>&#916;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font>,
+<font color="#ff0000"><b>O</b></font> [97.5]<br>
+Darkness Falls: <font color="#ff66cc"><b>&#9633;</b></font>,
+<font color="#00cc66"><b>&#916;</b></font>, <font color="#00ccff"><b>X</b></font> 
+[70]<br>
+Shadow Strike: (F+<font color="#ff66cc"><b>&#9633;</b></font>),
+<font color="#00cc66"><b>&#916;</b></font> [50]<br>
+Evil Twin: (F+<font color="#ff66cc"><b>&#9633;</b></font>),
+<font color="#00cc66"><b>&#916;</b></font>, <b>BP</b> [90]<br>
+Abyssal Hook: (F+<font color="#ff66cc"><b>&#9633;</b></font>),
+<font color="#00ccff"><b>X</b></font> [30]<br>
+Saibot Blast: (F+<font color="#ff66cc"><b>&#9633;</b></font>),
+<font color="#00ccff"><b>X</b></font>, <font color="#ff66cc"><b>&#9633;</b></font> 
+[70]<br>
+Shadow Strike: (F+<font color="#ff66cc"><b>&#9633;</b></font>),
+<font color="#00ccff"><b>X</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
+[50]<br>
+Evil Twin: (F+<font color="#ff66cc"><b>&#9633;</b></font>),
+<font color="#00ccff"><b>X</b></font>, <font color="#00cc66"><b>&#916;</b></font>,
+<font color="#00cc66"><b>&#916;</b></font> [90]<br>
+Shadow Clap: <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff66cc">
+<b>&#9633;</b></font> [50]<br>
+Night Rain: <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff66cc">
+<b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> [30]<br>
+Shadow Palm: <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff66cc">
+<b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font>,
+<font color="#ff66cc"><b>&#9633;</b></font> [70]<br>
+Shadow Krush: <b>BP</b>, <font color="#ff66cc"><b>&#9633;</b></font>,
+<font color="#ff0000"><b>O</b></font> [70]<br>
+Sneaky Saibot: <font color="#00cc66"><b>&#916;</b></font>, <font color="#ff0000">
+<b>O</b></font> [70]<br>
+Gravedigger: (B+<font color="#00ccff"><b>X</b></font>), <font color="#00ccff">
+<b>X</b></font> [30]<br>
+Reincarnation: (B+<font color="#00ccff"><b>X</b></font>), <font color="#00ccff">
+<b>X</b></font>, <font color="#ff0000"><b>O</b></font> [70]<br>
+Black Mace: <font color="#ff0000"><b>O</b></font>, <font color="#ff0000"><b>O</b></font> 
+[50]<br>
+Shadow Katapult: <font color="#ff0000"><b>O</b></font>, <font color="#ff0000">
+<b>O</b></font>, <font color="#00ccff"><b>X</b></font> [70]<hr class="sub">
+
+<u><b>Basic Aerial Attacks:</b></u><br>
+Guiding Dark: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
+Dark Scrape: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
+Saibot Spear: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
+
+<u><b>Aerial Kombos:</b></u><br>
+Vile Tension: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
+<font color="#00cc66"><b>&#916;</b></font> [27]<br>
+Wraith Kicks: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
+<font color="#00cc66"><b>&#916;</b></font>, <font color="#00ccff"><b>X</b></font>,
+<font color="#ff0000"><b>O</b></font> [89.5]<br>
+Wraith Kicks: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
+<font color="#00cc66"><b>&#916;</b></font>, <font color="#ff0000"><b>O</b></font>,
+<font color="#ff0000"><b>O</b></font> [89.5]<br>
+Void Knee: (UF+<font color="#00cc66"><b>&#916;</b></font>),
+<font color="#00ccff"><b>X</b></font> [27]<br>
+Saibot Dervish: (UF+<font color="#00cc66"><b>&#916;</b></font>),
+<font color="#00ccff"><b>X</b></font>, <font color="#ff0000"><b>O</b></font> [70]<hr class="sub">
+
+<u><b>Throws:</b></u><br>
+Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
+Sinister Sillhouette: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
+Sinister Strikes: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
+
+<u><b>Breakers:</b></u><br>
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
+
+<u><b>Taunts:</b></u><br>
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="KP2_Sektor">
 <img alt="Sucktor" border="1" height="80" src="bio_kp2_sektor.jpg" title="Sucktor" width="80"></a>
-<b>Sucktor</b> [KP2 DLC]<hr color="#1A1A1A">
+<b>Sucktor</b> [KP2 DLC]<hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
-Fusion 
-Strike: <font color="#ff66cc"><b>&#9633;</b></font><br>Cyborg Swipe: (D+<font color="#ff66cc"><b>&#9633;</b></font>)<br>Bionic Blast: <font color="#00cc66"><b>&#916;</b></font><br>&nbsp;&nbsp;&nbsp; 
-Bionic Blast - Charge: (Hold <font color="#00cc66"><b>&#916;</b></font>)<br>&nbsp;&nbsp;&nbsp; Bionic Blast - Cancel: 
-(Hold <font color="#00cc66"><b>&#916;</b></font>), D, D<br>Assembly Required: (B+<font color="#00cc66"><b>&#916;</b></font>)<br>Charging Elbow: (F+<font color="#00cc66"><b>&#916;</b></font>)<br>
-Knuckler: (D+<font color="#00cc66"><b>&#916;</b></font>)<br>Backdraft Strike: <font color="#00ccff"><b>X</b></font><br>Shin Shatter: (B+<font color="#00ccff"><b>X</b></font>)<br>
-Psycho Ketchup Mk.1: (F+<font color="#00ccff"><b>X</b></font>)<br>&nbsp;&nbsp;&nbsp; Psycho Ketchup Mk.1 - Delay: 
-(F+Hold <font color="#00ccff"><b>X</b></font>)<br>&nbsp;&nbsp;&nbsp; Psycho Ketchup Mk.1 - Cancel: (F+Hold
-<font color="#00ccff"><b>X</b></font>), D, D <br>Thrust Kick: (D+<font color="#00ccff"><b>X</b></font>)<br>Rising Steel: <font color="#ff0000"><b>O</b></font><br>Thruster 
-Sweep: (B+<font color="#ff0000"><b>O</b></font>)<br>Automated Knee: (F+<font color="#ff0000"><b>O</b></font>)<br>Thruster Kick: (D+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
-<u><b>Kombos:</b></u><br>Afterburn: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font> [30]<br>Artificial Intelligence:
-<font color="#ff66cc"><b>&#9633;</b></font>, <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> [70]<br>Force Sensor: (Hold <font color="#00cc66"><b>&#916;</b></font>), <font color="#ff66cc"><b>&#9633;</b></font> 
-[70]<br>Brute Force Hack: (B+<font color="#00cc66"><b>&#916;</b></font>), <font color="#00cc66"><b>&#916;</b></font> [70]<br>Overcharging Elbow: (F+<font color="#00cc66"><b>&#916;</b></font>),
-<font color="#ff66cc"><b>&#9633;</b></font> [30]<br>Rocket Punch: (F+<font color="#00cc66"><b>&#916;</b></font>), <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> [50]<br>Run 
-Down: (B+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000"><b>O</b></font> [89.5]<br>Fatal Error: (F+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000"><b>O</b></font> [96.5]<br>
-Gut Crusher: <font color="#ff0000"><b>O</b></font>, <font color="#00cc66"><b>&#916;</b></font> [30]<br>Head Compactor: <font color="#ff0000"><b>O</b></font>, <font color="#00cc66"><b>&#916;</b></font>,
-<font color="#808080"><b>L1</b></font> [70]<br>Collision Sensors: (F+<font color="#ff0000"><b>O</b></font>), <font color="#00ccff"><b>X</b></font><hr color="#1A1A1A">
-<u><b>Basic Aerial Attacks:</b></u><br>Fusion Force: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>Touch Typist: 
-(UF+<font color="#00cc66"><b>&#916;</b></font>)<br>Fusion Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
-<u><b>Aerial Kombos:</b></u><br>User Error: (UF+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00ccff"><b>X</b></font> [27]<br>Boot 
-Disc: (UF+<font color="#ff66cc"><b>&#9633;</b></font>), <font color="#00ccff"><b>X</b></font>, <font color="#ff0000"><b>O</b></font> [30] <br>Thermal Updraft: (UF+<font color="#00cc66"><b>&#916;</b></font>),
-<font color="#ff66cc"><b>&#9633;</b></font> [27]<br>Base Link: (UF+<font color="#00cc66"><b>&#916;</b></font>), <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> [70] <br>Demolition: 
-(UF+<font color="#00ccff"><b>X</b></font>), <font color="#00cc66"><b>&#916;</b></font> [76.5]<hr color="#1A1A1A"><u><b>Throws:</b></u><br>Shove: 
-(F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>Skill Crane Hot Streak: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
-<u><b>Breakers:</b></u><br>Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#333333">
+Fusion Strike: <font color="#ff66cc"><b>&#9633;</b></font><br>
+Cyborg Swipe: (D+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
+Bionic Blast: <font color="#00cc66"><b>&#916;</b></font><br>
+&nbsp;&nbsp;&nbsp; Bionic Blast - Charge: (Hold <font color="#00cc66"><b>&#916;</b></font>)<br>
+&nbsp;&nbsp;&nbsp; Bionic Blast - Cancel: (Hold <font color="#00cc66"><b>&#916;</b></font>), 
+D, D<br>
+Assembly Required: (B+<font color="#00cc66"><b>&#916;</b></font>)<br>
+Charging Elbow: (F+<font color="#00cc66"><b>&#916;</b></font>)<br>
+Knuckler: (D+<font color="#00cc66"><b>&#916;</b></font>)<br>
+Backdraft Strike: <font color="#00ccff"><b>X</b></font><br>
+Shin Shatter: (B+<font color="#00ccff"><b>X</b></font>)<br>
+Psycho Ketchup Mk.1: (F+<font color="#00ccff"><b>X</b></font>)<br>
+&nbsp;&nbsp;&nbsp; Psycho Ketchup Mk.1 - Delay: (F+Hold <font color="#00ccff">
+<b>X</b></font>)<br>
+&nbsp;&nbsp;&nbsp; Psycho Ketchup Mk.1 - Cancel: (F+Hold <font color="#00ccff">
+<b>X</b></font>), D, D <br>
+Thrust Kick: (D+<font color="#00ccff"><b>X</b></font>)<br>
+Rising Steel: <font color="#ff0000"><b>O</b></font><br>
+Thruster Sweep: (B+<font color="#ff0000"><b>O</b></font>)<br>
+Automated Knee: (F+<font color="#ff0000"><b>O</b></font>)<br>
+Thruster Kick: (D+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
+
+<u><b>Kombos:</b></u><br>
+Afterburn: <font color="#ff66cc"><b>&#9633;</b></font>, <font color="#ff66cc">
+<b>&#9633;</b></font> [30]<br>
+Artificial Intelligence: <font color="#ff66cc"><b>&#9633;</b></font>,
+<font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
+[70]<br>
+Force Sensor: (Hold <font color="#00cc66"><b>&#916;</b></font>),
+<font color="#ff66cc"><b>&#9633;</b></font> [70]<br>
+Brute Force Hack: (B+<font color="#00cc66"><b>&#916;</b></font>),
+<font color="#00cc66"><b>&#916;</b></font> [70]<br>
+Overcharging Elbow: (F+<font color="#00cc66"><b>&#916;</b></font>),
+<font color="#ff66cc"><b>&#9633;</b></font> [30]<br>
+Rocket Punch: (F+<font color="#00cc66"><b>&#916;</b></font>),
+<font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
+[50]<br>
+Run Down: (B+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000"><b>O</b></font> 
+[89.5]<br>
+Fatal Error: (F+<font color="#00ccff"><b>X</b></font>), <font color="#ff0000">
+<b>O</b></font> [96.5]<br>
+Gut Crusher: <font color="#ff0000"><b>O</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
+[30]<br>
+Head Compactor: <font color="#ff0000"><b>O</b></font>, <font color="#00cc66"><b>&#916;</b></font>,
+<font color="#808080"><b>L1</b></font> [70]<br>
+Collision Sensors: (F+<font color="#ff0000"><b>O</b></font>),
+<font color="#00ccff"><b>X</b></font><hr class="sub">
+
+<u><b>Basic Aerial Attacks:</b></u><br>
+Fusion Force: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
+Touch Typist: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
+Fusion Kick: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
+
+<u><b>Aerial Kombos:</b></u><br>
+User Error: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
+<font color="#00ccff"><b>X</b></font> [27]<br>
+Boot Disc: (UF+<font color="#ff66cc"><b>&#9633;</b></font>),
+<font color="#00ccff"><b>X</b></font>, <font color="#ff0000"><b>O</b></font> [30]
+<br>
+Thermal Updraft: (UF+<font color="#00cc66"><b>&#916;</b></font>),
+<font color="#ff66cc"><b>&#9633;</b></font> [27]<br>
+Base Link: (UF+<font color="#00cc66"><b>&#916;</b></font>),
+<font color="#ff66cc"><b>&#9633;</b></font>, <font color="#00cc66"><b>&#916;</b></font> 
+[70] <br>
+Demolition: (UF+<font color="#00ccff"><b>X</b></font>), <font color="#00cc66">
+<b>&#916;</b></font> [76.5]<hr class="sub">
+
+<u><b>Throws:</b></u><br>
+Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
+Skill Crane Hot Streak: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
+
+<u><b>Breakers:</b></u><br>
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="main">
 
 <a href="#top" name="KP2_Conan">
 <img alt="Conan The Barbarian" border="1" height="80" src="bio_kp2_conan.jpg" title="Conan The Barbarian" width="80"></a>
-<b>Conan The Barbarian</b> [KP2 DLC]<hr color="#1A1A1A">
+<b>Conan The Barbarian</b> [KP2 DLC]<hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
-?<hr color="#1A1A1A">
+?<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
-?<hr color="#1A1A1A">
+?<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 ?: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 ?: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-?: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+?: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
-?<hr color="#1A1A1A">
+?<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-?: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+?: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="KP2_Ghostface">
 <img alt="Ghostface" border="1" height="80" src="bio_kp2_ghostface.jpg" title="Ghostface" width="80"></a>
-<b>Ghostface</b> [KP2 DLC]<hr color="#1A1A1A">
+<b>Ghostface</b> [KP2 DLC]<hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
-?<hr color="#1A1A1A">
+?<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
-?<hr color="#1A1A1A">
+?<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 ?: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 ?: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-?: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+?: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
-?<hr color="#1A1A1A">
+?<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-?: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+?: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <a href="#top" name="KP2_T1000">
 <img alt="T-1000" border="1" height="80" src="bio_kp2_t1000.jpg" title="T-1000" width="80"></a>
-<b>T-1000</b> [KP2 DLC]<hr color="#1A1A1A">
+<b>T-1000</b> [KP2 DLC]<hr class="sub">
 
 <u><b>Basic Attacks:</b></u><br>
-?<hr color="#1A1A1A">
+?<hr class="sub">
 
 <u><b>Kombos:</b></u><br>
-?<hr color="#1A1A1A">
+?<hr class="sub">
 
 <u><b>Basic Aerial Attacks:</b></u><br>
 ?: (UF+<font color="#ff66cc"><b>&#9633;</b></font>)<br>
 ?: (UF+<font color="#00cc66"><b>&#916;</b></font>)<br>
-?: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr color="#1A1A1A">
+?: (UF+<font color="#00ccff"><b>X</b></font>)/(UF+<font color="#ff0000"><b>O</b></font>)<hr class="sub">
 
 <u><b>Aerial Kombos:</b></u><br>
-?<hr color="#1A1A1A">
+?<hr class="sub">
 
 <u><b>Throws:</b></u><br>
 Shove: (F+<font color="#808080"><b>L1</b></font>) / (F+<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<br>
-?: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr color="#1A1A1A">
+?: <font color="#808080"><b>L1</b></font> / (<font color="#ff66cc"><b>&#9633;</b></font>+<font color="#00ccff"><b>X</b></font>)<hr class="sub">
 
 <u><b>Breakers:</b></u><br>
-Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr color="#1A1A1A">
+Kombo Breaker: (F+<font color="#808080"><b>R2</b></font>)<hr class="sub">
 
 <u><b>Taunts:</b></u><br>
-Taunts: D, D, D, D<hr color="#333333">
+Taunts: D, D, D, D<hr class="main">
 
 <center>
-<img alt="Mortal Kombat 1 (2023)" border="0" height="183" src="logo_mk1.webp" title="Mortal Kombat 1 (2023)" width="640"></center>
-<hr color="#333333">
+<img alt="Mortal Kombat 1 (2023)" border="0" class="logo" height="183" src="logo_mk1.webp" title="Mortal Kombat 1 (2023)" width="640"></center>
+<hr class="main">
 
 <!--Start End--><br>
 <br>
@@ -2595,10 +2731,10 @@ Taunts: D, D, D, D<hr color="#333333">
 <br>
 <br>
 <br>
-<hr color="#333333">
+<hr class="main">
 
 <center><b><a href="../site_info.htm">MKKomplete</a></b></center>
-<hr color="#333333">
+<hr class="main">
 
 <!--End-->
 
