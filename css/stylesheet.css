@@ -91,34 +91,30 @@ hr.sub {
 }
 /* Character Select */
 .character-select {
-    display: block;                  /* Keep block display for proper layout */
-    max-width: 100%;                /* Allow full width */
-    padding: 0;                     /* Remove padding */
-    box-sizing: border-box;          /* Include padding in width */
+	display: block; /* Keep block display for proper layout */;
+	max-width: 100%; /* Allow full width */;
+	padding: 0;
+/* Remove padding */box-sizing: border-box;          /* Include padding in width */
 }
-
 .character-select a {
-    display: inline-block;           /* Keep images inline with block display */
-    margin: 0;                      /* No margin to minimize space */
-    width: 60px;                    /* Set a fixed width for images */
+	display: inline-block; /* Keep images inline with block display */;
+	margin: 0;
+/* No margin to minimize space */max-width: 100%;                    /* Set a fixed width for images */
 }
-
 .character-select img {
-    max-width: 100%;                /* Ensure images fill the anchor width */
-    max-height: 75px;               /* Set a maximum height for images */
-    height: auto;                   /* Maintain aspect ratio */
-    border: 1px solid #808080;      /* Optional: Add a border */
-    border-radius: 0;               /* Optional: Rounded corners */
-    transition: transform 0.2s;     /* Add hover effect */
+	max-width: 100%; /* Ensure images fill the anchor width */;
+	max-height: 100%; /* Set a maximum height for images */;
+	height: auto; /* Maintain aspect ratio */;
+	border: 1px solid #808080;
+/* Optional: Add a border */border-radius: 0;
+/* Optional: Rounded corners */transition: transform 0.2s;     /* Add hover effect */
 }
-
 .character-select img:hover {
-    transform: scale(1.05);         /* Scale image on hover */
+	transform: scale(1.05);         /* Scale image on hover */
 }
-
 /* Media query for smaller screens */
 @media (max-width: 600px) {
-    .character-select a {
-        width: 40px;                /* Adjust width for smaller screens */
-    }
+.character-select a {
+	width: 40px;                /* Adjust width for smaller screens */
+}
 }
