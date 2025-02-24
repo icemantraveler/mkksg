@@ -1,4 +1,168 @@
-﻿/* Link Styles */
+﻿/* Classic Button Styles */
+.hp {
+	color: #3399FF; /* Bright Blue */
+}
+.hk {
+	color: #FFEA00; /* Bright Yellow */
+}
+.lp {
+	color: #66FF66; /* Light Green */
+}
+.lk {
+	color: #FF6666; /* Soft Red */
+}
+.bl {
+	color: #D3D3D3; /* Lighter Silver */
+}
+.rn {
+	color: #999999; /* Lighter Dark Grey */
+}
+/* Classic PlayStation Button Styles */
+.php {
+	color: #FF66FF; /* Brighter Light Pink */
+}
+.phk {
+	color: #66FF66; /* Light Lime Green */
+}
+.plp {
+	color: #66CCFF; /* Lighter Blue */
+}
+.plk {
+	color: #FF3333; /* Brighter Red */
+}
+/* FP BP Button Styles */
+.nfp {
+	color: #3399FF; /* Bright Blue */
+}
+.nbp {
+	color: #FFEA00; /* Bright Yellow */
+}
+.nfk {
+	color: #66FF66; /* Light Green */
+}
+.nbk {
+	color: #FF6666; /* Soft Red */
+}
+.nth {
+	color: silver; /* Metallic Silver */
+}
+.ntg {
+	color: white; /* White */
+}
+.nbl {
+	color: #D3D3D3; /* Lighter Silver */
+}
+.nfs {
+	color: #999999; /* Lighter Dark Grey */
+}
+/* XBOX Button Styles */
+.x1 {
+	color: #3399FF; /* Bright Blue */
+}
+.x2 {
+	color: #FFEA00; /* Bright Yellow */
+}
+.x3 {
+	color: #66FF66; /* Light Green */
+}
+.x4 {
+	color: #FF6666; /* Soft Red */
+}
+.xg {
+	color: silver; /* Metallic Silver */
+}
+.xw {
+	color: white; /* White */
+}
+.xbl {
+	color: #D3D3D3; /* Lighter Silver */
+}
+.xrn {
+	color: #999999; /* Lighter Dark Grey */
+}
+/* PlayStation Button Styles */
+.p1 {
+	color: #FF66FF; /* Brighter Light Pink */
+}
+.p3 {
+	color: #66CCFF; /* Lighter Blue */
+}
+.p2 {
+	color: #66FF66; /* Light Lime Green */
+}
+.p4 {
+	color: #FF3333; /* Brighter Red */
+}
+.pg {
+	color: silver; /* Metallic Silver */
+}
+.pbl {
+	color: #D3D3D3; /* Lighter Silver */
+}
+.prn {
+	color: #999999; /* Lighter Dark Grey */
+}
+/* GameCube Button Styles */
+.gc1 {
+	color: #FF6666; /* Soft Red */
+}
+.gc2 {
+	color: #FFEA00; /* Bright Yellow */
+}
+.gc3 {
+	color: #66FF66; /* Light Green */
+}
+.gc4 {
+	color: #3399FF; /* Bright Blue */
+}
+.gcg {
+	color: silver; /* Metallic Silver */
+}
+.gcbl {
+	color: #D3D3D3; /* Lighter Silver */
+}
+.gcrn {
+	color: #999999; /* Lighter Dark Grey */
+}
+/* Dreamcast Button Styles */
+.dchp {
+	color: #FFFF66;
+}
+.dclp {
+	color: #FF5050;
+}
+.dchk {
+	color: #00FF99;
+}
+.dclk {
+	color: #6699FF;
+}
+.dcbl {
+	color: #D3D3D3; /* Lighter Silver */
+}
+.dcrn {
+	color: #999999; /* Lighter Dark Grey */
+}
+/* Hand Held Button Styles */
+.hhp {
+	color: #FFEA00; /* Bright Yellow */
+}
+.hhk {
+	color: #FF6666; /* Soft Red */
+}
+.hhbl {
+	color: #D3D3D3; /* Lighter Silver */
+}
+.hhrn {
+	color: #999999; /* Lighter Dark Grey */
+}
+.hh1 {
+	color: #FFEA00; /* Bright Yellow */
+}
+.hh2 {
+	color: #FF6666; /* Soft Red */
+}
+/* Link Styles */
 a {
 	color: #808080 !important; /* Force the link color */;
 	font-family: Verdana, sans-serif;
@@ -24,7 +188,7 @@ table {
 }
 .responsive-table {
 	width: 100%; /* Allow the table to take full width of its container */;
-	max-width: 700px; /* Set a maximum width for larger screens */;
+	max-width: 850px; /* Set a maximum width for larger screens */;
 	border-collapse: collapse; /* Remove gaps between cells */;
 }
 .responsive-table td {
