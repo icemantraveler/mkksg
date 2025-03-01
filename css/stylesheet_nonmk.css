@@ -1,4 +1,41 @@
-﻿/* Classic Button Styles */
+﻿/* Just Colors */
+.blu {
+	color: #66B3FF; /* Light Blue */
+}
+.yel {
+	color: #FFFF66; /* Light Yellow */
+}
+.gre {
+	color: #99FF99; /* Light Green */
+}
+.red {
+	color: #FF9999; /* Soft Pinkish Red */
+}
+.whi {
+	color: #E6E6E6; /* Light Grey (Off-white) */
+}
+.pin {
+	color: #FFB3D9; /* Light Pink */
+}
+.pur {
+	color: #B066B2; /* Light Purple */
+}
+.ora {
+	color: #FFB84D; /* Light Orange */
+}
+.grey1 {
+	color: #D3D3D3; /* Lighter Silver (unchanged) */
+}
+.grey2 {
+	color: #B3B3B3; /* Lighter Medium Grey */
+}
+.grey3 {
+	color: #999999; /* Slightly Darker Grey */
+}
+.grey4 {
+	color: #808080; /* Charcoal Grey (unchanged) */
+}
+/* Classic Button Styles */
 .hp {
 	color: #3399FF; /* Bright Blue */
 }
