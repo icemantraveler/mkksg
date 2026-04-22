@@ -316,6 +316,6 @@ hr.sub {
 /* Media query for smaller screens */
 @media (max-width: 600px) {
 .character-select a {
-	width: 40px;                /* Adjust width for smaller screens */
+	width: 34px;                /* Adjust width for smaller screens */
 }
 }
