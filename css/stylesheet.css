@@ -378,4 +378,33 @@ hr.sub {
 	width: 83px;
 }
 /* End Character Select5 */
+/* Character Select4 */
+.character-select10 {
+	display: block;
+	max-width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+}
+.character-select4 a {
+	display: inline-block;
+	margin: 0;
+	max-width: 100%;
+}
+.character-select4 img {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	border: 1px solid #808080;
+	border-radius: 0;
+	transition: transform 0.2s;
+}
+.character-select4 img:hover {
+	transform: scale(1.05);
+}
+@media (max-width: 600px) {
+.character-select4 a {
+	width: 98px;
+}
+/* End Character Select4 */
+
 }
