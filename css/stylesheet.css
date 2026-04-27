@@ -353,18 +353,18 @@ hr.sub {
 /* Character Select5 */
 .character-select5 {
 	display: block;
-	max-width: 100%;
+	max-width: 200%;
 	padding: 0;
 	box-sizing: border-box;
 }
 .character-select5 a {
 	display: inline-block;
 	margin: 0;
-	max-width: 100%;
+	max-width: 200%;
 }
 .character-select5 img {
-	max-width: 100%;
-	max-height: 100%;
+	max-width: 200%;
+	max-height: 200%;
 	height: auto;
 	border: 1px solid #808080;
 	border-radius: 0;
@@ -375,7 +375,7 @@ hr.sub {
 }
 @media (max-width: 600px) {
 .character-select5 a {
-	width: 83px;
+	width: auto;
 }
 /* End Character Select5 */
 /* Character Select4 */
