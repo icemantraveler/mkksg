@@ -113,26 +113,12 @@ const noBreakKeywords = [
     "Weapon:"
 ];
 
-let originalHTML = null;
-
 function processTextBlocks() {
-    const isPortrait = isMobilePortrait();
-
-    if (!originalHTML) {
-        // Store the original HTML on first run
-        originalHTML = document.body.innerHTML;
-    } else {
-        // Reset to original HTML before reapplying
-        document.body.innerHTML = originalHTML;
-    }
-
-    if (!isPortrait) {
-        // If not portrait, just reset font size and stop
+    if (!isMobilePortrait()) {
         document.body.style.fontSize = '';
         return;
     }
 
-    // Insert line breaks and adjust font size
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
     let node;
     let skipInfo = false;
@@ -143,16 +129,16 @@ function processTextBlocks() {
         // Skip script/style tags
         if (['SCRIPT', 'STYLE'].includes(parent.nodeName)) continue;
 
-        // Reset skipInfo after <hr>
-        if (parent.closest('hr')) skipInfo = false;
-
         // Skip if inside Info section
         if (skipInfo) continue;
 
-        const text = node.nodeValue.trim();
+        const text = node.nodeValue;
+
+        // Skip empty or whitespace-only nodes
+        if (!text.trim()) continue;
 
         // Skip keyword lines
-        if (noBreakKeywords.some(kw => text.startsWith(kw))) continue;
+        if (noBreakKeywords.some(kw => text.trim().startsWith(kw))) continue;
 
         // Start skipping if text contains "Info:"
         if (text.includes('Info:')) {
@@ -163,13 +149,15 @@ function processTextBlocks() {
         // Skip if parent already contains <br>
         if (parent.innerHTML.includes('<br>')) continue;
 
-        // Insert <br> after : and . unless followed by ) or "
+        // Replace : and . with <br> unless followed by ) or "
         const newHTML = text.replace(/([:.])(?=[^)"\n])/g, '$1<br>');
 
-        // Replace text node with span containing new HTML
-        const span = document.createElement('span');
-        span.innerHTML = newHTML;
-        parent.replaceChild(span, node);
+        // Only modify if something changed
+        if (newHTML !== text) {
+            const span = document.createElement('span');
+            span.innerHTML = newHTML;
+            parent.replaceChild(span, node);
+        }
     }
 
     // Increase font size
@@ -178,6 +166,4 @@ function processTextBlocks() {
 
 // Run after DOM load
 window.addEventListener('DOMContentLoaded', processTextBlocks);
-
-// Reapply on resize (rotation)
 window.addEventListener('resize', processTextBlocks);
