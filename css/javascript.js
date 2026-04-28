@@ -99,68 +99,69 @@ function toggle_it(itemID) {
 // ------------------------------
 // Block 4: Mobile-specific Line Breaks & Font Size
 // ------------------------------
+
 // ------------------------------
-// Block 4: Insert Line Breaks After Chars (optimized)
+// Mobile portrait detection
 // ------------------------------
-function processTextBlocks() {
-    if (!isMobilePortrait()) return;
-
-    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-
-    let node;
-    let skipInfo = false;
-
-    while (node = walker.nextNode()) {
-        const parent = node.parentNode;
-
-        // Skip script/style tags
-        if (['SCRIPT', 'STYLE'].includes(parent.nodeName)) continue;
-
-        // Reset skipInfo after <hr>
-        if (parent.closest('hr')) skipInfo = false;
-
-        // Skip if inside Info section
-        if (skipInfo) continue;
-
-        const text = node.nodeValue;
-        if (!text.trim()) continue;
-
-        // Skip keyword lines
-        if (noBreakKeywords.some(kw => text.trim().startsWith(kw))) continue;
-
-        // Start skipping if text contains "Info:"
-        if (text.includes('Info:')) {
-            skipInfo = true;
-            continue;
-        }
-
-        // Skip if parent already contains <br>
-        if (parent.innerHTML.includes('<br>')) continue;
-
-        // Insert <br> after : and . unless followed by ) or "
-        let newHTML = '';
-        for (let i = 0; i < text.length; i++) {
-            const char = text[i];
-            newHTML += char;
-            if (char === ':' || char === '.') {
-                const nextChar = text[i + 1] || '';
-                if (nextChar !== ')' && nextChar !== '"') {
-                    newHTML += '<br>';
-                }
-            }
-        }
-
-        // Only replace if there was a change
-        if (newHTML !== text) {
-            const span = document.createElement('span');
-            span.innerHTML = newHTML;
-            parent.replaceChild(span, node);
-        }
-    }
-
-    // Increase font size
-    document.body.style.fontSize = '16px';
+function isMobilePortrait() {
+    return window.innerWidth < window.innerHeight;
 }
 
-// Run after DOM load
-window.addEventListener('DOMContentLoaded', processTextBlocks);
+// ------------------------------
+// Keywords to skip
+// ------------------------------
+const noBreakKeywords = [
+    "First Appearance:",
+    "Origin:",
+    "Alignment:",
+    "Allies:",
+    "Foes:",
+    "Fighting Style:",
+    "Weapon:"
+];
+
+// ------------------------------
+// Insert line breaks for vertical mobile
+// ------------------------------
+function insertLineBreaksMobile() {
+    if (!isMobilePortrait()) {
+        document.body.style.fontSize = '';
+        return;
+    }
+
+    document.body.style.fontSize = '16px';
+
+    let skipInfo = false;
+    const allElements = Array.from(document.body.children);
+
+    allElements.forEach(el => {
+        if (el.tagName === 'HR') {
+            skipInfo = false; // reset after <hr>
+            return;
+        }
+
+        const text = el.textContent || '';
+
+        if (!text.trim()) return;
+
+        // Skip Info section
+        if (text.includes('Info:')) {
+            skipInfo = true;
+            return;
+        }
+        if (skipInfo) return;
+
+        // Skip lines starting with keywords
+        if (noBreakKeywords.some(kw => text.startsWith(kw))) return;
+
+        // Skip if already has <br>
+        if (el.innerHTML.includes('<br>')) return;
+
+        // Insert <br> after : or . unless followed by ) or "
+        el.innerHTML = text.replace(/([:.])(?=[^)"\n])/g, '$1<br>');
+    });
+}
+
+// Run on load and on resize
+window.addEventListener('DOMContentLoaded', insertLineBreaksMobile);
+window.addEventListener('resize', insertLineBreaksMobile);
