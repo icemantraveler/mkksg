@@ -101,7 +101,7 @@ function toggle_it(itemID) {
 // ------------------------------
 
 // ------------------------------
-// Mobile portrait detection
+// Mobile Portrait Detection
 // ------------------------------
 function isMobilePortrait() {
     return window.innerWidth < window.innerHeight;
@@ -121,7 +121,7 @@ const noBreakKeywords = [
 ];
 
 // ------------------------------
-// Insert line breaks for vertical mobile
+// Insert Line Breaks on Mobile
 // ------------------------------
 function insertLineBreaksMobile() {
     if (!isMobilePortrait()) {
@@ -132,36 +132,61 @@ function insertLineBreaksMobile() {
     document.body.style.fontSize = '16px';
 
     let skipInfo = false;
-    const allElements = Array.from(document.body.children);
 
-    allElements.forEach(el => {
-        if (el.tagName === 'HR') {
-            skipInfo = false; // reset after <hr>
-            return;
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT, null, false);
+
+    let node;
+    while ((node = walker.nextNode())) {
+        const tag = node.tagName;
+
+        // Reset after <hr>
+        if (tag === 'HR') {
+            skipInfo = false;
+            continue;
         }
 
-        const text = el.textContent || '';
+        // Skip interactive and inline structural tags
+        if (['FORM','SELECT','OPTION','BUTTON','INPUT','TEXTAREA','A','IMG','SCRIPT','STYLE'].includes(tag)) {
+            continue;
+        }
 
-        if (!text.trim()) return;
+        // Skip if inside Info section
+        if (skipInfo) continue;
 
-        // Skip Info section
+        const text = node.textContent || '';
+        if (!text.trim()) continue;
+
+        // Start skipping if text contains "Info:"
         if (text.includes('Info:')) {
             skipInfo = true;
-            return;
+            continue;
         }
-        if (skipInfo) return;
 
         // Skip lines starting with keywords
-        if (noBreakKeywords.some(kw => text.startsWith(kw))) return;
+        if (noBreakKeywords.some(kw => text.trim().startsWith(kw))) continue;
 
-        // Skip if already has <br>
-        if (el.innerHTML.includes('<br>')) return;
+        // Skip if node already contains <br>
+        if (node.innerHTML.includes('<br>')) continue;
 
-        // Insert <br> after : or . unless followed by ) or "
-        el.innerHTML = text.replace(/([:.])(?=[^)"\n])/g, '$1<br>');
-    });
+        // Replace ':' and '.' with <br> unless followed by ) or "
+        let newHTML = '';
+        for (let i = 0; i < text.length; i++) {
+            const char = text[i];
+            newHTML += char;
+            if (char === ':' || char === '.') {
+                const nextChar = text[i+1] || '';
+                if (nextChar !== ')' && nextChar !== '"') {
+                    newHTML += '<br>';
+                }
+            }
+        }
+
+        node.innerHTML = newHTML;
+    }
 }
 
-// Run on load and on resize
+// ------------------------------
+// Run on DOM load and resize
+// ------------------------------
 window.addEventListener('DOMContentLoaded', insertLineBreaksMobile);
 window.addEventListener('resize', insertLineBreaksMobile);
