@@ -39,7 +39,7 @@
 a {
 	color: #808080 !important; /* Force the link color */;
 	font-family: Verdana, sans-serif;
-	font-size: 1rem; /* Link size */;
+	font-size: 0.875rem; /* Link size */;
 	text-decoration: underline; /* Change to 'none' to remove underline */
 }
 a:hover {
@@ -50,7 +50,7 @@ body {
 	background: #000000 url('../pics/bgmk3.jpg') no-repeat fixed center;
 	font-family: Verdana, sans-serif;
 	color: #999999;
-	font-size: 1rem; /* Base font size */
+	font-size: 0.875rem; /* Base font size */
 }
 /* Table Styles */
 table {
@@ -67,10 +67,10 @@ font: inherit;
 /* Media Queries */
 @media (max-width: 768px) {
 body {
-	font-size: 0.8rem; /* Slightly smaller text */
+	font-size: 1rem; /* Slightly smaller text */
 }
 a {
-	font-size: 0.7rem; /* Smaller links */
+	font-size: 1rem; /* Smaller links */
 }
 .responsive-table, .responsive-table tr, .responsive-table td {
 	display: block; /* Stack elements */;
@@ -87,10 +87,10 @@ a {
 }
 @media (max-width: 480px) {
 body {
-	font-size: 0.75rem; /* Adjusted for smaller devices */
+	font-size: 0.833rem; /* Adjusted for smaller devices */
 }
 a {
-	font-size: 0.65rem; /* Smaller links */
+	font-size: 0.833rem; /* Smaller links */
 }
 }
 /* Scrollbar Styles (WebKit Browsers) */
