@@ -1,4 +1,11 @@
 // ------------------------------
+// Block 0: Mobile detection helper
+// ------------------------------
+function isMobile() {
+    return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+// ------------------------------
 // Block 1: Disable right-click
 // ------------------------------
 var message = "Function Disabled!";
@@ -58,22 +65,18 @@ function resizeCharacterRows() {
     let rowWidth = 0;
     firstRow.forEach(a => {
         const img = a.querySelector('img');
-
         const w = parseFloat(img.getAttribute('width'));
         const border = 2; // 1px left + 1px right
-
         rowWidth += (w + border);
     });
 
     const availableWidth = container.clientWidth;
-
     const scale = Math.min(1, availableWidth / rowWidth);
 
     // apply scaling
     allImages.forEach(img => {
         const w = parseFloat(img.getAttribute('width'));
         const h = parseFloat(img.getAttribute('height'));
-
         img.style.width = (w * scale) + 'px';
         img.style.height = (h * scale) + 'px';
     });
@@ -99,7 +102,6 @@ function toggle_it(itemID) {
 // ------------------------------
 // Block 4: Insert Line Breaks After Chars
 // ------------------------------
-
 function insertLineBreaksAfterChars(chars = [':', '.'], exceptions = [')', '"']) {
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
     const nodesToModify = [];
@@ -129,9 +131,12 @@ function insertLineBreaksAfterChars(chars = [':', '.'], exceptions = [')', '"'])
     });
 }
 
+// ------------------------------
+// Block 5: Mobile-specific behaviors
+// ------------------------------
 window.addEventListener('DOMContentLoaded', () => {
     if (isMobile()) {
-        // Increase font size via JS if needed dynamically (optional, because CSS handles it)
+        // Increase font size dynamically
         document.body.style.fontSize = '16px';
 
         // Insert line breaks after colons and periods (with exceptions)
