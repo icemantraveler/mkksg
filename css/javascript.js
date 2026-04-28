@@ -1,8 +1,9 @@
 // ------------------------------
 // Block 0: Mobile detection helper
 // ------------------------------
-function isMobile() {
-    return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+function isMobilePortrait() {
+    return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+        && window.innerHeight > window.innerWidth;
 }
 
 // ------------------------------
@@ -55,13 +56,13 @@ function resizeCharacterRows() {
 
     const allImages = container.querySelectorAll('img');
 
-    // ALWAYS reset to original HTML attributes (critical)
+    // ALWAYS reset to original HTML attributes
     allImages.forEach(img => {
         img.style.width = img.getAttribute('width') + 'px';
         img.style.height = img.getAttribute('height') + 'px';
     });
 
-    // compute TRUE base width from attributes (NOT DOM)
+    // compute TRUE base width from attributes
     let rowWidth = 0;
     firstRow.forEach(a => {
         const img = a.querySelector('img');
@@ -100,13 +101,8 @@ function toggle_it(itemID) {
 }
 
 // ------------------------------
-// Block 4: Insert Line Breaks After Chars
+// Block 4: Mobile-specific Line Breaks & Font Size (Responsive)
 // ------------------------------
-function isMobilePortrait() {
-    return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-        && window.innerHeight > window.innerWidth;
-}
-
 const noBreakKeywords = [
     "First Appearance:",
     "Origin:",
@@ -117,55 +113,63 @@ const noBreakKeywords = [
     "Weapon:"
 ];
 
+let originalHTML = null;
+
 function processTextBlocks() {
-    if (!isMobilePortrait()) return;
+    const isPortrait = isMobilePortrait();
 
-    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT, null, false);
+    if (!originalHTML) {
+        // Store the original HTML on first run
+        originalHTML = document.body.innerHTML;
+    } else {
+        // Reset to original HTML before reapplying
+        document.body.innerHTML = originalHTML;
+    }
 
+    if (!isPortrait) {
+        // If not portrait, just reset font size and stop
+        document.body.style.fontSize = '';
+        return;
+    }
+
+    // Insert line breaks and adjust font size
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
     let node;
     let skipInfo = false;
 
     while (node = walker.nextNode()) {
-        if (node.nodeName === 'HR') {
-            skipInfo = false; // reset after <hr>
-            continue;
-        }
+        const parent = node.parentNode;
+
+        // Skip script/style tags
+        if (['SCRIPT', 'STYLE'].includes(parent.nodeName)) continue;
+
+        // Reset skipInfo after <hr>
+        if (parent.closest('hr')) skipInfo = false;
 
         // Skip if inside Info section
         if (skipInfo) continue;
 
-        // Check if the node contains "Info:"
-        if (node.textContent.includes('Info:')) {
+        const text = node.nodeValue.trim();
+
+        // Skip keyword lines
+        if (noBreakKeywords.some(kw => text.startsWith(kw))) continue;
+
+        // Start skipping if text contains "Info:"
+        if (text.includes('Info:')) {
             skipInfo = true;
             continue;
         }
 
-        // Only process nodes that have text and no <br> yet
-        if (node.childNodes.length === 1 && node.firstChild.nodeType === Node.TEXT_NODE) {
-            const text = node.textContent;
+        // Skip if parent already contains <br>
+        if (parent.innerHTML.includes('<br>')) continue;
 
-            // Skip keywords
-            if (noBreakKeywords.some(kw => text.startsWith(kw))) continue;
+        // Insert <br> after : and . unless followed by ) or "
+        const newHTML = text.replace(/([:.])(?=[^)"\n])/g, '$1<br>');
 
-            // Skip if already contains <br>
-            if (node.innerHTML.includes('<br>')) continue;
-
-            // Replace ':' and '.' with line breaks (with exceptions)
-            let newHTML = '';
-            for (let i = 0; i < text.length; i++) {
-                const char = text[i];
-                newHTML += char;
-
-                if (char === ':' || char === '.') {
-                    const nextChar = text[i + 1] || '';
-                    if (nextChar !== ')' && nextChar !== '"') {
-                        newHTML += '<br>';
-                    }
-                }
-            }
-
-            node.innerHTML = newHTML;
-        }
+        // Replace text node with span containing new HTML
+        const span = document.createElement('span');
+        span.innerHTML = newHTML;
+        parent.replaceChild(span, node);
     }
 
     // Increase font size
@@ -174,3 +178,6 @@ function processTextBlocks() {
 
 // Run after DOM load
 window.addEventListener('DOMContentLoaded', processTextBlocks);
+
+// Reapply on resize (rotation)
+window.addEventListener('resize', processTextBlocks);
