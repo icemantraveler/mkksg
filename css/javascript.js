@@ -34,7 +34,7 @@ if (document.layers) {
     document.onmousedown = clickIE4;
 }
 
-document.oncontextmenu = new Function("alert(message);return false");
+document.oncontextmenu = function() { alert(message); return false; };
 
 // ------------------------------
 // Block 2: Resize character rows
@@ -56,7 +56,7 @@ function resizeCharacterRows() {
 
     const allImages = container.querySelectorAll('img');
 
-    // ALWAYS reset to original HTML attributes
+    // reset to original HTML attributes
     allImages.forEach(img => {
         img.style.width = img.getAttribute('width') + 'px';
         img.style.height = img.getAttribute('height') + 'px';
@@ -93,15 +93,11 @@ function toggle_it(itemID) {
     const el = document.getElementById(itemID);
     if (!el) return;
 
-    if (el.style.display === 'none') {
-        el.style.display = 'inline';
-    } else {
-        el.style.display = 'none';
-    }
+    el.style.display = (el.style.display === 'none') ? 'inline' : 'none';
 }
 
 // ------------------------------
-// Block 4: Mobile-specific Line Breaks & Font Size (Responsive)
+// Block 4: Mobile-specific Line Breaks & Font Size
 // ------------------------------
 const noBreakKeywords = [
     "First Appearance:",
@@ -113,58 +109,37 @@ const noBreakKeywords = [
     "Weapon:"
 ];
 
-function processTextBlocks() {
+function applyMobileLineBreaks() {
     if (!isMobilePortrait()) {
         document.body.style.fontSize = '';
         return;
     }
 
-    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-    let node;
-    let skipInfo = false;
+    // Adjust font size
+    document.body.style.fontSize = '16px';
 
-    while (node = walker.nextNode()) {
-        const parent = node.parentNode;
+    // Target text containers only
+    const textContainers = document.querySelectorAll('td, p, div');
 
-        // Skip script/style tags
-        if (['SCRIPT', 'STYLE'].includes(parent.nodeName)) continue;
+    textContainers.forEach(container => {
+        let html = container.innerHTML;
 
-        // Skip if inside Info section
-        if (skipInfo) continue;
+        // Skip if <br> already present
+        if (html.includes('<br>')) return;
 
-        const text = node.nodeValue;
+        // Skip lines starting with keywords
+        if (noBreakKeywords.some(kw => html.trim().startsWith(kw))) return;
 
-        // Skip empty nodes
-        if (!text.trim()) continue;
-
-        // Skip keyword lines
-        if (noBreakKeywords.some(kw => text.trim().startsWith(kw))) continue;
-
-        // Start skipping if text contains "Info:"
-        if (text.includes('Info:')) {
-            skipInfo = true;
-            continue;
-        }
-
-        // Skip if parent already contains <br>
-        if (parent.innerHTML.includes('<br>')) continue;
+        // Skip content in Info: sections
+        if (html.includes('Info:')) return;
 
         // Replace : and . with <br> unless followed by ) or "
-        // The key change: do not trim the text here, preserves colons at line start
-        const newHTML = text.replace(/([:.])(?=[^)"\n])/g, '$1<br>');
+        html = html.replace(/([:.])(?=[^)"\n])/g, '$1<br>');
 
-        // Only modify if something changed
-        if (newHTML !== text) {
-            const span = document.createElement('span');
-            span.innerHTML = newHTML;
-            parent.replaceChild(span, node);
-        }
-    }
-
-    // Increase font size
-    document.body.style.fontSize = '16px';
+        container.innerHTML = html;
+    });
 }
 
-// Run after DOM load
-window.addEventListener('DOMContentLoaded', processTextBlocks);
-window.addEventListener('resize', processTextBlocks);
+// Run on DOM load and on resize (rotation)
+window.addEventListener('DOMContentLoaded', applyMobileLineBreaks);
+window.addEventListener('resize', applyMobileLineBreaks);
