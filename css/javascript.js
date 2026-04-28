@@ -134,7 +134,7 @@ function processTextBlocks() {
 
         const text = node.nodeValue;
 
-        // Skip empty or whitespace-only nodes
+        // Skip empty nodes
         if (!text.trim()) continue;
 
         // Skip keyword lines
@@ -150,6 +150,7 @@ function processTextBlocks() {
         if (parent.innerHTML.includes('<br>')) continue;
 
         // Replace : and . with <br> unless followed by ) or "
+        // The key change: do not trim the text here, preserves colons at line start
         const newHTML = text.replace(/([:.])(?=[^)"\n])/g, '$1<br>');
 
         // Only modify if something changed
