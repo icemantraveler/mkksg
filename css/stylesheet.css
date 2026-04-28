@@ -51,6 +51,7 @@ body {
 	font-family: Verdana, sans-serif;
 	color: #999999;
 	font-size: 0.875rem; /* Base font size */
+	line-height: 1.4;
 }
 /* Table Styles */
 table {
@@ -67,10 +68,10 @@ font: inherit;
 /* Media Queries */
 @media (max-width: 768px) {
 body {
-	font-size: 1rem; /* Slightly smaller text */
+	font-size: 0.9rem; /* Slightly smaller text */
 }
 a {
-	font-size: 1rem; /* Smaller links */
+	font-size: 0.9rem; /* Smaller links */
 }
 .responsive-table, .responsive-table tr, .responsive-table td {
 	display: block; /* Stack elements */;
@@ -87,10 +88,10 @@ a {
 }
 @media (max-width: 480px) {
 body {
-	font-size: 0.833rem; /* Adjusted for smaller devices */
+	font-size: 0.95rem; /* Adjusted for smaller devices */
 }
 a {
-	font-size: 0.833rem; /* Smaller links */
+	font-size: 0.95rem; /* Smaller links */
 }
 }
 /* Scrollbar Styles (WebKit Browsers) */
