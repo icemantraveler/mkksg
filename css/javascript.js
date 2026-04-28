@@ -100,7 +100,7 @@ function toggle_it(itemID) {
 // Block 4: Insert Line Breaks After Chars
 // ------------------------------
 
-function insertLineBreaksAfterChars(chars = [':', '.']) {
+function insertLineBreaksAfterChars(chars = [':', '.'], exceptions = [')', '"']) {
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
     const nodesToModify = [];
 
@@ -118,10 +118,8 @@ function insertLineBreaksAfterChars(chars = [':', '.']) {
             fragment.appendChild(document.createTextNode(char));
 
             if (chars.includes(char)) {
-                const nextSibling = textNode.nextSibling;
-                const followingChar = text[i + 1];
-
-                if (!(followingChar === '\n' || (nextSibling && nextSibling.nodeName === 'BR'))) {
+                const nextChar = text[i + 1] || '';
+                if (!exceptions.includes(nextChar)) {
                     fragment.appendChild(document.createElement('br'));
                 }
             }
@@ -131,9 +129,12 @@ function insertLineBreaksAfterChars(chars = [':', '.']) {
     });
 }
 
-// Run only on mobile devices
 window.addEventListener('DOMContentLoaded', () => {
-    if (/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        insertLineBreaksAfterChars([':', '.']);
+    if (isMobile()) {
+        // Increase font size via JS if needed dynamically (optional, because CSS handles it)
+        document.body.style.fontSize = '16px';
+
+        // Insert line breaks after colons and periods (with exceptions)
+        insertLineBreaksAfterChars([':', '.'], [')', '"']);
     }
 });
