@@ -102,44 +102,75 @@ function toggle_it(itemID) {
 // ------------------------------
 // Block 4: Insert Line Breaks After Chars
 // ------------------------------
-function insertLineBreaksAfterChars(chars = [':', '.'], exceptions = [')', '"']) {
-    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-    const nodesToModify = [];
-
-    while (walker.nextNode()) {
-        nodesToModify.push(walker.currentNode);
-    }
-
-    nodesToModify.forEach(textNode => {
-        const text = textNode.nodeValue;
-        const parent = textNode.parentNode;
-        const fragment = document.createDocumentFragment();
-
-        for (let i = 0; i < text.length; i++) {
-            const char = text[i];
-            fragment.appendChild(document.createTextNode(char));
-
-            if (chars.includes(char)) {
-                const nextChar = text[i + 1] || '';
-                if (!exceptions.includes(nextChar)) {
-                    fragment.appendChild(document.createElement('br'));
-                }
-            }
-        }
-
-        parent.replaceChild(fragment, textNode);
-    });
+function isMobilePortrait() {
+    return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+        && window.innerHeight > window.innerWidth;
 }
 
-// ------------------------------
-// Block 5: Mobile-specific behaviors
-// ------------------------------
-window.addEventListener('DOMContentLoaded', () => {
-    if (isMobile()) {
-        // Increase font size dynamically
-        document.body.style.fontSize = '16px';
+const noBreakKeywords = [
+    "First Appearance:",
+    "Origin:",
+    "Alignment:",
+    "Allies:",
+    "Foes:",
+    "Fighting Style:",
+    "Weapon:"
+];
 
-        // Insert line breaks after colons and periods (with exceptions)
-        insertLineBreaksAfterChars([':', '.'], [')', '"']);
+function processTextBlocks() {
+    if (!isMobilePortrait()) return;
+
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT, null, false);
+
+    let node;
+    let skipInfo = false;
+
+    while (node = walker.nextNode()) {
+        if (node.nodeName === 'HR') {
+            skipInfo = false; // reset after <hr>
+            continue;
+        }
+
+        // Skip if inside Info section
+        if (skipInfo) continue;
+
+        // Check if the node contains "Info:"
+        if (node.textContent.includes('Info:')) {
+            skipInfo = true;
+            continue;
+        }
+
+        // Only process nodes that have text and no <br> yet
+        if (node.childNodes.length === 1 && node.firstChild.nodeType === Node.TEXT_NODE) {
+            const text = node.textContent;
+
+            // Skip keywords
+            if (noBreakKeywords.some(kw => text.startsWith(kw))) continue;
+
+            // Skip if already contains <br>
+            if (node.innerHTML.includes('<br>')) continue;
+
+            // Replace ':' and '.' with line breaks (with exceptions)
+            let newHTML = '';
+            for (let i = 0; i < text.length; i++) {
+                const char = text[i];
+                newHTML += char;
+
+                if (char === ':' || char === '.') {
+                    const nextChar = text[i + 1] || '';
+                    if (nextChar !== ')' && nextChar !== '"') {
+                        newHTML += '<br>';
+                    }
+                }
+            }
+
+            node.innerHTML = newHTML;
+        }
     }
-});
+
+    // Increase font size
+    document.body.style.fontSize = '16px';
+}
+
+// Run after DOM load
+window.addEventListener('DOMContentLoaded', processTextBlocks);
