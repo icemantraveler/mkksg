@@ -50,18 +50,16 @@ body {
 	background: #000000;
 	font-family: Verdana, sans-serif;
 	color: #999999;
-	font-size: 0.833rem; /* Base font size */
+	font-size: 0.875rem; /* Base font size */;
+	line-height: 1.4;
 }
 /* Table Styles */
 table {
-	border: none;
-/* Set border to none for clarity */font-family: Verdana, sans-serif;
-	font-size: 0.833rem; /* Use rem for consistency */;
-	color: #999999;
-}
+font: inherit;
+  color: #999;}
 .responsive-table {
 	width: 100%; /* Allow the table to take full width of its container */;
-	max-width: 700px; /* Set a maximum width for larger screens */;
+	max-width: 850px; /* Set a maximum width for larger screens */;
 	border-collapse: collapse; /* Remove gaps between cells */;
 }
 .responsive-table td {
@@ -70,10 +68,10 @@ table {
 /* Media Queries */
 @media (max-width: 768px) {
 body {
-	font-size: 0.8rem; /* Slightly smaller text */
+	font-size: 0.9rem; /* Slightly smaller text */
 }
 a {
-	font-size: 0.7rem; /* Smaller links */
+	font-size: 0.9rem; /* Smaller links */
 }
 .responsive-table, .responsive-table tr, .responsive-table td {
 	display: block; /* Stack elements */;
@@ -90,10 +88,10 @@ a {
 }
 @media (max-width: 480px) {
 body {
-	font-size: 0.75rem; /* Adjusted for smaller devices */
+	font-size: 0.95rem; /* Adjusted for smaller devices */
 }
 a {
-	font-size: 0.65rem; /* Smaller links */
+	font-size: 0.95rem; /* Smaller links */
 }
 }
 /* Scrollbar Styles (WebKit Browsers) */
@@ -128,30 +126,26 @@ hr.sub {
 }
 /* Character Select CSS */
 .character-select {
-    text-align: center;   /* center images */
-    line-height: normal;  /* avoids editor line collapse */
+	text-align: center;   /* center images */;
+	line-height: normal;  /* avoids editor line collapse */
 }
-
 .character-select a {
-    display: inline-block;  /* keep each <a> on same line until <br> */
+	display: inline-block;  /* keep each <a> on same line until <br> */
 }
-
 .character-select img {
     width: auto;            /* original width, JS scales it */
     height: auto;           /* maintain aspect ratio */
     max-width: 100%;        /* never overflow container */
-    border: 1px solid #808080;
-    box-sizing: border-box; /* include border in width/height */
-    vertical-align: middle; /* keeps inline-block aligned */
-    transition: transform 0.2s;
+	border: 1px solid #808080;
+	box-sizing: border-box; /* include border in width/height */;
+	vertical-align: middle; /* keeps inline-block aligned */;
+	transition: transform 0.2s;
 }
-
 .character-select img:hover {
-    transform: scale(1.05);
+	transform: scale(1.05);
 }
-
 .character-select img {
-    width: 50px;      /* or any reasonable default */
-    max-width: 100%;
-    height: auto;
+	width: 50px;      /* or any reasonable default */;
+	max-width: 100%;
+	height: auto;
 }

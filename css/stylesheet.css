@@ -126,30 +126,26 @@ hr.sub {
 }
 /* Character Select CSS */
 .character-select {
-    text-align: center;   /* center images */
+    text-align: center;   /* center images */;
     line-height: normal;  /* avoids editor line collapse */
 }
-
 .character-select a {
     display: inline-block;  /* keep each <a> on same line until <br> */
 }
-
 .character-select img {
     width: auto;            /* original width, JS scales it */
     height: auto;           /* maintain aspect ratio */
     max-width: 100%;        /* never overflow container */
     border: 1px solid #808080;
-    box-sizing: border-box; /* include border in width/height */
-    vertical-align: middle; /* keeps inline-block aligned */
+    box-sizing: border-box; /* include border in width/height */;
+    vertical-align: middle; /* keeps inline-block aligned */;
     transition: transform 0.2s;
 }
-
 .character-select img:hover {
     transform: scale(1.05);
 }
-
 .character-select img {
-    width: 50px;      /* or any reasonable default */
+    width: 50px;      /* or any reasonable default */;
     max-width: 100%;
     height: auto;
 }
