@@ -1,175 +1,195 @@
 ﻿/* =========================
    MKKomplete Clean Stylesheet
-   Tidied (No Functional Changes)
+   Optimized + Consistent Version
    ========================= */
-
+.symbol {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1;
+	display: inline-block;
+}
+/* =========================
+   Paragraph Spacing
+   ========================= */
+p {
+	margin: 0;
+}
+/* =========================
+   Uniform Characters
+   ========================= */
+.uniform {
+	display: inline-block;
+	width: 1.5em;
+	text-align: center;
+	border-radius: 0.3em;
+	line-height: 1;
+}
 /* =========================
    Color Classes
    ========================= */
-.blu { color: #66B3FF; }
-.yel { color: #FFFF66; }
-.gre { color: #99FF99; }
-.red { color: #FF9999; }
-.whi { color: #E6E6E6; }
-.pin { color: #FFB3D9; }
-.pur { color: #B066B2; }
-.ora { color: #FFB84D; }
-
-.grey1 { color: #D3D3D3; }
-.grey2 { color: #B3B3B3; }
-.grey3 { color: #999999; }
-.grey4 { color: #808080; }
-
+.blu {
+	color: #66B3FF;
+}
+.yel {
+	color: #FFFF66;
+}
+.gre {
+	color: #99FF99;
+}
+.red {
+	color: #FF9999;
+}
+.whi {
+	color: #E6E6E6;
+}
+.pin {
+	color: #FFB3D9;
+}
+.pur {
+	color: #B066B2;
+}
+.ora {
+	color: #FFB84D;
+}
+.grey1 {
+	color: #D3D3D3;
+}
+.grey2 {
+	color: #B3B3B3;
+}
+.grey3 {
+	color: #999999;
+}
+.grey4 {
+	color: #808080;
+}
 /* =========================
    Links
    ========================= */
 a {
-  color: #808080 !important;
-  font-family: Verdana, sans-serif;
-  font-size: 0.875rem;
-  text-decoration: underline;
+	color: #808080 !important;
+	font-family: Verdana, sans-serif;
+	font-size: 0.875rem;
+	text-decoration: underline;
 }
-
 a:hover {
-  color: #FFFFFF !important;
+	color: #FFFFFF !important;
 }
-
 /* =========================
    Body
    ========================= */
 body {
-  background: #000000 url('../pics/bgmk3.jpg') no-repeat fixed center;
-  font-family: Verdana, sans-serif;
-  color: #999999;
-  font-size: 0.875rem;
-  line-height: 1.4;
+	background: #000000 url('../pics/bgmk3.jpg') no-repeat fixed center;
+	font-family: Verdana, sans-serif;
+	color: #999999;
+	font-size: 0.875rem;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0;
+	font-variant-numeric: tabular-nums;
 }
-
 /* =========================
    Tables
    ========================= */
 table {
-  font: inherit;
-  color: #999;
+	font: inherit;
+	color: #999;
+	border-collapse: collapse;
 }
-
 .responsive-table {
-  width: 100%;
-  max-width: 850px;
-  border-collapse: collapse;
+	width: 100%;
+	max-width: 850px;
+	border-collapse: collapse;
+	line-height: 1.4;
 }
-
 .responsive-table td {
-  padding: 5px;
+	padding: 3px 6px;
+	vertical-align: top;
 }
-
 /* =========================
    Media Queries
    ========================= */
 @media (max-width: 768px) {
-
-  body {
-    font-size: 0.9rem;
-  }
-
-  a {
-    font-size: 0.9rem;
-  }
-
-  .responsive-table,
-  .responsive-table tr,
-  .responsive-table td {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .responsive-table tr {
-    margin-bottom: 15px;
-  }
-
-  .responsive-table td {
-    padding: 10px;
-    border: 1px solid #333;
-  }
+body {
+	font-size: 0.9rem;
 }
-
+a {
+	font-size: 0.9rem;
+}
+.responsive-table, .responsive-table tr, .responsive-table td {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+.responsive-table tr {
+	margin-bottom: 15px;
+}
+.responsive-table td {
+	padding: 10px;
+	border: 1px solid #333;
+}
+}
 @media (max-width: 480px) {
-
-  body {
-    font-size: 0.95rem;
-  }
-
-  a {
-    font-size: 0.95rem;
-  }
+body {
+	font-size: 0.85rem;
 }
-
+a {
+	font-size: 0.85rem;
+}
+}
 /* =========================
    Scrollbar (WebKit only)
    ========================= */
 body::-webkit-scrollbar {
-  width: 12px;
+	width: 12px;
 }
-
 body::-webkit-scrollbar-track {
-  background: #000000;
+	background: #000000;
 }
-
 body::-webkit-scrollbar-thumb {
-  background-color: #999999;
-  border-radius: 10px;
+	background-color: #999999;
+	border-radius: 10px;
 }
-
 /* =========================
    Horizontal Rules
    ========================= */
 hr {
-  border: none;
-  height: 2px;
-  margin: 2px 0;
+	border: none;
+	height: 2px;
+	margin: 2px 0;
 }
-
 hr.main {
-  background-color: #333333;
+	background-color: #333333;
 }
-
 hr.sub {
-  background-color: #1A1A1A;
+	background-color: #1A1A1A;
 }
-
 /* =========================
    Logo
    ========================= */
 .logo {
-  max-width: 90%;
-  height: auto;
-  margin: 0 auto;
-  text-align: center;
+	margin: 0 auto;
+	max-width: 90%;
+	height: auto;
 }
-
 /* =========================
    Character Select
    ========================= */
 .character-select {
-  text-align: center;
-  line-height: normal;
+	text-align: center;
+	line-height: normal;
 }
-
 .character-select a {
-  display: inline-block;
+	display: inline-block;
 }
-
 .character-select img {
-  width: 50px;
-  height: auto;
-  max-width: 100%;
-  border: 1px solid #808080;
-  box-sizing: border-box;
-  vertical-align: middle;
-  transition: transform 0.2s;
+	width: 50px;
+	height: auto;
+	max-width: 100%;
+	border: 1px solid #808080;
+	box-sizing: border-box;
+	vertical-align: middle;
+	transition: transform 0.2s;
 }
-
 .character-select img:hover {
-  transform: scale(1.05);
+	transform: scale(1.05);
 }
