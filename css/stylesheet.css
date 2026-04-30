@@ -1,4 +1,12 @@
 ﻿/* =========================
+   Fix For WideScreen Displays
+   ========================= */
+.page {
+	max-width: 1100px; /* controls readable width */;
+	margin: 0 auto;
+/* centers it */padding: 0 10px;     /* keeps content away from edges */
+}
+/* =========================
    MKKomplete Clean Stylesheet
    Optimized + Consistent Version
    ========================= */
@@ -84,7 +92,7 @@ body {
 	font-size: 0.875rem;
 	line-height: 1.4;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 	font-variant-numeric: tabular-nums;
 }
 /* =========================
