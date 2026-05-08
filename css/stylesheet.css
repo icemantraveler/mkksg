@@ -10,8 +10,8 @@
    MKKomplete Clean Stylesheet
    Optimized + Consistent Version
    ========================= */
-.symbol {
-	font-family: Arial, Helvetica, sans-serif;
+.sym {
+	font-family: Verdana;
 	line-height: 1;
 	display: inline-block;
 }
@@ -24,7 +24,7 @@ p {
 /* =========================
    Uniform Characters
    ========================= */
-.uniform {
+.uni {
 	display: inline-block;
 	width: 1.5em;
 	text-align: center;
@@ -35,49 +35,53 @@ p {
    Color Classes
    ========================= */
 .blu {
-	color: #66B3FF;
+	color: #7EC8FF;   /* brighter electric blue */
 }
 .yel {
-	color: #FFFF66;
+	color: #FFF27A;   /* softer neon yellow */
 }
 .gre {
-	color: #99FF99;
+	color: #7DFFB3;   /* vivid mint green */
 }
 .red {
-	color: #FF9999;
+	color: #FF8A8A;   /* brighter soft red */
 }
 .whi {
-	color: #E6E6E6;
+	color: #F2F2F2;   /* near-white */
 }
 .pin {
-	color: #FFB3D9;
+	color: #FF9FD6;   /* brighter pink */
 }
 .pur {
-	color: #B066B2;
+	color: #D08CFF;   /* much more visible purple */
 }
 .ora {
-	color: #FFB84D;
+	color: #FFBE5C;   /* glowing orange */
 }
 .grey1 {
-	color: #D3D3D3;
+	color: #E0E0E0;
 }
 .grey2 {
-	color: #B3B3B3;
+	color: #C8C8C8;
 }
 .grey3 {
-	color: #999999;
+	color: #B0B0B0;
 }
 .grey4 {
-	color: #808080;
+	color: #909090;
+}
+.blu, .yel, .gre, .red, .pin, .pur, .ora {
+	text-shadow: 0 0 6px rgba(126,200,255,0.5);
 }
 /* =========================
    Links
    ========================= */
 a {
-	color: #808080 !important;
+	color: #C0C0C0 !important; /* silver */;
 	font-family: Verdana, sans-serif;
 	font-size: 0.875rem;
 	text-decoration: underline;
+	transition: color 0.2s ease;
 }
 a:hover {
 	color: #FFFFFF !important;
@@ -88,29 +92,30 @@ a:hover {
 body {
 	background: #000000 url('../pics/bgmk3.jpg') no-repeat fixed center;
 	font-family: Verdana, sans-serif;
-	color: #999999;
+	color: #D0D0D0; /* brighter silver-gray */;
 	font-size: 0.875rem;
-	line-height: 1.4;
+	line-height: 1.5;
 	margin: 0;
 	padding: 10px;
-	font-variant-numeric: tabular-nums;
+	font-variant-numeric: tabular-nums; /* readability enhancement */;
+	text-shadow: 0 0 2px rgba(0,0,0,0.8);
 }
 /* =========================
    Tables
    ========================= */
 table {
 	font: inherit;
-	color: #999;
+	color: #D0D0D0;
 	border-collapse: collapse;
 }
 .responsive-table {
 	width: 100%;
 	max-width: 850px;
 	border-collapse: collapse;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 .responsive-table td {
-	padding: 3px 6px;
+	padding: 2px 4px;
 	vertical-align: top;
 }
 /* =========================
@@ -161,9 +166,11 @@ body::-webkit-scrollbar-thumb {
    Horizontal Rules
    ========================= */
 hr {
-	border: none;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
 	height: 2px;
-	margin: 2px 0;
+	margin: 2px 0 0px 0;
 }
 hr.main {
 	background-color: #333333;
@@ -190,7 +197,7 @@ hr.sub {
 	display: inline-block;
 }
 .character-select img {
-	width: 50px;
+	width: 75px;
 	height: auto;
 	max-width: 100%;
 	border: 1px solid #808080;
