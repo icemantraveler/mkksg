@@ -102,12 +102,32 @@ function toggle_it(itemID) {
 
 function formatText() {
   if (window.innerWidth < window.innerHeight) {
+
     document.querySelectorAll('.bio').forEach(el => {
-      el.innerHTML = el.innerHTML.replace(/\.(?!<br>)/g, '.<br>');
+      const original = el.dataset.original || el.innerHTML;
+
+      if (!el.dataset.original) {
+        el.dataset.original = original;
+      }
+
+      el.innerHTML = original.replace(/\.(\s|$)/g, '.<br>');
     });
 
-    document.querySelectorAll('.specials').forEach(el => {
-      el.innerHTML = el.innerHTML.replace(/:(?!<br>)/g, ':<br>');
+    document.querySelectorAll('.specials, .finishers, .combos').forEach(el => {
+      const original = el.dataset.original || el.innerHTML;
+
+      if (!el.dataset.original) {
+        el.dataset.original = original;
+      }
+
+      el.innerHTML = original.replace(/:(\s|$)/g, ':<br>');
+    });
+
+  } else {
+    document.querySelectorAll('.bio, .specials, .finishers, .combos').forEach(el => {
+      if (el.dataset.original) {
+        el.innerHTML = el.dataset.original;
+      }
     });
   }
 }
