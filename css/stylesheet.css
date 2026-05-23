@@ -16,6 +16,14 @@
 	display: inline-block;
 }
 /* =========================
+   Directionals
+   ========================= */
+.dir {
+	font-family: Verdana;
+	line-height: 1;
+	display: inline-block;
+}
+/* =========================
    Paragraph Spacing
    ========================= */
 p {
@@ -169,14 +177,16 @@ hr {
 	border-style: none;
 	border-color: inherit;
 	border-width: medium;
+	border: 0;
 	height: 2px;
 	margin: 2px 0 0px 0;
 }
 hr.main {
-	background-color: #333333;
+	background: linear-gradient(to right, #3A3A3A, #D0D0D0, #3A3A3A);
 }
 hr.sub {
-	background-color: #1A1A1A;
+	background: linear-gradient(to right, #1A1A1A, #777777, #1A1A1A);
+	opacity: 0.75;
 }
 /* =========================
    Logo
