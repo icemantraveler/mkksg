@@ -195,13 +195,3 @@ function formatAll() {
 
 window.addEventListener('load', formatAll);
 window.addEventListener('resize', formatAll);
-// ------------------------------
-// DEBUG: Highlight formatted sections
-// ------------------------------
-window.addEventListener('load', () => {
-  document.querySelectorAll('.info, .bio, .specials, .finishers, .combos, .clues, .howtofight, .howtoplayas, .morphs, .intro, .ending, .taunts, .howtounlock, .dlc, .throws')
-    .forEach(el => {
-      el.style.backgroundColor = 'rgba(0, 150, 255, 0.25)';
-      el.style.outline = '1px solid #0096ff';
-    });
-});
