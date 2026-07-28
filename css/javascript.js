@@ -109,7 +109,8 @@ function formatBio(text) {
     'Prof.', 'Sr.', 'Jr.',
     'Maj.', 'Lt.', 'Capt.', 'Col.',
     'Gen.', 'Sgt.', 'Cmdr.',
-    'U.S.', 'U.K.'
+    'U.S.', 'U.K.',
+    'M. Bison', 'E. Honda', 'R. Mika',
   ];
 
   let protectedText = text;
