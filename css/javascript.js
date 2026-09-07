@@ -196,3 +196,176 @@ function formatAll() {
 
 window.addEventListener('load', formatAll);
 window.addEventListener('resize', formatAll);
+
+/*
+========================================
+MORTAL KOMBAT NOTATION
+ACCESSIBILITY SYSTEM
+========================================
+*/
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /*
+    ----------------------------------------
+    DIRECTIONAL INDICATORS
+    ----------------------------------------
+    */
+
+    const directionLabels = {
+
+        "U": "Up",
+        "D": "Down",
+        "F": "Forward",
+        "B": "Back",
+
+        "UF": "Up and Forward",
+        "DF": "Down and Forward",
+        "DB": "Down and Back",
+        "UB": "Up and Back"
+
+    };
+
+
+    /*
+    ----------------------------------------
+    BUTTON SYMBOLS
+    ----------------------------------------
+    */
+
+    const symbolLabels = {
+
+        // Mortal Kombat 1-3
+
+        "HP": "High Punch",
+        "LP": "Low Punch",
+        "HK": "High Kick",
+        "LK": "Low Kick",
+        "BL": "Block",
+        "RN": "Run",
+
+
+        // Later Mortal Kombat games
+
+        "FP": "Front Punch",
+        "BP": "Back Punch",
+        "FK": "Front Kick",
+        "BK": "Back Kick",
+        "TG": "Tag",
+        "TH": "Throw",
+        "FS": "Flip Stance",
+
+
+        // Generic
+
+        "P": "Punch",
+        "K": "Kick"
+
+    };
+
+
+    /*
+    ----------------------------------------
+    APPLY ACCESSIBLE LABEL
+    ----------------------------------------
+    */
+
+    function applyNotationLabel(element, labels) {
+
+        // Prevent processing twice
+
+        if (element.dataset.notationProcessed === "true") {
+            return;
+        }
+
+
+        // Get the visible text
+
+        const abbreviation = element.textContent.trim();
+
+
+        // Find the full meaning
+
+        const meaning = labels[abbreviation];
+
+
+        // Stop if it is not recognized
+
+        if (!meaning) {
+            return;
+        }
+
+
+        /*
+        Screen reader label
+
+        Example:
+
+        HP
+
+        becomes:
+
+        High Punch
+        */
+
+        element.setAttribute(
+            "aria-label",
+            meaning
+        );
+
+
+        /*
+        Tooltip for sighted users.
+
+        Hovering over HP will show:
+
+        High Punch
+        */
+
+        element.setAttribute(
+            "title",
+            meaning
+        );
+
+
+        // Mark as processed
+
+        element.dataset.notationProcessed = "true";
+
+    }
+
+
+    /*
+    ----------------------------------------
+    PROCESS DIRECTIONS
+    ----------------------------------------
+    */
+
+    document.querySelectorAll(".dir").forEach(function (element) {
+
+        applyNotationLabel(
+            element,
+            directionLabels
+        );
+
+    });
+
+
+    /*
+    ----------------------------------------
+    PROCESS BUTTONS
+    ----------------------------------------
+    */
+
+    document.querySelectorAll(".sym").forEach(function (element) {
+
+        applyNotationLabel(
+            element,
+            symbolLabels
+        );
+
+    });
+
+
+});
