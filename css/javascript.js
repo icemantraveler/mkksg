@@ -200,7 +200,8 @@ window.addEventListener('resize', formatAll);
 /*
 ========================================
 MORTAL KOMBAT NOTATION
-ACCESSIBILITY SYSTEM
+ACCESSIBILITY & TRANSLATION SYSTEM
+VERSION 3
 ========================================
 */
 
@@ -267,35 +268,99 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /*
     ----------------------------------------
-    APPLY ACCESSIBLE LABELS
+    APPLY NOTATION INFORMATION
     ----------------------------------------
     */
 
     function applyNotationLabel(element, labels) {
+
+
+        // Prevent processing twice
 
         if (element.dataset.notationProcessed === "true") {
             return;
         }
 
 
+        // Get the abbreviation before adding anything
+
         const abbreviation = element.textContent.trim();
+
+
+        // Find the full meaning
+
         const meaning = labels[abbreviation];
 
+
+        // Stop if not recognized
 
         if (!meaning) {
             return;
         }
 
 
-        // Screen reader meaning
+        /*
+        ----------------------------------------
+        ACCESSIBILITY
+        ----------------------------------------
 
-        element.setAttribute("aria-label", meaning);
+        Gives screen readers the full meaning.
+        */
+
+        element.setAttribute(
+            "aria-label",
+            meaning
+        );
 
 
-        // Tooltip for sighted users
+        /*
+        ----------------------------------------
+        TOOLTIP
+        ----------------------------------------
 
-        element.setAttribute("title", meaning);
+        Shows the meaning when a sighted user
+        hovers over the notation.
+        */
 
+        element.setAttribute(
+            "title",
+            meaning
+        );
+
+
+        /*
+        ----------------------------------------
+        TRANSLATION TEXT
+        ----------------------------------------
+
+        Add the full English meaning to the DOM.
+
+        This is visually hidden but remains
+        available in the document as text.
+
+        This is an experiment to determine
+        whether Google Translate will use
+        the additional context.
+        */
+
+        const translationText = document.createElement("span");
+
+        translationText.className = "translation-text";
+
+        translationText.textContent =
+            " (" + meaning + ")";
+
+
+        element.appendChild(
+            translationText
+        );
+
+
+        /*
+        ----------------------------------------
+        MARK AS PROCESSED
+        ----------------------------------------
+        */
 
         element.dataset.notationProcessed = "true";
 
@@ -310,7 +375,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelectorAll(".dir").forEach(function (element) {
 
-        applyNotationLabel(element, directionLabels);
+        applyNotationLabel(
+            element,
+            directionLabels
+        );
 
     });
 
@@ -323,139 +391,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelectorAll(".sym").forEach(function (element) {
 
-        applyNotationLabel(element, symbolLabels);
-
-    });
-
-
-    /*
-    ========================================
-    NOTATION OPERATORS
-    ========================================
-
-    +  = plus
-
-    /  = or
-
-    Only operators located between notation
-    elements are processed.
-
-    Commas are intentionally left alone.
-    */
-
-
-    function isNotationElement(element) {
-
-        return (
-            element &&
-            element.nodeType === Node.ELEMENT_NODE &&
-            (
-                element.classList.contains("dir") ||
-                element.classList.contains("sym")
-            )
-        );
-
-    }
-
-
-    document.querySelectorAll(".dir, .sym").forEach(function (element) {
-
-
-        const nextNode = element.nextSibling;
-
-
-        /*
-        We only care about text nodes.
-
-        Example:
-
-        </b>+</b>
-
-        or:
-
-        </b>/<b>
-        */
-
-        if (
-            !nextNode ||
-            nextNode.nodeType !== Node.TEXT_NODE
-        ) {
-            return;
-        }
-
-
-        const nextElement = nextNode.nextSibling;
-
-
-        /*
-        The operator must be between two
-        notation elements.
-        */
-
-        if (!isNotationElement(nextElement)) {
-            return;
-        }
-
-
-        const operator = nextNode.textContent.trim();
-
-
-        let meaning = null;
-
-
-        if (operator === "+") {
-
-            meaning = "plus";
-
-        }
-
-        else if (operator === "/") {
-
-            meaning = "or";
-
-        }
-
-
-        if (!meaning) {
-            return;
-        }
-
-
-        /*
-        Replace the text operator with a span.
-
-        The visible character remains exactly
-        the same.
-
-        The aria-label gives screen readers
-        the intended meaning.
-        */
-
-        const operatorElement =
-            document.createElement("span");
-
-
-        operatorElement.textContent =
-            nextNode.textContent;
-
-
-        operatorElement.setAttribute(
-            "aria-label",
-            meaning
-        );
-
-
-        operatorElement.setAttribute(
-            "role",
-            "text"
-        );
-
-
-        nextNode.parentNode.replaceChild(
-            operatorElement,
-            nextNode
+        applyNotationLabel(
+            element,
+            symbolLabels
         );
 
     });
+
 
 });
