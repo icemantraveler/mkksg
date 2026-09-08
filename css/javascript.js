@@ -34,10 +34,7 @@ if (document.layers) {
     document.onmousedown = clickIE4;
 }
 
-document.oncontextmenu = function() {
-    alert(message);
-    return false;
-};
+document.oncontextmenu = function() { alert(message); return false; };
 
 // ------------------------------
 // Block 2: Resize character rows
@@ -100,262 +97,112 @@ function toggle_it(itemID) {
 }
 
 // ------------------------------
-// Block 4: Format bios + moves
+// Block 4: Format specials/finishers/combos (break after colon ONLY if needed)
+// ------------------------------
+// ------------------------------
+// Block 4: Format bios + moves (fixed clean version)
 // ------------------------------
 
 function formatBio(text) {
-    const abbreviations = [
-        'Mr.', 'Mrs.', 'Ms.', 'Dr.',
-        'Prof.', 'Sr.', 'Jr.',
-        'Maj.', 'Lt.', 'Capt.', 'Col.',
-        'Gen.', 'Sgt.', 'Cmdr.',
-        'U.S.', 'U.K.',
-        'M. Bison', 'E. Honda', 'R. Mika',
-    ];
+  const abbreviations = [
+    'Mr.', 'Mrs.', 'Ms.', 'Dr.',
+    'Prof.', 'Sr.', 'Jr.',
+    'Maj.', 'Lt.', 'Capt.', 'Col.',
+    'Gen.', 'Sgt.', 'Cmdr.',
+    'U.S.', 'U.K.',
+    'M. Bison', 'E. Honda', 'R. Mika',
+  ];
 
-    let protectedText = text;
+  let protectedText = text;
 
-    abbreviations.forEach(abbr => {
-        const escaped = abbr.replace(/\./g, '\\.');
-        protectedText = protectedText.replace(
-            new RegExp(escaped, 'g'),
-            abbr.replace(/\./g, '__DOT__')
-        );
-    });
+  abbreviations.forEach(abbr => {
+    const escaped = abbr.replace(/\./g, '\\.');
+    protectedText = protectedText.replace(
+      new RegExp(escaped, 'g'),
+      abbr.replace(/\./g, '__DOT__')
+    );
+  });
 
-    protectedText = protectedText.replace(/\.\s+/g, '.<br>');
-    protectedText = protectedText.replace(/__DOT__/g, '.');
+  protectedText = protectedText.replace(/\.\s+/g, '.<br>');
+  protectedText = protectedText.replace(/__DOT__/g, '.');
 
-    return protectedText;
+  return protectedText;
 }
 
 function formatMoves() {
-    document.querySelectorAll('.specials, .finishers, .combos').forEach(el => {
-        const original = el.dataset.original || el.innerHTML;
+  document.querySelectorAll('.specials, .finishers, .combos').forEach(el => {
+    const original = el.dataset.original || el.innerHTML;
 
-        if (!el.dataset.original) {
-            el.dataset.original = original;
-        }
+    if (!el.dataset.original) {
+      el.dataset.original = original;
+    }
 
-        el.innerHTML = original;
+    el.innerHTML = original;
 
-        if (window.innerWidth >= window.innerHeight) return;
+    if (window.innerWidth >= window.innerHeight) return;
 
-        const lines = original.split(/<br\s*\/?>/i);
+    const lines = original.split(/<br\s*\/?>/i);
 
-        const testDiv = document.createElement('div');
-        testDiv.style.position = 'absolute';
-        testDiv.style.visibility = 'hidden';
-        testDiv.style.whiteSpace = 'nowrap';
+    const testDiv = document.createElement('div');
+    testDiv.style.position = 'absolute';
+    testDiv.style.visibility = 'hidden';
+    testDiv.style.whiteSpace = 'nowrap';
 
-        const style = window.getComputedStyle(el);
-        testDiv.style.fontSize = style.fontSize;
-        testDiv.style.fontFamily = style.fontFamily;
-        testDiv.style.fontWeight = style.fontWeight;
-        testDiv.style.letterSpacing = style.letterSpacing;
+    const style = window.getComputedStyle(el);
+    testDiv.style.fontSize = style.fontSize;
+    testDiv.style.fontFamily = style.fontFamily;
+    testDiv.style.fontWeight = style.fontWeight;
+    testDiv.style.letterSpacing = style.letterSpacing;
 
-        document.body.appendChild(testDiv);
+    document.body.appendChild(testDiv);
 
-        const processed = lines.map(line => {
-            if (!line.includes(':')) return line;
+    const processed = lines.map(line => {
+      if (!line.includes(':')) return line;
 
-            testDiv.innerHTML = line;
+      testDiv.innerHTML = line;
 
-            const isTooWide = testDiv.scrollWidth > el.clientWidth;
+      const isTooWide = testDiv.scrollWidth > el.clientWidth;
 
-            if (isTooWide) {
-                return line.replace(/:(\s*)/, ':<br>$1');
-            }
+      if (isTooWide) {
+        return line.replace(/:(\s*)/, ':<br>$1');
+      }
 
-            return line;
-        });
-
-        document.body.removeChild(testDiv);
-
-        el.innerHTML = processed.join('<br>');
+      return line;
     });
+
+    document.body.removeChild(testDiv);
+
+    el.innerHTML = processed.join('<br>');
+  });
 }
 
 function formatAll() {
-    const isPortrait = window.innerWidth < window.innerHeight;
+  const isPortrait = window.innerWidth < window.innerHeight;
 
-    // BIOS
-    document.querySelectorAll('.bio').forEach(el => {
-        const original = el.dataset.original || el.innerHTML;
+  // BIOS
+  document.querySelectorAll('.bio').forEach(el => {
+    const original = el.dataset.original || el.innerHTML;
 
-        if (!el.dataset.original) {
-            el.dataset.original = original;
-        }
+    if (!el.dataset.original) {
+      el.dataset.original = original;
+    }
 
-        el.innerHTML = isPortrait ? formatBio(original) : original;
-    });
+    el.innerHTML = isPortrait ? formatBio(original) : original;
+  });
 
-    // MOVES
-    formatMoves();
+  // MOVES
+  formatMoves();
 }
 
 window.addEventListener('load', formatAll);
 window.addEventListener('resize', formatAll);
-
-/*
-========================================
-MORTAL KOMBAT NOTATION
-ACCESSIBILITY & TRANSLATION SYSTEM
-VERSION 4
-========================================
-*/
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    /*
-    ----------------------------------------
-    DIRECTIONAL INDICATORS
-    ----------------------------------------
-    */
-
-    const directionLabels = {
-
-        "U": "Up",
-        "D": "Down",
-        "F": "Forward",
-        "B": "Back",
-
-        "UF": "Up and Forward",
-        "DF": "Down and Forward",
-        "DB": "Down and Back",
-        "UB": "Up and Back"
-
-    };
-
-    /*
-    ----------------------------------------
-    BUTTON SYMBOLS
-    ----------------------------------------
-    */
-
-    const symbolLabels = {
-
-        // Mortal Kombat 1-3
-
-        "HP": "High Punch",
-        "LP": "Low Punch",
-        "HK": "High Kick",
-        "LK": "Low Kick",
-        "BL": "Block",
-        "RN": "Run",
-
-        // Later Mortal Kombat games
-
-        "FP": "Front Punch",
-        "BP": "Back Punch",
-        "FK": "Front Kick",
-        "BK": "Back Kick",
-        "TG": "Tag",
-        "TH": "Throw",
-        "FS": "Flip Stance",
-
-        // Generic
-
-        "P": "Punch",
-        "K": "Kick"
-
-    };
-
-    /*
-    ----------------------------------------
-    APPLY NOTATION INFORMATION
-    ----------------------------------------
-    */
-
-   function applyNotationLabel(element, labels) {
-	if (element.dataset.notationProcessed === "true") return;
-
-	const abbreviation = element.textContent.trim();
-	const meaning = labels[abbreviation];
-
-	if (!meaning) return;
-
-	element.dataset.notationOriginal = abbreviation;
-	element.dataset.notationMeaning = meaning;
-
-	element.textContent = "";
-
-	const shortSpan = document.createElement("span");
-	shortSpan.className = "notation-short";
-	shortSpan.textContent = abbreviation;
-
-	const fullSpan = document.createElement("span");
-	fullSpan.className = "notation-full";
-	fullSpan.textContent = meaning;
-
-	element.appendChild(shortSpan);
-	element.appendChild(fullSpan);
-
-	element.setAttribute("aria-label", meaning);
-	element.setAttribute("title", meaning);
-
-	element.dataset.notationProcessed = "true";
-}  /*  ----------------------------------------
-    PROCESS DIRECTIONS
-    ----------------------------------------
-    */
-
-    document.querySelectorAll(".dir").forEach(function (element) {
-
-        applyNotationLabel(
-            element,
-            directionLabels
-        );
-
+// ------------------------------
+// DEBUG: Highlight formatted sections
+// ------------------------------
+window.addEventListener('load', () => {
+  document.querySelectorAll('.info, .bio, .specials, .finishers, .combos, .clues, .howtofight, .howtoplayas, .morphs, .intro, .ending, .taunts, .howtounlock, .dlc, .throws, .uniqueattacks, .supers')
+    .forEach(el => {
+      el.style.backgroundColor = 'rgba(0, 150, 255, 0.25)';
+      el.style.outline = '1px solid #0096ff';
     });
-
-    /*
-    ----------------------------------------
-    PROCESS BUTTON SYMBOLS
-    ----------------------------------------
-    */
-
-    document.querySelectorAll(".sym").forEach(function (element) {
-
-        applyNotationLabel(
-            element,
-            symbolLabels
-        );
-
-    });
-
 });
-function updateNotationTranslationState() {
-	const htmlLang = (document.documentElement.lang || "").toLowerCase();
-
-	const translated =
-		htmlLang &&
-		htmlLang !== "en" &&
-		!htmlLang.startsWith("en-");
-
-	document.querySelectorAll(".sym, .dir").forEach(element => {
-		const shortText = element.querySelector(".notation-short");
-		const fullText = element.querySelector(".notation-full");
-
-		if (!shortText || !fullText) return;
-
-		if (translated) {
-			shortText.style.display = "none";
-			fullText.style.display = "inline";
-		} else {
-			shortText.style.display = "inline";
-			fullText.style.display = "none";
-		}
-	});
-}
-
-const notationTranslationObserver = new MutationObserver(() => {
-	updateNotationTranslationState();
-});
-
-notationTranslationObserver.observe(document.documentElement, {
-	attributes: true,
-	attributeFilter: ["lang"]
-});
-
-updateNotationTranslationState();

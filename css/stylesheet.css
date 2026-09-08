@@ -1,17 +1,23 @@
 ﻿/* =========================
+   Global Reset & Box Shield
+   ========================= */
+*, *::before, *::after {
+	box-sizing: border-box; /* Prevents padding from causing mobile horizontal scrolling */
+}
+/* =========================
    Fix For WideScreen Displays
    ========================= */
 .page {
 	max-width: 1100px; /* controls readable width */;
 	margin: 0 auto;
-/* centers it */padding: 0 10px;     /* keeps content away from edges */
+/* centers it */padding: 0 10px; /* keeps content away from edges */
 }
 /* =========================
    MKKomplete Clean Stylesheet
    Optimized + Consistent Version
    ========================= */
 .sym {
-	font-family: Verdana;
+	font-family: Verdana, sans-serif;
 	line-height: 1;
 	display: inline-block;
 }
@@ -19,18 +25,9 @@
    Directionals
    ========================= */
 .dir {
-	font-family: Verdana;
+	font-family: Verdana, sans-serif;
 	line-height: 1;
 	display: inline-block;
-}
-/* =========================
-   MK Notation Translation
-   ========================= */
-.notation-short {
-	display: inline;
-}
-.notation-full {
-	display: none;
 }
 /* =========================
    Paragraph Spacing
@@ -52,29 +49,37 @@ p {
    Color Classes
    ========================= */
 .blu {
-	color: #7EC8FF;   /* brighter electric blue */
+	color: #7EC8FF;
 }
+/* brighter electric blue */
 .yel {
-	color: #FFF27A;   /* softer neon yellow */
+	color: #FFF27A;
 }
+/* softer neon yellow */
 .gre {
-	color: #7DFFB3;   /* vivid mint green */
+	color: #7DFFB3;
 }
+/* vivid mint green */
 .red {
-	color: #FF8A8A;   /* brighter soft red */
+	color: #FF8A8A;
 }
+/* brighter soft red */
 .whi {
-	color: #F2F2F2;   /* near-white */
+	color: #F2F2F2;
 }
+/* near-white */
 .pin {
-	color: #FF9FD6;   /* brighter pink */
+	color: #FF9FD6;
 }
+/* brighter pink */
 .pur {
-	color: #D08CFF;   /* much more visible purple */
+	color: #D08CFF;
 }
+/* much more visible purple */
 .ora {
-	color: #FFBE5C;   /* glowing orange */
+	color: #FFBE5C;
 }
+/* glowing orange */
 .grey1 {
 	color: #E0E0E0;
 }
@@ -148,7 +153,6 @@ a {
 .responsive-table, .responsive-table tr, .responsive-table td {
 	display: block;
 	width: 100%;
-	box-sizing: border-box;
 }
 .responsive-table tr {
 	margin-bottom: 15px;
@@ -157,13 +161,16 @@ a {
 	padding: 10px;
 	border: 1px solid #333;
 }
+/* 
+   FIX: Prevents text lines from splitting or wrapping 
+   away from your fixed-width .uni button layout cells
+*/
+.responsive-table td, .page {
+	white-space: nowrap;
 }
-@media (max-width: 480px) {
-body {
-	font-size: 0.85rem;
-}
-a {
-	font-size: 0.85rem;
+/* Re-enable wrapping inside full combo text rows if needed */
+.responsive-table td p, .responsive-table td div {
+	white-space: normal;
 }
 }
 /* =========================
@@ -183,12 +190,9 @@ body::-webkit-scrollbar-thumb {
    Horizontal Rules
    ========================= */
 hr {
-	border-style: none;
-	border-color: inherit;
-	border-width: medium;
 	border: 0;
 	height: 2px;
-	margin: 2px 0 0px 0;
+	margin: 2px 0 0;
 }
 hr.main {
 	background: linear-gradient(to right, #3A3A3A, #D0D0D0, #3A3A3A);
@@ -220,7 +224,6 @@ hr.sub {
 	height: auto;
 	max-width: 100%;
 	border: 1px solid #808080;
-	box-sizing: border-box;
 	vertical-align: middle;
 	transition: transform 0.2s;
 }
