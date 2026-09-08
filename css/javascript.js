@@ -274,30 +274,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function applyNotationLabel(element, labels) {
 
+    // Prevent processing twice
+    if (element.dataset.notationProcessed === "true") {
+        return;
+    }
 
-        // Prevent processing twice
+    // Get the original abbreviation
+    const abbreviation = element.textContent.trim();
 
-        if (element.dataset.notationProcessed === "true") {
-            return;
-        }
+    // Find the full meaning
+    const meaning = labels[abbreviation];
 
+    // Stop if not recognized
+    if (!meaning) {
+        return;
+    }
 
-        // Get the abbreviation before adding anything
+    // Preserve the original abbreviation for reference/debugging
+    element.dataset.notationOriginal = abbreviation;
 
-        const abbreviation = element.textContent.trim();
+    // Accessibility
+    element.setAttribute("aria-label", meaning);
 
+    // Mouse-over tooltip
+    element.setAttribute("title", meaning);
 
-        // Find the full meaning
+    // IMPORTANT:
+    // Replace the actual visible text with the full meaning.
+    // This makes Google Translate and text-to-speech
+    // see the full terminology instead of the abbreviation.
+    element.textContent = meaning;
 
-        const meaning = labels[abbreviation];
-
-
-        // Stop if not recognized
-
-        if (!meaning) {
-            return;
-        }
-
+    // Mark as processed
+    element.dataset.notationProcessed = "true";
+}
 
         /*
         ----------------------------------------
@@ -325,34 +335,6 @@ document.addEventListener("DOMContentLoaded", function () {
         element.setAttribute(
             "title",
             meaning
-        );
-
-
-        /*
-        ----------------------------------------
-        TRANSLATION TEXT
-        ----------------------------------------
-
-        Add the full English meaning to the DOM.
-
-        This is visually hidden but remains
-        available in the document as text.
-
-        This is an experiment to determine
-        whether Google Translate will use
-        the additional context.
-        */
-
-        const translationText = document.createElement("span");
-
-        translationText.className = "translation-text";
-
-        translationText.textContent =
-            " (" + meaning + ")";
-
-
-        element.appendChild(
-            translationText
         );
 
 
