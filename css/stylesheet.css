@@ -160,17 +160,14 @@ a {
 .responsive-table td {
 	padding: 10px;
 	border: 1px solid #333;
+	white-space: normal; /* FORCE regular combo text rows to wrap normally */
 }
 /* 
-   FIX: Prevents text lines from splitting or wrapping 
-   away from your fixed-width .uni button layout cells
+   FIX: Locks ONLY the rows containing your ".uni" Key items 
+   from breaking apart, while letting normal move lists wrap beautifully.
 */
-.responsive-table td, .page {
-	white-space: nowrap;
-}
-/* Re-enable wrapping inside full combo text rows if needed */
-.responsive-table td p, .responsive-table td div {
-	white-space: normal;
+.responsive-table td:has(.uni) {
+	white-space: nowrap !important;
 }
 }
 /* =========================
