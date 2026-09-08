@@ -34,7 +34,10 @@ if (document.layers) {
     document.onmousedown = clickIE4;
 }
 
-document.oncontextmenu = function() { alert(message); return false; };
+document.oncontextmenu = function() {
+    alert(message);
+    return false;
+};
 
 // ------------------------------
 // Block 2: Resize character rows
@@ -97,101 +100,98 @@ function toggle_it(itemID) {
 }
 
 // ------------------------------
-// Block 4: Format specials/finishers/combos (break after colon ONLY if needed)
-// ------------------------------
-// ------------------------------
-// Block 4: Format bios + moves (fixed clean version)
+// Block 4: Format bios + moves
 // ------------------------------
 
 function formatBio(text) {
-  const abbreviations = [
-    'Mr.', 'Mrs.', 'Ms.', 'Dr.',
-    'Prof.', 'Sr.', 'Jr.',
-    'Maj.', 'Lt.', 'Capt.', 'Col.',
-    'Gen.', 'Sgt.', 'Cmdr.',
-    'U.S.', 'U.K.',
-    'M. Bison', 'E. Honda', 'R. Mika',
-  ];
+    const abbreviations = [
+        'Mr.', 'Mrs.', 'Ms.', 'Dr.',
+        'Prof.', 'Sr.', 'Jr.',
+        'Maj.', 'Lt.', 'Capt.', 'Col.',
+        'Gen.', 'Sgt.', 'Cmdr.',
+        'U.S.', 'U.K.',
+        'M. Bison', 'E. Honda', 'R. Mika',
+    ];
 
-  let protectedText = text;
+    let protectedText = text;
 
-  abbreviations.forEach(abbr => {
-    const escaped = abbr.replace(/\./g, '\\.');
-    protectedText = protectedText.replace(
-      new RegExp(escaped, 'g'),
-      abbr.replace(/\./g, '__DOT__')
-    );
-  });
+    abbreviations.forEach(abbr => {
+        const escaped = abbr.replace(/\./g, '\\.');
+        protectedText = protectedText.replace(
+            new RegExp(escaped, 'g'),
+            abbr.replace(/\./g, '__DOT__')
+        );
+    });
 
-  protectedText = protectedText.replace(/\.\s+/g, '.<br>');
-  protectedText = protectedText.replace(/__DOT__/g, '.');
+    protectedText = protectedText.replace(/\.\s+/g, '.<br>');
+    protectedText = protectedText.replace(/__DOT__/g, '.');
 
-  return protectedText;
+    return protectedText;
 }
 
 function formatMoves() {
-  document.querySelectorAll('.specials, .finishers, .combos').forEach(el => {
-    const original = el.dataset.original || el.innerHTML;
+    document.querySelectorAll('.specials, .finishers, .combos').forEach(el => {
+        const original = el.dataset.original || el.innerHTML;
 
-    if (!el.dataset.original) {
-      el.dataset.original = original;
-    }
+        if (!el.dataset.original) {
+            el.dataset.original = original;
+        }
 
-    el.innerHTML = original;
+        el.innerHTML = original;
 
-    if (window.innerWidth >= window.innerHeight) return;
+        if (window.innerWidth >= window.innerHeight) return;
 
-    const lines = original.split(/<br\s*\/?>/i);
+        const lines = original.split(/<br\s*\/?>/i);
 
-    const testDiv = document.createElement('div');
-    testDiv.style.position = 'absolute';
-    testDiv.style.visibility = 'hidden';
-    testDiv.style.whiteSpace = 'nowrap';
+        const testDiv = document.createElement('div');
+        testDiv.style.position = 'absolute';
+        testDiv.style.visibility = 'hidden';
+        testDiv.style.whiteSpace = 'nowrap';
 
-    const style = window.getComputedStyle(el);
-    testDiv.style.fontSize = style.fontSize;
-    testDiv.style.fontFamily = style.fontFamily;
-    testDiv.style.fontWeight = style.fontWeight;
-    testDiv.style.letterSpacing = style.letterSpacing;
+        const style = window.getComputedStyle(el);
+        testDiv.style.fontSize = style.fontSize;
+        testDiv.style.fontFamily = style.fontFamily;
+        testDiv.style.fontWeight = style.fontWeight;
+        testDiv.style.letterSpacing = style.letterSpacing;
 
-    document.body.appendChild(testDiv);
+        document.body.appendChild(testDiv);
 
-    const processed = lines.map(line => {
-      if (!line.includes(':')) return line;
+        const processed = lines.map(line => {
+            if (!line.includes(':')) return line;
 
-      testDiv.innerHTML = line;
+            testDiv.innerHTML = line;
 
-      const isTooWide = testDiv.scrollWidth > el.clientWidth;
+            const isTooWide = testDiv.scrollWidth > el.clientWidth;
 
-      if (isTooWide) {
-        return line.replace(/:(\s*)/, ':<br>$1');
-      }
+            if (isTooWide) {
+                return line.replace(/:(\s*)/, ':<br>$1');
+            }
 
-      return line;
+            return line;
+        });
+
+        document.body.removeChild(testDiv);
+
+        el.innerHTML = processed.join('<br>');
     });
-
-    document.body.removeChild(testDiv);
-
-    el.innerHTML = processed.join('<br>');
-  });
 }
 
 function formatAll() {
-  const isPortrait = window.innerWidth < window.innerHeight;
+    const isPortrait = window.innerWidth < window.innerHeight;
 
-  // BIOS
-  document.querySelectorAll('.bio').forEach(el => {
-    const original = el.dataset.original || el.innerHTML;
+    // BIOS
+    document.querySelectorAll('.bio').forEach(el => {
+        const original = el.dataset.original || el.innerHTML;
 
-    if (!el.dataset.original) {
-      el.dataset.original = original;
-    }
+        if (!el.dataset.original) {
+            el.dataset.original = original;
+        }
 
-    el.innerHTML = isPortrait ? formatBio(original) : original;
-  });
+        el.innerHTML = isPortrait ? formatBio(original) : original;
+    });
 
-  // MOVES
-  formatMoves();
+    // MOVES
+    formatMoves();
 }
 
 window.addEventListener('load', formatAll);
@@ -201,12 +201,11 @@ window.addEventListener('resize', formatAll);
 ========================================
 MORTAL KOMBAT NOTATION
 ACCESSIBILITY & TRANSLATION SYSTEM
-VERSION 3
+VERSION 4
 ========================================
 */
 
 document.addEventListener("DOMContentLoaded", function () {
-
 
     /*
     ----------------------------------------
@@ -228,7 +227,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     };
 
-
     /*
     ----------------------------------------
     BUTTON SYMBOLS
@@ -246,7 +244,6 @@ document.addEventListener("DOMContentLoaded", function () {
         "BL": "Block",
         "RN": "Run",
 
-
         // Later Mortal Kombat games
 
         "FP": "Front Punch",
@@ -257,7 +254,6 @@ document.addEventListener("DOMContentLoaded", function () {
         "TH": "Throw",
         "FS": "Flip Stance",
 
-
         // Generic
 
         "P": "Punch",
@@ -265,92 +261,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
     };
 
-
     /*
     ----------------------------------------
     APPLY NOTATION INFORMATION
     ----------------------------------------
     */
 
-    function applyNotationLabel(element, labels) {
+   function applyNotationLabel(element, labels) {
+	if (element.dataset.notationProcessed === "true") return;
 
-    // Prevent processing twice
-    if (element.dataset.notationProcessed === "true") {
-        return;
-    }
+	const abbreviation = element.textContent.trim();
+	const meaning = labels[abbreviation];
 
-    // Get the original abbreviation
-    const abbreviation = element.textContent.trim();
+	if (!meaning) return;
 
-    // Find the full meaning
-    const meaning = labels[abbreviation];
+	element.dataset.notationOriginal = abbreviation;
+	element.dataset.notationMeaning = meaning;
 
-    // Stop if not recognized
-    if (!meaning) {
-        return;
-    }
+	element.textContent = "";
 
-    // Preserve the original abbreviation for reference/debugging
-    element.dataset.notationOriginal = abbreviation;
+	const shortSpan = document.createElement("span");
+	shortSpan.className = "notation-short";
+	shortSpan.textContent = abbreviation;
 
-    // Accessibility
-    element.setAttribute("aria-label", meaning);
+	const fullSpan = document.createElement("span");
+	fullSpan.className = "notation-full";
+	fullSpan.textContent = meaning;
 
-    // Mouse-over tooltip
-    element.setAttribute("title", meaning);
+	element.appendChild(shortSpan);
+	element.appendChild(fullSpan);
 
-    // IMPORTANT:
-    // Replace the actual visible text with the full meaning.
-    // This makes Google Translate and text-to-speech
-    // see the full terminology instead of the abbreviation.
-    element.textContent = meaning;
+	element.setAttribute("aria-label", meaning);
+	element.setAttribute("title", meaning);
 
-    // Mark as processed
-    element.dataset.notationProcessed = "true";
-}
-
-        /*
-        ----------------------------------------
-        ACCESSIBILITY
-        ----------------------------------------
-
-        Gives screen readers the full meaning.
-        */
-
-        element.setAttribute(
-            "aria-label",
-            meaning
-        );
-
-
-        /*
-        ----------------------------------------
-        TOOLTIP
-        ----------------------------------------
-
-        Shows the meaning when a sighted user
-        hovers over the notation.
-        */
-
-        element.setAttribute(
-            "title",
-            meaning
-        );
-
-
-        /*
-        ----------------------------------------
-        MARK AS PROCESSED
-        ----------------------------------------
-        */
-
-        element.dataset.notationProcessed = "true";
-
-    }
-
-
-    /*
-    ----------------------------------------
+	element.dataset.notationProcessed = "true";
+}  /*  ----------------------------------------
     PROCESS DIRECTIONS
     ----------------------------------------
     */
@@ -363,7 +308,6 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
     });
-
 
     /*
     ----------------------------------------
@@ -380,5 +324,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-
 });
+function updateNotationTranslationState() {
+	const htmlLang = (document.documentElement.lang || "").toLowerCase();
+
+	const translated =
+		htmlLang &&
+		htmlLang !== "en" &&
+		!htmlLang.startsWith("en-");
+
+	document.querySelectorAll(".sym, .dir").forEach(element => {
+		const shortText = element.querySelector(".notation-short");
+		const fullText = element.querySelector(".notation-full");
+
+		if (!shortText || !fullText) return;
+
+		if (translated) {
+			shortText.style.display = "none";
+			fullText.style.display = "inline";
+		} else {
+			shortText.style.display = "inline";
+			fullText.style.display = "none";
+		}
+	});
+}
+
+const notationTranslationObserver = new MutationObserver(() => {
+	updateNotationTranslationState();
+});
+
+notationTranslationObserver.observe(document.documentElement, {
+	attributes: true,
+	attributeFilter: ["lang"]
+});
+
+updateNotationTranslationState();
