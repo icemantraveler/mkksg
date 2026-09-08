@@ -267,69 +267,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /*
     ----------------------------------------
-    APPLY ACCESSIBLE LABEL
+    APPLY ACCESSIBLE LABELS
     ----------------------------------------
     */
 
     function applyNotationLabel(element, labels) {
-
-        // Prevent processing twice
 
         if (element.dataset.notationProcessed === "true") {
             return;
         }
 
 
-        // Get the visible text
-
         const abbreviation = element.textContent.trim();
-
-
-        // Find the full meaning
-
         const meaning = labels[abbreviation];
 
-
-        // Stop if it is not recognized
 
         if (!meaning) {
             return;
         }
 
 
-        /*
-        Screen reader label
+        // Screen reader meaning
 
-        Example:
-
-        HP
-
-        becomes:
-
-        High Punch
-        */
-
-        element.setAttribute(
-            "aria-label",
-            meaning
-        );
+        element.setAttribute("aria-label", meaning);
 
 
-        /*
-        Tooltip for sighted users.
+        // Tooltip for sighted users
 
-        Hovering over HP will show:
+        element.setAttribute("title", meaning);
 
-        High Punch
-        */
-
-        element.setAttribute(
-            "title",
-            meaning
-        );
-
-
-        // Mark as processed
 
         element.dataset.notationProcessed = "true";
 
@@ -344,28 +310,152 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelectorAll(".dir").forEach(function (element) {
 
-        applyNotationLabel(
-            element,
-            directionLabels
-        );
+        applyNotationLabel(element, directionLabels);
 
     });
 
 
     /*
     ----------------------------------------
-    PROCESS BUTTONS
+    PROCESS BUTTON SYMBOLS
     ----------------------------------------
     */
 
     document.querySelectorAll(".sym").forEach(function (element) {
 
-        applyNotationLabel(
-            element,
-            symbolLabels
-        );
+        applyNotationLabel(element, symbolLabels);
 
     });
 
+
+    /*
+    ========================================
+    NOTATION OPERATORS
+    ========================================
+
+    +  = plus
+
+    /  = or
+
+    Only operators located between notation
+    elements are processed.
+
+    Commas are intentionally left alone.
+    */
+
+
+    function isNotationElement(element) {
+
+        return (
+            element &&
+            element.nodeType === Node.ELEMENT_NODE &&
+            (
+                element.classList.contains("dir") ||
+                element.classList.contains("sym")
+            )
+        );
+
+    }
+
+
+    document.querySelectorAll(".dir, .sym").forEach(function (element) {
+
+
+        const nextNode = element.nextSibling;
+
+
+        /*
+        We only care about text nodes.
+
+        Example:
+
+        </b>+</b>
+
+        or:
+
+        </b>/<b>
+        */
+
+        if (
+            !nextNode ||
+            nextNode.nodeType !== Node.TEXT_NODE
+        ) {
+            return;
+        }
+
+
+        const nextElement = nextNode.nextSibling;
+
+
+        /*
+        The operator must be between two
+        notation elements.
+        */
+
+        if (!isNotationElement(nextElement)) {
+            return;
+        }
+
+
+        const operator = nextNode.textContent.trim();
+
+
+        let meaning = null;
+
+
+        if (operator === "+") {
+
+            meaning = "plus";
+
+        }
+
+        else if (operator === "/") {
+
+            meaning = "or";
+
+        }
+
+
+        if (!meaning) {
+            return;
+        }
+
+
+        /*
+        Replace the text operator with a span.
+
+        The visible character remains exactly
+        the same.
+
+        The aria-label gives screen readers
+        the intended meaning.
+        */
+
+        const operatorElement =
+            document.createElement("span");
+
+
+        operatorElement.textContent =
+            nextNode.textContent;
+
+
+        operatorElement.setAttribute(
+            "aria-label",
+            meaning
+        );
+
+
+        operatorElement.setAttribute(
+            "role",
+            "text"
+        );
+
+
+        nextNode.parentNode.replaceChild(
+            operatorElement,
+            nextNode
+        );
+
+    });
 
 });
