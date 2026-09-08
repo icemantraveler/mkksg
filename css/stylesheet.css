@@ -24,6 +24,15 @@
 	display: inline-block;
 }
 /* =========================
+   MK Notation Translation
+   ========================= */
+.notation-short {
+	display: inline;
+}
+.notation-full {
+	display: none;
+}
+/* =========================
    Paragraph Spacing
    ========================= */
 p {
