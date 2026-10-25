@@ -227,3 +227,21 @@ hr.sub {
 .character-select img:hover {
 	transform: scale(1.05);
 }
+/* =========================
+   Ending Navigation
+   ========================= */
+.text-link-button {
+	background: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+	font: inherit;
+	color: inherit;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.text-link-button:hover {
+	color: currentColor;
+	opacity: 0.8; 
+}
