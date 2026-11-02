@@ -45,3 +45,9 @@ table {
 	font-size: 10pt;
 	color: #000000;
 }
+/* =========================
+   Footer Spacing
+   ========================= */
+.spacer {
+	height: 1050px;
+}

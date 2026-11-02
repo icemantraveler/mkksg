@@ -240,8 +240,13 @@ hr.sub {
 	text-decoration: underline;
 	cursor: pointer;
 }
-
 .text-link-button:hover {
 	color: currentColor;
-	opacity: 0.8; 
+	opacity: 0.8;
+}
+/* =========================
+   Footer Spacing
+   ========================= */
+.spacer {
+	height: 1050px;
 }

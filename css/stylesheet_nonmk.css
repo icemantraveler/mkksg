@@ -1,4 +1,10 @@
 ﻿/* =========================
+   Global Reset & Box Shield
+   ========================= */
+*, *::before, *::after {
+	box-sizing: border-box; /* Prevents padding from causing mobile horizontal scrolling */
+}
+/* =========================
    Fix For WideScreen Displays
    ========================= */
 .page {
@@ -22,15 +28,6 @@
 	font-family: Verdana;
 	line-height: 1;
 	display: inline-block;
-}
-/* =========================
-   MK Notation Translation
-   ========================= */
-.notation-short {
-	display: inline;
-}
-.notation-full {
-	display: none;
 }
 /* =========================
    Paragraph Spacing
@@ -240,8 +237,13 @@ hr.sub {
 	text-decoration: underline;
 	cursor: pointer;
 }
-
 .text-link-button:hover {
 	color: currentColor;
-	opacity: 0.8; 
+	opacity: 0.8;
+}
+/* =========================
+   Footer Spacing
+   ========================= */
+.spacer {
+	height: 1050px;
 }
