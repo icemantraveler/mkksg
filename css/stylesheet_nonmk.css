@@ -247,3 +247,13 @@ hr.sub {
 .spacer {
 	height: 1050px;
 }
+/* =========================
+   Character Image Size
+   ========================= */
+.charsel {
+	width: auto;
+	height: 80px;
+	border: 1px solid #808080;
+	vertical-align: bottom;
+	transition: transform 0.2s;
+}
