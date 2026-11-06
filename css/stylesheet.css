@@ -228,7 +228,7 @@ hr.sub {
 	transform: scale(1.05);
 }
 /* =========================
-   Ending Navigation
+   Back Navigation
    ========================= */
 .text-link-button {
 	background: transparent;
@@ -259,4 +259,17 @@ hr.sub {
 	border: 1px solid #808080;
 	vertical-align: bottom;
 	transition: transform 0.2s;
+}
+/* =========================
+   Ending Images
+   ========================= */
+.ending {
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+.endingvert {
+	margin: 0 auto;
+	max-width: 50%;
+	height: auto;
 }
