@@ -194,5 +194,17 @@ function formatAll() {
   formatMoves();
 }
 
-window.addEventListener('load', formatAll);
-window.addEventListener('resize', formatAll);
+// ------------------------------
+// Initialization & Event Listeners
+// ------------------------------
+window.addEventListener('DOMContentLoaded', () => {
+    requestAnimationFrame(() => {
+        formatAll();
+    });
+});
+
+let resizeTimer;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(formatAll, 100);
+});
