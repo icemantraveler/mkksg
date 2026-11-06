@@ -10,14 +10,14 @@
 .page {
 	max-width: 1100px; /* controls readable width */;
 	margin: 0 auto;
-/* centers it */padding: 0 10px;     /* keeps content away from edges */
+/* centers it */padding: 0 10px; /* keeps content away from edges */
 }
 /* =========================
    MKKomplete Clean Stylesheet
    Optimized + Consistent Version
    ========================= */
 .sym {
-	font-family: Verdana;
+	font-family: Verdana, sans-serif;
 	line-height: 1;
 	display: inline-block;
 }
@@ -25,7 +25,7 @@
    Directionals
    ========================= */
 .dir {
-	font-family: Verdana;
+	font-family: Verdana, sans-serif;
 	line-height: 1;
 	display: inline-block;
 }
@@ -153,6 +153,7 @@ a {
 .responsive-table td {
 	padding: 10px;
 	border: 1px solid #333;
+	white-space: normal; /* FORCE regular combo text rows to wrap normally */
 }
 }
 @media (max-width: 480px) {
@@ -180,12 +181,9 @@ body::-webkit-scrollbar-thumb {
    Horizontal Rules
    ========================= */
 hr {
-	border-style: none;
-	border-color: inherit;
-	border-width: medium;
 	border: 0;
 	height: 2px;
-	margin: 2px 0 0px 0;
+	margin: 2px 0 0;
 }
 hr.main {
 	background: linear-gradient(to right, #3A3A3A, #D0D0D0, #3A3A3A);

@@ -49,37 +49,29 @@ p {
    Color Classes
    ========================= */
 .blu {
-	color: #7EC8FF;
+	color: #7EC8FF;   /* brighter electric blue */
 }
-/* brighter electric blue */
 .yel {
-	color: #FFF27A;
+	color: #FFF27A;   /* softer neon yellow */
 }
-/* softer neon yellow */
 .gre {
-	color: #7DFFB3;
+	color: #7DFFB3;   /* vivid mint green */
 }
-/* vivid mint green */
 .red {
-	color: #FF8A8A;
+	color: #FF8A8A;   /* brighter soft red */
 }
-/* brighter soft red */
 .whi {
-	color: #F2F2F2;
+	color: #F2F2F2;   /* near-white */
 }
-/* near-white */
 .pin {
-	color: #FF9FD6;
+	color: #FF9FD6;   /* brighter pink */
 }
-/* brighter pink */
 .pur {
-	color: #D08CFF;
+	color: #D08CFF;   /* much more visible purple */
 }
-/* much more visible purple */
 .ora {
-	color: #FFBE5C;
+	color: #FFBE5C;   /* glowing orange */
 }
-/* glowing orange */
 .grey1 {
 	color: #E0E0E0;
 }
@@ -153,6 +145,7 @@ a {
 .responsive-table, .responsive-table tr, .responsive-table td {
 	display: block;
 	width: 100%;
+	box-sizing: border-box;
 }
 .responsive-table tr {
 	margin-bottom: 15px;
@@ -217,8 +210,8 @@ hr.sub {
 	display: inline-block;
 }
 .character-select img {
-	width: 75px;
-	height: auto;
+	width: auto; /* 75px */;
+	height: 80px; /* auto */;
 	max-width: 100%;
 	border: 1px solid #808080;
 	vertical-align: middle;
