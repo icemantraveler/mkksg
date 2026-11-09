@@ -29,66 +29,34 @@
 		<a href="http://www.youtube.com/embed/lzwclqAFIwI" target="_blank"><img alt="Sektor" border="1" height="82" src="bio_sektor.jpg" title="Sektor" width="89"></a></div>
 	<hr class="main">
 
-	<center><a href="https://www.youtube.com/watch?v=3WbQGn8C1_U" target="_blank">Click here to watch MKGold Endings on YouTube</a> - <a href="https://www.youtube.com/watch?v=V9-J0XQi_Eo" target="_blank">Remastered</a></center><hr class="main">
+	<center><a href="https://www.youtube.com/watch?v=3WbQGn8C1_U" target="_blank">Click here to watch MKGold Endings on YouTube</a> - <a href="https://www.youtube.com/watch?v=V9-J0XQi_Eo" target="_blank">Remastered</a></center>
+	<hr class="sub">
 
-	<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="390" name="_blank" src="https://www.youtube.com/embed/FcDvpG2r0Qs" title="YouTube video player" width="480">
-	</iframe></center><hr class="main">
+	<button class="text-link-button" onclick="goBack()">Go Back</button><hr class="main">
 
-	<!--Start End--><br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+	<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="390" name="_blank" src="https://www.youtube.com/embed/FcDvpG2r0Qs" title="YouTube video player" width="480"></iframe></center>
 	<hr class="main">
 
-	<center><b><a href="../site_info.htm">MKKomplete</a></b></center><hr class="main">
+	<!--Start End--><div class="spacer">
+	</div>
+	<hr class="main">
+
+	<center><b><a href="../site_info.htm">MKKomplete</a></b></center>
+	<hr class="main">
 
 	<!--End--></div>
+<script type="text/javascript">
+function goBack() {
+    const params = new URLSearchParams(window.location.search);
+    const returnPage = params.get('return');
+
+    if (returnPage) {
+        window.location.href = returnPage;
+    } else {
+        window.location.href = "../menu.htm#mkg";
+    }
+}
+</script>
 
 </body>
 
