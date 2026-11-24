@@ -132,6 +132,16 @@ table {
 	padding: 2px 4px;
 	vertical-align: top;
 }
+.responsive-krypt {
+	width: 100%;
+	max-width: 850px;
+	border-collapse: collapse;
+	line-height: 1.5;
+}
+.responsive-krypt td {
+	padding: 2px 4px;
+	vertical-align: top;
+}
 /* =========================
    Media Queries
    ========================= */

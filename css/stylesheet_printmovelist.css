@@ -40,7 +40,7 @@ body {
 }
 table {
 	font: inherit;
-	color: #000000;
+	color: inherit;
 	border-collapse: collapse;
 }
 .responsive-table {
