@@ -39,11 +39,19 @@ body {
 	scrollbar-highlight-color: #999999;
 }
 table {
-	table-border-color-light: rgb(255,255,153);
-	table-border-color-dark: rgb(255,255,51);
-	font-family: Verdana;
-	font-size: 10pt;
+	font: inherit;
 	color: #000000;
+	border-collapse: collapse;
+}
+.responsive-table {
+	width: 100%;
+	max-width: 850px;
+	border-collapse: collapse;
+	line-height: 1.5;
+}
+.responsive-table td {
+	padding: 2px 4px;
+	vertical-align: top;
 }
 /* =========================
    Footer Spacing
